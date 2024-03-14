@@ -3,10 +3,11 @@ BONUS_NAME ?=
 
 BUILD_DIR ?= ./obj
 SRC_DIRS ?= ./src
-INCL_DIR ?= ./inc
+INCL_DIR ?= ./MLX42/include/ ./inc
 
-LIB = libft
-LIBS = $(addprefix -L ,$(LIB))
+LIBFT = libft
+LIBMLX = MLX42
+LIBS = $(addprefix -L ,$(LIBFT) $(LIBMLX))
 
 SRCS := $(filter-out %_bonus.c, $(shell find $(SRC_DIRS) -name *.c))
 OBJS := $(subst $(SRC_DIRS), $(BUILD_DIR), $(SRCS:.c=.o))
@@ -24,27 +25,33 @@ CFLAGS ?= $(INC_FLAGS) -Wall -Werror -Wextra -MMD -MP -g
 
 LD = cc
 LDFLAGS = $(LIBS)
-LINKS = -lft
+LINKS = $(LIBMLX)/build/libmlx42.a -ldl -lglfw -pthread -lm
 
 HIDE =
 
 all: init_submodules $(NAME)
 
-$(NAME): $(OBJS)
-	@make -C $(LIB)
+libft:
+	echo "\n\ncompiling libft\n\n"
+	@make -C $(LIBFT)
+
+libmlx:
+	echo "\n\ncompiling mlx\n\n"
+	@cmake $(LIBMLX) -B $(LIBMLX)/build && make -C $(LIBMLX)/build -j4
+
+$(NAME): libft libmlx $(OBJS)
 	@echo "\nLinking:"
 	$(LD) $(LDFLAGS) -o $@ $(OBJS) $(LINKS)
 	@echo "..\n"
 
 $(BUILD_DIR)/%.o: $(SRC_DIRS)/%.c
 	$(HIDE) mkdir -p $(@D)
-	$(HIDE) $(CC) $(CFLAGS) $(CPPFLAGS) -c $< -o $@
+	$(HIDE) $(CC) $(CFLAGS) -c $< -o $@
 	@echo "Compiling $< ..\n"
 
 bonus: init_submodules $(BONUS_NAME)
 
-$(BONUS_NAME): $(BONUS_OBJS)
-	@make -C $(LIB)
+$(BONUS_NAME): libft libmlx $(BONUS_OBJS)
 	@echo "\nlinking bonus:"
 	$(LD) $(LDFLAGS) -o $(BONUS_NAME) $(BONUS_OBJS) $(LINKS)
 	@echo "..\n"
@@ -56,15 +63,14 @@ $(BUILD_DIR)/%_bonus.o: $(SRC_DIRS)/%_bonus.c
 
 clean:
 	$(HIDE) $(RM) -r $(BUILD_DIR)
-	$(MAKE) -C $(LIB) clean
-	$(HIDE) $(RM) heredoc.txt
+	$(MAKE) -C $(LIBFT) clean
 	@echo "removing obj/ ..\n"
 
 fclean: clean
-	@make fclean -C $(LIB)
+	@make fclean -C $(LIBFT)
 	$(HIDE) $(RM) $(NAME)
 	$(HIDE) $(RM) $(BONUS_NAME)
-	$(MAKE) -C $(LIB) fclean
+	make -C $(LIBFT) fclean
 	@echo "removing $(NAME) ..\n"
 
 re: fclean all
@@ -73,7 +79,7 @@ init_submodules:
 	@git submodule update --init
 
 valgrind: all
-	valgrind --leak-check=full --show-leak-kinds=all --suppressions=$(SUPP) ./$(NAME)
+	valgrind --leak-check=full --show-leak-kinds=all
 
 .PHONY: clean fclean re all bonus init_submodules
 
