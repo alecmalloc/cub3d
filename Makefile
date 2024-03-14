@@ -9,16 +9,15 @@ LIBFT = libft
 LIBMLX = MLX42
 LIBS = $(addprefix -L ,$(LIBFT) $(LIBMLX))
 
-SRCS := $(filter-out %_bonus.c, $(shell find $(SRC_DIRS) -name *.c))
-OBJS := $(subst $(SRC_DIRS), $(BUILD_DIR), $(SRCS:.c=.o))
+OBJS	:= ${SRCS:.c=.o}
 
-BONUS_SRCS := $(shell find $(SRC_DIRS) -name *_bonus.c)
-BONUS_OBJS := $(subst $(SRC_DIRS), $(BUILD_DIR), $(BONUS_SRCS:.c=.o))
+all: libft libmlx $(NAME)
 
-DEPS := $(OBJS:.o=.d)
+libft:
+		make -C $(LIBFT)
 
-INC_DIRS := $(shell find $(INCL_DIR) -type d)
-INC_FLAGS := $(addprefix -I,$(INC_DIRS))
+libmlx:
+	@cmake $(LIBMLX) -B $(LIBMLX)/build && make -C $(LIBMLX)/build -j4
 
 CC = cc
 CFLAGS ?= $(INC_FLAGS) -Wall -Werror -Wextra -MMD -MP -g
@@ -73,7 +72,7 @@ fclean: clean
 	make -C $(LIBFT) fclean
 	@echo "removing $(NAME) ..\n"
 
-re: fclean all
+re: clean all
 
 init_submodules:
 	@git submodule update --init
