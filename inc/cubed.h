@@ -6,14 +6,16 @@
 /*   By: aeastman <aeastman@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/14 10:23:21 by aeastman          #+#    #+#             */
-/*   Updated: 2024/03/14 10:24:35 by aeastman         ###   ########.fr       */
+/*   Updated: 2024/03/14 10:27:41 by aeastman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef CUBED_H
 # define CUBED_H
 
-
+typedef struct Cubed {
+	
+} cubed;
 
 
 #endif
