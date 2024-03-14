@@ -6,11 +6,11 @@
 /*   By: aeastman <aeastman@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/14 13:48:29 by aeastman          #+#    #+#             */
-/*   Updated: 2024/03/14 14:46:29 by aeastman         ###   ########.fr       */
+/*   Updated: 2024/03/14 14:47:19 by aeastman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../inc/cubed.h"
+#include "cubed.h"
 
 int	mlx_handler(t_cubed	*cubed)
 {

@@ -6,7 +6,7 @@
 /*   By: aeastman <aeastman@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/14 10:23:21 by aeastman          #+#    #+#             */
-/*   Updated: 2024/03/14 13:51:25 by aeastman         ###   ########.fr       */
+/*   Updated: 2024/03/14 14:47:42 by aeastman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 # include <stdlib.h>
 
 // include MLX42
-# include "../MLX42/include/MLX42/MLX42.h"
+# include "MLX42.h"
 
 typedef struct Cubed {
 	mlx_t	*ptr_mlx;
