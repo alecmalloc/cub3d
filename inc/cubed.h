@@ -6,16 +6,22 @@
 /*   By: aeastman <aeastman@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/14 10:23:21 by aeastman          #+#    #+#             */
-/*   Updated: 2024/03/14 10:27:41 by aeastman         ###   ########.fr       */
+/*   Updated: 2024/03/14 11:44:17 by aeastman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef CUBED_H
 # define CUBED_H
 
+// c lib includes
+# include <stdlib.h>
+
+// include MLX42
+# include "../MLX42/include/MLX42/MLX42.h"
+
 typedef struct Cubed {
-	
-} cubed;
+	mlx_t	*ptr_mlx;
+}	t_cubed;
 
 
 #endif
