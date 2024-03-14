@@ -1,42 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   window.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aeastman <aeastman@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/14 09:48:55 by aeastman          #+#    #+#             */
-/*   Updated: 2024/03/14 16:15:50 by aeastman         ###   ########.fr       */
+/*   Created: 2024/03/14 13:48:29 by aeastman          #+#    #+#             */
+/*   Updated: 2024/03/14 16:19:55 by aeastman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "cubed.h"
 
-void	*init_structs(t_cubed *cubed)
+// initialize mlx instance and load images
+int	window_init(t_cubed	*cubed)
 {
-	t_images	*images;
-
-	images = malloc(sizeof(t_images));
-	if (!images)
-		return (NULL);
-	cubed->images = images;
-	return ((void *)1);
-}
-
-void	destroy_structs(t_cubed *cubed)
-{
-	free(cubed->images);
-}
-
-// load up main struct and initalize the mlx window
-int	main(void)
-{
-	t_cubed	cubed;
-
-	if (init_structs(&cubed) == NULL)
+	cubed->mlx_inst = mlx_init(1500, 800, "cub3d", false);
+	if (!(cubed->mlx_inst))
 		return (EXIT_FAILURE);
-	if (window_init(&cubed) == EXIT_FAILURE)
-		return (EXIT_FAILURE);
-	destroy_structs(&cubed);
+	mlx_set_window_pos(cubed->mlx_inst, 210, 133);
+	put_backdrop(cubed);
+	mlx_loop(cubed->mlx_inst);
+	mlx_terminate(cubed->mlx_inst);
 	return (EXIT_SUCCESS);
 }
