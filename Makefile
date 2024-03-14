@@ -1,11 +1,11 @@
-NAME ?= 
-BONUS_NAME ?= 
+NAME ?= cub3d
+BONUS_NAME ?=
 
 BUILD_DIR ?= ./obj
 SRC_DIRS ?= ./src
-INCL_DIR ?= ./inlcude
+INCL_DIR ?= ./inc
 
-LIB = 
+LIB = libft
 LIBS = $(addprefix -L ,$(LIB))
 
 SRCS := $(filter-out %_bonus.c, $(shell find $(SRC_DIRS) -name *.c))
@@ -19,16 +19,16 @@ DEPS := $(OBJS:.o=.d)
 INC_DIRS := $(shell find $(INCL_DIR) -type d)
 INC_FLAGS := $(addprefix -I,$(INC_DIRS))
 
-CC = 
-CFLAGS ?= $(INC_FLAGS) -Wall -Werror -Wextra -MMD -MP -g3
+CC = cc
+CFLAGS ?= $(INC_FLAGS) -Wall -Werror -Wextra -MMD -MP -g
 
-LD = 
+LD = cc
 LDFLAGS = $(LIBS)
-LINKS = 
+LINKS = -lft
 
-HIDE = @
+HIDE =
 
-all: $(NAME)
+all: init_submodules $(NAME)
 
 $(NAME): $(OBJS)
 	@make -C $(LIB)
@@ -38,10 +38,10 @@ $(NAME): $(OBJS)
 
 $(BUILD_DIR)/%.o: $(SRC_DIRS)/%.c
 	$(HIDE) mkdir -p $(@D)
-	$(HIDE) $(CC) $(CFLAGS) -c $< -o $@
+	$(HIDE) $(CC) $(CFLAGS) $(CPPFLAGS) -c $< -o $@
 	@echo "Compiling $< ..\n"
 
-bonus: $(BONUS_NAME)
+bonus: init_submodules $(BONUS_NAME)
 
 $(BONUS_NAME): $(BONUS_OBJS)
 	@make -C $(LIB)
@@ -51,22 +51,30 @@ $(BONUS_NAME): $(BONUS_OBJS)
 
 $(BUILD_DIR)/%_bonus.o: $(SRC_DIRS)/%_bonus.c
 	$(HIDE) mkdir -p $(@D)
-	$(HIDE) $(CC) $(CFLAGS) -c $< -o $@
+	$(HIDE) $(CC) $(CFLAGS) $(CPPFLAGS) -c $< -o $@
 	@echo "Compiling $< ...\n"
-
-
-.PHONY: clean fclean re all bonus
 
 clean:
 	$(HIDE) $(RM) -r $(BUILD_DIR)
+	$(MAKE) -C $(LIB) clean
+	$(HIDE) $(RM) heredoc.txt
 	@echo "removing obj/ ..\n"
 
 fclean: clean
 	@make fclean -C $(LIB)
 	$(HIDE) $(RM) $(NAME)
 	$(HIDE) $(RM) $(BONUS_NAME)
+	$(MAKE) -C $(LIB) fclean
 	@echo "removing $(NAME) ..\n"
 
 re: fclean all
 
-INC_DIRS-include $(DEPS)
+init_submodules:
+	@git submodule update --init
+
+valgrind: all
+	valgrind --leak-check=full --show-leak-kinds=all --suppressions=$(SUPP) ./$(NAME)
+
+.PHONY: clean fclean re all bonus init_submodules
+
+-include $(DEPS)
