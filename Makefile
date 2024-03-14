@@ -1,72 +1,39 @@
-NAME ?= 
-BONUS_NAME ?= 
+NAME	:= cub3d
+CFLAGS	:= -Wextra -Wall -Werror -g3
+LIBMLX	:= MLX42
+LIBFT	:= libft
+CC := cc
 
-BUILD_DIR ?= ./obj
-SRC_DIRS ?= ./src
-INCL_DIR ?= ./inlcude
+HEADERS	:= -I ./inc/ -I $(LIBMLX)/include -I $(LIBFT)/inc
+LIBS	:= $(LIBFT)/libft.a $(LIBMLX)/build/libmlx42.a -ldl -lglfw -pthread -lm
+SRCS	:= src/main.c 
 
-LIB = 
-LIBS = $(addprefix -L ,$(LIB))
 
-SRCS := $(filter-out %_bonus.c, $(shell find $(SRC_DIRS) -name *.c))
-OBJS := $(subst $(SRC_DIRS), $(BUILD_DIR), $(SRCS:.c=.o))
+OBJS	:= ${SRCS:.c=.o}
 
-BONUS_SRCS := $(shell find $(SRC_DIRS) -name *_bonus.c)
-BONUS_OBJS := $(subst $(SRC_DIRS), $(BUILD_DIR), $(BONUS_SRCS:.c=.o))
+all: libft libmlx $(NAME)
 
-DEPS := $(OBJS:.o=.d)
+libft:
+		make -C $(LIBFT)
 
-INC_DIRS := $(shell find $(INCL_DIR) -type d)
-INC_FLAGS := $(addprefix -I,$(INC_DIRS))
+libmlx:
+	@cmake $(LIBMLX) -B $(LIBMLX)/build && make -C $(LIBMLX)/build -j4
 
-CC = 
-CFLAGS ?= $(INC_FLAGS) -Wall -Werror -Wextra -MMD -MP -g3
-
-LD = 
-LDFLAGS = $(LIBS)
-LINKS = 
-
-HIDE = @
-
-all: $(NAME)
+%.o: %.c
+	@$(CC) $(CFLAGS) -o $@ -c $< $(HEADERS) && printf "Compiling: $(notdir $<) "
 
 $(NAME): $(OBJS)
-	@make -C $(LIB)
-	@echo "\nLinking:"
-	$(LD) $(LDFLAGS) -o $@ $(OBJS) $(LINKS)
-	@echo "..\n"
-
-$(BUILD_DIR)/%.o: $(SRC_DIRS)/%.c
-	$(HIDE) mkdir -p $(@D)
-	$(HIDE) $(CC) $(CFLAGS) -c $< -o $@
-	@echo "Compiling $< ..\n"
-
-bonus: $(BONUS_NAME)
-
-$(BONUS_NAME): $(BONUS_OBJS)
-	@make -C $(LIB)
-	@echo "\nlinking bonus:"
-	$(LD) $(LDFLAGS) -o $(BONUS_NAME) $(BONUS_OBJS) $(LINKS)
-	@echo "..\n"
-
-$(BUILD_DIR)/%_bonus.o: $(SRC_DIRS)/%_bonus.c
-	$(HIDE) mkdir -p $(@D)
-	$(HIDE) $(CC) $(CFLAGS) -c $< -o $@
-	@echo "Compiling $< ...\n"
-
-
-.PHONY: clean fclean re all bonus
+	@$(CC) $(OBJS) $(LIBS) $(HEADERS) -o $(NAME) -fsanitize=address -g3
 
 clean:
-	$(HIDE) $(RM) -r $(BUILD_DIR)
-	@echo "removing obj/ ..\n"
+	@rm -f $(OBJS)
+	@rm -fr $(LIBMLX)/build
+	@make clean -C $(LIBFT)
 
 fclean: clean
-	@make fclean -C $(LIB)
-	$(HIDE) $(RM) $(NAME)
-	$(HIDE) $(RM) $(BONUS_NAME)
-	@echo "removing $(NAME) ..\n"
+	@rm -f $(NAME)
+	@make fclean -C $(LIBFT)
 
-re: fclean all
+re: clean all
 
-INC_DIRS-include $(DEPS)
+.PHONY: all, clean, fclean, re, libmlx
