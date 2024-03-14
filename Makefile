@@ -6,7 +6,7 @@ CC := cc
 
 HEADERS	:= -I ./inc/ -I $(LIBMLX)/include -I $(LIBFT)/inc
 LIBS	:= $(LIBFT)/libft.a $(LIBMLX)/build/libmlx42.a -ldl -lglfw -pthread -lm
-SRCS	:= src/main.c 
+SRCS	:= src/main.c src/mlx/window.c
 
 
 OBJS	:= ${SRCS:.c=.o}
