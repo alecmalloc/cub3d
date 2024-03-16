@@ -6,7 +6,7 @@
 /*   By: aeastman <aeastman@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/14 10:23:21 by aeastman          #+#    #+#             */
-/*   Updated: 2024/03/14 16:58:18 by aeastman         ###   ########.fr       */
+/*   Updated: 2024/03/16 13:54:46 by aeastman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,8 @@
 
 typedef struct Images{
 	mlx_image_t	*ceiling;
+	mlx_image_t *floor;
+
 }	t_images;
 
 // cubed main struct to store most everything
