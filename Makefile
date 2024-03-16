@@ -5,7 +5,7 @@ BUILD_DIR ?= ./obj
 SRC_DIRS ?= ./src
 INCL_DIR ?= ./MLX42/include ./libft/includes ./inc
 
-LIB = libft MLX42
+LIB = libft MLX42 MLX42/build
 LIBS = $(addprefix -L ,$(LIB))
 
 SRCS := $(filter-out %_bonus.c, $(shell find $(SRC_DIRS) -name *.c))
@@ -20,12 +20,11 @@ INC_DIRS := $(shell find $(INCL_DIR) -type d)
 INC_FLAGS := $(addprefix -I,$(INC_DIRS))
 
 CC = cc
-CFLAGS ?= $(INC_FLAGS) -Wall -Werror -Wextra -MMD -MP -g
+CFLAGS ?= $(INC_FLAGS) -Wall -Werror -Wextra -MMD -MP -g3 -O0
 
 LD = cc
 LDFLAGS = $(LIBS)
-LINKS = -lft -ldl -lglfw -pthread -lm $(word 2, $(LIB))/build/libmlx42.a  $(word 1, $(LIB))/libft.a
-
+LINKS = -lft -lmlx42 -ldl -lglfw -pthread -lm 
 all: $(NAME)
 
 do_libft:
@@ -35,7 +34,7 @@ do_libmlx:
 	@cmake $(word 2, $(LIB)) -B $(word 2, $(LIB))/build && make -sC $(word 2, $(LIB))/build -j4
 
 $(NAME): init_submodules do_libft do_libmlx $(OBJS)
-	$(LD) $(LDFLAGS) $(LINKS) -o $@ $(OBJS)
+	$(LD) $(OBJS) $(LDFLAGS) $(LINKS) -o $@ 
 
 $(BUILD_DIR)/%.o: $(SRC_DIRS)/%.c
 	@mkdir -p $(@D)
@@ -66,7 +65,7 @@ init_submodules:
 	git submodule update --init --recursive
 
 valgrind: all
-	valgrind --leak-check=full --show-leak-kinds=all --track-fds=yes
+	valgrind --leak-check=full --show-leak-kinds=all --track-fds=yes ./$(NAME)
 
 .PHONY: clean fclean re all bonus init_submodules do_libft do_libmlx
 

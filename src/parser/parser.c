@@ -20,14 +20,31 @@ static int	open_file(char *file, t_cubed *master)
 	return(1);
 }
 
+static void	print_parser(t_parser *parser)
+{
+	printf("%s\n", parser->grafics->ntex);	
+	printf("%s\n", parser->grafics->wtex);
+	printf("%s\n", parser->grafics->etex);	
+	printf("%s\n", parser->grafics->stex);	
+	printf("%s\n", parser->grafics->ntex);	
+	printf("%d\n", parser->grafics->fc[0]);	
+	printf("%d\n", parser->grafics->fc[1]);	
+	printf("%d\n", parser->grafics->fc[2]);	
+	printf("%d\n", parser->grafics->sc[0]);	
+	printf("%d\n", parser->grafics->sc[1]);	
+	printf("%d\n", parser->grafics->sc[2]);	
+}
+
 int	parser(char *file, t_cubed *master){
 	int	ret;
-	init_grafics(master->parser->grafics);
+
 	if ((ret = check_suffix(file)))
 		return(ret);
 	if ((ret = open_file( file, master)))
 		return(ret);
 	if((ret = extract_data(master->parser)))
 		return(ret);
+	print_parser(master->parser);
+	//close fd
 	return(0);
 }

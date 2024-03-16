@@ -6,7 +6,7 @@
 /*   By: aeastman <aeastman@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/14 10:23:21 by aeastman          #+#    #+#             */
-/*   Updated: 2024/03/16 11:43:53 by mbartsch         ###   ########.fr       */
+/*   Updated: 2024/03/16 12:38:01 by mbartsch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,7 @@ typedef struct Cubed {
 
 // /mlx
 int	mlx_handler(t_cubed	*cubed);
+int	init_all(t_cubed *cubed);
 int	parser(char *pathname, t_cubed *master);
 
 #endif

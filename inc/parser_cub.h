@@ -12,7 +12,7 @@ typedef struct	s_graf{
 	int	sc[3];
 }	t_graf;
 
-typedef struct	smap{
+typedef struct	s_map{
 	;
 }	t_map;
 
@@ -22,9 +22,9 @@ typedef struct	s_parser{
 	struct s_map	*map;
 }	t_parser;
 
+int	init_parser(t_parser *parser);
 int	extract_data(t_parser *parser);
 void	skip_spaces(char *tmp);
-void	init_grafics(t_graf *grafics);
 int	extract_npath(char *src, char *dst);
 int	extract_spath(char *src, char *dst);
 int	extract_wpath(char *src, char *dst);

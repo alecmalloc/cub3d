@@ -1,28 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   window.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aeastman <aeastman@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/14 09:48:55 by aeastman          #+#    #+#             */
-/*   Updated: 2024/03/16 12:44:25 by mbartsch         ###   ########.fr       */
+/*   Created: 2024/03/14 13:48:29 by aeastman          #+#    #+#             */
+/*   Updated: 2024/03/16 11:49:49 by mbartsch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "cubed.h"
+#include "../../inc/cubed.h"
 
-// load up main struct and initalize the mlx window
-int	main(int argc, char *argv[])
+int	mlx_handler(t_cubed	*cubed)
 {
-	t_cubed	*cubed;
-
-	cubed = NULL;
-	init_all(cubed);
-	if (argc != 2 && argv)
-		;
-	parser(argv[1], cubed);
-	//if (mlx_handler(&cubed) == EXIT_FAILURE)
-	//	return (EXIT_FAILURE);
+	cubed->ptr_mlx = mlx_init(1000, 500, "cub3d", false);
+	if (!(cubed->ptr_mlx))
+		return (EXIT_FAILURE);
+	mlx_set_window_pos(cubed->ptr_mlx, 20, 30);
+	mlx_loop(cubed->ptr_mlx);
+	mlx_terminate(cubed->ptr_mlx);
 	return (EXIT_SUCCESS);
 }
