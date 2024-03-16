@@ -1,6 +1,7 @@
 {
 	"files.associations": {
 		"mlx42.h": "c",
-		"cubed.h": "c"
+		"cubed.h": "c",
+		"stdlib.h": "c"
 	}
 }
