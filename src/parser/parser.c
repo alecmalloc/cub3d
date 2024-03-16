@@ -22,7 +22,7 @@ static int	open_file(char *file, t_cubed *master)
 
 int	parser(char *file, t_cubed *master){
 	int	ret;
-	init_tex_col(master->parser->grafics);
+	init_grafics(master->parser->grafics);
 	if ((ret = check_suffix(file)))
 		return(ret);
 	if ((ret = open_file( file, master)))

@@ -3,11 +3,10 @@ BONUS_NAME ?=
 
 BUILD_DIR ?= ./obj
 SRC_DIRS ?= ./src
-INCL_DIR ?= ./MLX42/include/ ./libft/includes ./inc
+INCL_DIR ?= ./MLX42/ ./libft/includes ./inc
 
-LIBFT = libft
-LIBMLX = MLX42
-LIBS = $(addprefix -L ,$(LIBFT) $(LIBMLX))
+LIB = libft MLX42
+LIBS = $(addprefix -L ,$(LIB))
 
 SRCS := $(filter-out %_bonus.c, $(shell find $(SRC_DIRS) -name *.c))
 OBJS := $(subst $(SRC_DIRS), $(BUILD_DIR), $(SRCS:.c=.o))
@@ -25,28 +24,27 @@ CFLAGS ?= $(INC_FLAGS) -Wall -Werror -Wextra -MMD -MP -g
 
 LD = cc
 LDFLAGS = $(LIBS)
-LINKS = -lft -ldl -lglfw -pthread -lm
-#$(LIBMLX)/build/libmlx42.a $(LIBFT)/libft.a 
+LINKS = -lft -ldl -lglfw -pthread -lm $(word 2, $(LIB))/build/libmlx42.a  $(word 1, $(LIB))/libft.a
 
 all: $(NAME)
 
-libft:
-	make -C $(LIBFT)
+do_libft:
+	make -sC $(word 1, $(LIB))
 
-libmlx:
-	@cmake $(LIBMLX) -B $(LIBMLX)/build && make -sC $(LIBMLX)/build -j4
+do_libmlx:
+	@cmake $(word 2, $(LIB)) -B $(word 2, $(LIB))/build && make -sC $(word 2, $(LIB))/build -j4
 
-$(NAME): init_submodules libft libmlx $(OBJS)
-	@$(LD) $(LDFLAGS) -o $@ $(OBJS) $(LINKS)
+$(NAME): init_submodules do_libft do_libmlx $(OBJS)
+	$(LD) $(LDFLAGS) $(LINKS) -o $@ $(OBJS)
 
 $(BUILD_DIR)/%.o: $(SRC_DIRS)/%.c
-	@$(HIDE) mkdir -p $(@D)
-	@$(HIDE) $(CC) $(CFLAGS) -c $< -o $@
+	@mkdir -p $(@D)
+	$(CC) $(CFLAGS) -c $< -o $@
 
 bonus: $(BONUS_NAME)
 
-$(BONUS_NAME): init_submodules libft libmlx $(BONUS_OBJS)
-	@$(LD) $(LDFLAGS) -o $(BONUS_NAME) $(BONUS_OBJS) $(LINKS)
+$(BONUS_NAME): init_submodules do_libft do_libmlx $(BONUS_OBJS)
+	@$(LD) $(LDFLAGS) $(LINKS) -o $(BONUS_NAME) $(BONUS_OBJS)
 
 $(BUILD_DIR)/%_bonus.o: $(SRC_DIRS)/%_bonus.c
 	@mkdir -p $(@D)
@@ -54,10 +52,10 @@ $(BUILD_DIR)/%_bonus.o: $(SRC_DIRS)/%_bonus.c
 
 clean:
 	@$(RM) -r $(BUILD_DIR)
-	@make -sC $(LIBFT) clean
+	make -sC $(word 1, $(LIB)) clean
 
 fclean:
-	@make fclean -sC $(LIBFT)
+	make fclean -sC $(word 1, $(LIB))
 	@$(RM) -r $(BUILD_DIR)
 	@$(RM) $(NAME)
 	@$(RM) $(BONUS_NAME)
@@ -65,12 +63,11 @@ fclean:
 re: fclean all
 
 init_submodules:
-	git submodule update --init
-#	git submodule update --remote
+	git submodule update --init --recursive
 
 valgrind: all
 	valgrind --leak-check=full --show-leak-kinds=all --track-fds=yes
 
-.PHONY: clean fclean re all bonus init_submodules
+.PHONY: clean fclean re all bonus init_submodules do_libft do_libmlx
 
 -include $(DEPS)

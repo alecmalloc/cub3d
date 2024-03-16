@@ -1,5 +1,5 @@
-#ifndef ERROR_H
-# define ERROR_H
+#ifndef ERROR_CUB_H
+# define ERROR_CUB_H
 
 //define ErrorCodes
 

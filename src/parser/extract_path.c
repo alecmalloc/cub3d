@@ -7,7 +7,7 @@ int	extract_npath(char *src, char *dst)
 	while(*src != ' ')
 		src++;
 	skip_spaces(src);
-	dst = ft_strdup(src);
+	dst = ft_strdup((const char*)src);
 	if (!dst)
 		return(MALL_ERR);
 	if (open(dst, O_RDONLY) == -1)

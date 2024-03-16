@@ -1,5 +1,5 @@
-#ifndef PARSER_H
-# define PARSER_H
+#ifndef PARSER_CUB_H
+# define PARSER_CUB_H
 
 //store textures and colours
 
@@ -24,11 +24,12 @@ typedef struct	s_parser{
 
 int	extract_data(t_parser *parser);
 void	skip_spaces(char *tmp);
-void	init_tex_col(t_graf *grafics);
-int	extrac_npath(char *src, char *dst);
-int	extrac_spath(char *src, char *dst);
-int	extrac_wpath(char *src, char *dst);
-int	extrac_epath(char *src, char *dst);
+void	init_grafics(t_graf *grafics);
+int	extract_npath(char *src, char *dst);
+int	extract_spath(char *src, char *dst);
+int	extract_wpath(char *src, char *dst);
+int	extract_epath(char *src, char *dst);
 int	get_frgb(char *src, int arr[]);
 int	get_srgb(char *src, int arr[]);
+
 #endif
