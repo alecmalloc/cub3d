@@ -3,7 +3,7 @@ BONUS_NAME ?=
 
 BUILD_DIR ?= ./obj
 SRC_DIRS ?= ./src
-INCL_DIR ?= ./MLX42/include/ ./inc
+INCL_DIR ?= ./MLX42/include/ ./libft/includes ./inc
 
 LIBFT = libft
 LIBMLX = MLX42
@@ -25,51 +25,51 @@ CFLAGS ?= $(INC_FLAGS) -Wall -Werror -Wextra -MMD -MP -g
 
 LD = cc
 LDFLAGS = $(LIBS)
-LINKS = $(LIBMLX)/build/libmlx42.a -ldl -lglfw -pthread -lm
+LINKS = -lft -ldl -lglfw -pthread -lm
+#$(LIBMLX)/build/libmlx42.a $(LIBFT)/libft.a 
 
-HIDE =
-
-all: init_submodules $(NAME)
+all: $(NAME)
 
 libft:
-	@make -C $(LIBFT)
+	make -C $(LIBFT)
 
 libmlx:
-	@cmake $(LIBMLX) -B $(LIBMLX)/build && make -C $(LIBMLX)/build -j4
+	@cmake $(LIBMLX) -B $(LIBMLX)/build && make -sC $(LIBMLX)/build -j4
 
-$(NAME): libft libmlx $(OBJS)
-	$(LD) $(LDFLAGS) -o $@ $(OBJS) $(LINKS)
+$(NAME): init_submodules libft libmlx $(OBJS)
+	@$(LD) $(LDFLAGS) -o $@ $(OBJS) $(LINKS)
 
 $(BUILD_DIR)/%.o: $(SRC_DIRS)/%.c
-	$(HIDE) mkdir -p $(@D)
-	$(HIDE) $(CC) $(CFLAGS) -c $< -o $@
+	@$(HIDE) mkdir -p $(@D)
+	@$(HIDE) $(CC) $(CFLAGS) -c $< -o $@
 
-bonus: init_submodules $(BONUS_NAME)
+bonus: $(BONUS_NAME)
 
-$(BONUS_NAME): libft libmlx $(BONUS_OBJS)
-	$(LD) $(LDFLAGS) -o $(BONUS_NAME) $(BONUS_OBJS) $(LINKS)
+$(BONUS_NAME): init_submodules libft libmlx $(BONUS_OBJS)
+	@$(LD) $(LDFLAGS) -o $(BONUS_NAME) $(BONUS_OBJS) $(LINKS)
 
 $(BUILD_DIR)/%_bonus.o: $(SRC_DIRS)/%_bonus.c
-	$(HIDE) mkdir -p $(@D)
-	$(HIDE) $(CC) $(CFLAGS) $(CPPFLAGS) -c $< -o $@
+	@mkdir -p $(@D)
+	@$(CC) $(CFLAGS) $(CPPFLAGS) -c $< -o $@
 
 clean:
-	$(HIDE) $(RM) -r $(BUILD_DIR)
-	$(MAKE) -C $(LIBFT) clean
+	@$(RM) -r $(BUILD_DIR)
+	@make -sC $(LIBFT) clean
 
-fclean: clean
-	@make fclean -C $(LIBFT)
-	$(HIDE) $(RM) $(NAME)
-	$(HIDE) $(RM) $(BONUS_NAME)
-	make -C $(LIBFT) fclean
+fclean:
+	@make fclean -sC $(LIBFT)
+	@$(RM) -r $(BUILD_DIR)
+	@$(RM) $(NAME)
+	@$(RM) $(BONUS_NAME)
 
-re: clean all
+re: fclean all
 
 init_submodules:
-	@git submodule update --init
+	git submodule update --init
+#	git submodule update --remote
 
 valgrind: all
-	valgrind --leak-check=full --show-leak-kinds=all
+	valgrind --leak-check=full --show-leak-kinds=all --track-fds=yes
 
 .PHONY: clean fclean re all bonus init_submodules
 
