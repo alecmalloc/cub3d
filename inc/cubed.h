@@ -6,7 +6,7 @@
 /*   By: aeastman <aeastman@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/14 10:23:21 by aeastman          #+#    #+#             */
-/*   Updated: 2024/03/16 11:05:13 by mbartsch         ###   ########.fr       */
+/*   Updated: 2024/03/16 11:43:53 by mbartsch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@
 # include "../MLX42/include/MLX42/MLX42.h"
 # include "parser_cub.h"
 # include "error_cub.h"
-# include "libft.h"
+# include "../libft/includes/libft.h"
 
 typedef struct Cubed {
 	mlx_t		*ptr_mlx;

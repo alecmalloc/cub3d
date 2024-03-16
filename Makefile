@@ -3,7 +3,7 @@ BONUS_NAME ?=
 
 BUILD_DIR ?= ./obj
 SRC_DIRS ?= ./src
-INCL_DIR ?= ./MLX42/ ./libft/includes ./inc
+INCL_DIR ?= ./MLX42/include ./libft/includes ./inc
 
 LIB = libft MLX42
 LIBS = $(addprefix -L ,$(LIB))
