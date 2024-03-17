@@ -13,11 +13,14 @@ static int	extract_data_line(char *tmp, t_graf *grafics)
 	skip_spaces(&tmp);
 	if (*tmp == 'N' && *(tmp + 1) == 'O' && *(tmp + 2) == ' ' && !grafics->ntex)
 		return (extract_npath(tmp, &grafics->ntex));
-	else if (*tmp == 'S' && *(tmp + 1) == 'O' && *(tmp + 2) == ' ' && !grafics->stex)
+	else if (*tmp == 'S' && *(tmp + 1) == 'O' && *(tmp + 2) == ' ' \
+		&& !grafics->stex)
 		return (extract_spath(tmp, &grafics->stex));
-	else if (*tmp == 'W' && *(tmp + 1) == 'E' && *(tmp + 2) == ' ' && !grafics->wtex)
+	else if (*tmp == 'W' && *(tmp + 1) == 'E' && *(tmp + 2) == ' ' \
+		&& !grafics->wtex)
 		return (extract_wpath(tmp, &grafics->wtex));
-	else if (*tmp == 'E' && *(tmp + 1) == 'A' && *(tmp + 2) == ' ' && !grafics->etex)
+	else if (*tmp == 'E' && *(tmp + 1) == 'A' && *(tmp + 2) == ' ' \
+		&& !grafics->etex)
 		return (extract_epath(tmp, &grafics->etex));
 	else if (*tmp == 'F' && *(tmp + 1) == ' ' && grafics->fc[0] == -1)
 		return (get_frgb(tmp, grafics->fc));
@@ -43,9 +46,8 @@ int	extract_data(t_parser *parser)
 	while (tmp && !data_extracted(parser->grafics))
 	{
 		ret = extract_data_line(tmp, parser->grafics);
-	if (ret != 0)
-	{
-		return (ret);
+		if (ret != 0)
+			return (ret);
 		free(tmp);
 		tmp = get_next_line(parser->fd);
 	}

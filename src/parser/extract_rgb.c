@@ -1,6 +1,6 @@
 #include "cubed.h"
 
-int	extract_nbr(char *src)
+static int	extract_nbr(char *src)
 {
 	int	z;
 	int	i;
@@ -20,62 +20,76 @@ int	extract_nbr(char *src)
 	return (ret);
 }
 
-int	get_frgb(char *src, int arr[])
+static int	extract_arr_f(char *src, int *arr[])
 {
 	int	z;
 
+	z = 0;
+	while (*src && (ft_isdigit(*src) || *src == ' '))
+	{
+		(*arr)[z] = extract_nbr(src);
+		if ((*arr)[z] == -1)
+			return (WFN_ERR);
+		z++;
+		while (ft_isdigit(*src))
+			src++;
+		if (*src == ' ')
+			src++;
+	}
+	if (z != 3)
+		return (MFN_ERR);
+	while (*src && *src == ' ')
+		src++;
+	if (*src)
+		return (WFF_ERR);
+	return (0);
+}
+
+static int	extract_arr_s(char *src, int *arr[])
+{
+	int	z;
+
+	z = 0;
+	while (*src && (ft_isdigit(*src) || *src == ' '))
+	{
+		(*arr)[z] = extract_nbr(src);
+		if ((*arr)[z] == -1)
+			return (WSN_ERR);
+		z++;
+		while (ft_isdigit(*src))
+			src++;
+		if (*src == ' ')
+			src++;
+	}
+	if (z != 3)
+		return (MSN_ERR);
+	while (*src && *src == ' ')
+		src++;
+	if (*src)
+		return (WFS_ERR);
+	return (0);
+}
+
+int	get_frgb(char *src, int arr[])
+{
 	if (arr[0] != -1)
 		return (DFN_ERR);
 	while (*src && *src != ' ')
 		src++;
 	if (!*src)
 		return (MFN_ERR);
-	z = 0;
 	skip_spaces(&src);
-	while (*src && *src != '\n' && *src != ' ')
-	{
-		if (!ft_isdigit(*src))
-			return (WFF_ERR);
-		arr[z] = extract_nbr(src);
-		if (arr[z] == -1)
-			return (WFN_ERR);
-		z++;
-		while (ft_isdigit(*src))
-			src++;
-		if (*src == ',')
-			src++;
-	}
-	if (z != 3)
-		return (MFN_ERR);
-	return (0);
+	return (extract_arr_f(src, &arr));
 }
 
 int	get_srgb(char *src, int arr[])
 {
-	int	z;
-
 	if (arr[0] != -1)
 		return (DSN_ERR);
 	while (*src && *src != ' ')
 		src++;
 	if (!*src)
 		return (MSN_ERR);
-	z = 0;
 	skip_spaces(&src);
-	while (*src && *src != '\n' && *src != ' ')
-	{
-		if (!ft_isdigit(*src))
-			return (WFS_ERR);
-		arr[z] = extract_nbr(src);
-		if (arr[z] == -1)
-			return (WSN_ERR);
-		z++;
-		while (ft_isdigit(*src))
-			src++;
-		if (*src == ',')
-			src++;
-	}
-	if (z != 3)
-		return (MSN_ERR);
-	return (0);
+	return (extract_arr_s(src, &arr));
 }
