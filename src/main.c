@@ -16,12 +16,15 @@
 int	main(int argc, char *argv[])
 {
 	t_cubed	*cubed;
+	int	ret;
 
 	cubed = NULL;
-	init_all(cubed);
+	init_all(&cubed);
 	if (argc != 2 && argv)
-		;
-	parser(argv[1], cubed);
+		return(print_error(WRA_ERR));
+	ret = parser(argv[1], cubed);
+	if (ret)
+		return (print_error(ret));
 	//if (mlx_handler(&cubed) == EXIT_FAILURE)
 	//	return (EXIT_FAILURE);
 	return (EXIT_SUCCESS);

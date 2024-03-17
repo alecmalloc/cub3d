@@ -22,13 +22,13 @@ typedef struct	s_parser{
 	struct s_map	*map;
 }	t_parser;
 
-int	init_parser(t_parser *parser);
+int	init_parser(t_parser **parser);
 int	extract_data(t_parser *parser);
-void	skip_spaces(char *tmp);
-int	extract_npath(char *src, char *dst);
-int	extract_spath(char *src, char *dst);
-int	extract_wpath(char *src, char *dst);
-int	extract_epath(char *src, char *dst);
+void	skip_spaces(char **tmp);
+int	extract_npath(char *src, char **dst);
+int	extract_spath(char *src, char **dst);
+int	extract_wpath(char *src, char **dst);
+int	extract_epath(char *src, char **dst);
 int	get_frgb(char *src, int arr[]);
 int	get_srgb(char *src, int arr[]);
 

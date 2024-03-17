@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../inc/cubed.h"
+#include "cubed.h"
 
 int	mlx_handler(t_cubed	*cubed)
 {

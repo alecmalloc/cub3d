@@ -32,7 +32,7 @@ typedef struct Cubed {
 
 // /mlx
 int	mlx_handler(t_cubed	*cubed);
-int	init_all(t_cubed *cubed);
+int	init_all(t_cubed **cubed);
 int	parser(char *pathname, t_cubed *master);
 
 #endif
