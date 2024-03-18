@@ -58,6 +58,9 @@
 # define WFF_ERR 170
 # define WFS_ERR 171
 
+//Map not found
+# define MNF_ERR 180
+
 # define DIRECTIONS {"North", "East", "South", "West"}
 # define BOTOP {"Floor", "Ceiling"} 
 

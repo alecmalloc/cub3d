@@ -46,6 +46,7 @@ int	parser(char *file, t_cubed *master)
 	ret = extract_data(master->parser);
 	if (ret)
 		return (ret);
+	ret = extract_map(master->parser);
 	print_parser(master->parser);
 	//close fd
 	return (0);

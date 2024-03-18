@@ -11,21 +11,18 @@ static int	extract_data_line(char *tmp, t_graf *grafics)
 	if (*tmp == '\n')
 		return (0);
 	skip_spaces(&tmp);
-	if (*tmp == 'N' && *(tmp + 1) == 'O' && *(tmp + 2) == ' ' && !grafics->ntex)
+	if (*tmp == 'N' && *(tmp + 1) == 'O' && *(tmp + 2) == ' ')
 		return (extract_npath(tmp, &grafics->ntex));
-	else if (*tmp == 'S' && *(tmp + 1) == 'O' && *(tmp + 2) == ' ' \
-		&& !grafics->stex)
+	else if (*tmp == 'S' && *(tmp + 1) == 'O' && *(tmp + 2) == ' ')
 		return (extract_spath(tmp, &grafics->stex));
-	else if (*tmp == 'W' && *(tmp + 1) == 'E' && *(tmp + 2) == ' ' \
-		&& !grafics->wtex)
+	else if (*tmp == 'W' && *(tmp + 1) == 'E' && *(tmp + 2) == ' ')
 		return (extract_wpath(tmp, &grafics->wtex));
-	else if (*tmp == 'E' && *(tmp + 1) == 'A' && *(tmp + 2) == ' ' \
-		&& !grafics->etex)
+	else if (*tmp == 'E' && *(tmp + 1) == 'A' && *(tmp + 2) == ' ')
 		return (extract_epath(tmp, &grafics->etex));
-	else if (*tmp == 'F' && *(tmp + 1) == ' ' && grafics->fc[0] == -1)
-		return (get_frgb(tmp, grafics->fc));
-	else if (*tmp == 'C' && *(tmp + 1) == ' ' && grafics->sc[0] == -1)
-		return (get_srgb(tmp, grafics->sc));
+	else if (*tmp == 'F' && *(tmp + 1) == ' ')
+		return (get_frgb(tmp, &grafics->fc));
+	else if (*tmp == 'C' && *(tmp + 1) == ' ')
+		return (get_srgb(tmp, &grafics->sc));
 	return (WRL_ERR);
 }
 

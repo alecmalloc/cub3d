@@ -20,7 +20,7 @@ static int	extract_nbr(char *src)
 	return (ret);
 }
 
-static int	extract_arr_f(char *src, int *arr[])
+static int	extract_arr_f(char *src, int (*arr)[])
 {
 	int	z;
 
@@ -45,7 +45,7 @@ static int	extract_arr_f(char *src, int *arr[])
 	return (0);
 }
 
-static int	extract_arr_s(char *src, int *arr[])
+static int	extract_arr_s(char *src, int (*arr)[])
 {
 	int	z;
 
@@ -70,26 +70,26 @@ static int	extract_arr_s(char *src, int *arr[])
 	return (0);
 }
 
-int	get_frgb(char *src, int arr[])
+int	get_frgb(char *src, int (*arr)[])
 {
-	if (arr[0] != -1)
+	if ((*arr)[0] != -1)
 		return (DFN_ERR);
 	while (*src && *src != ' ')
 		src++;
 	if (!*src)
 		return (MFN_ERR);
 	skip_spaces(&src);
-	return (extract_arr_f(src, &arr));
+	return (extract_arr_f(src, arr));
 }
 
-int	get_srgb(char *src, int arr[])
+int	get_srgb(char *src, int (*arr)[])
 {
-	if (arr[0] != -1)
+	if ((*arr)[0] != -1)
 		return (DSN_ERR);
 	while (*src && *src != ' ')
 		src++;
 	if (!*src)
 		return (MSN_ERR);
 	skip_spaces(&src);
-	return (extract_arr_s(src, &arr));
+	return (extract_arr_s(src, arr));
 }

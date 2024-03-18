@@ -65,7 +65,7 @@ init_submodules:
 	git submodule update --init --recursive
 
 valgrind: all
-	valgrind --leak-check=full --show-leak-kinds=all --track-fds=yes ./$(NAME) files_cub/test.cub
+	valgrind --leak-check=full --show-leak-kinds=all --track-fds=yes -s ./$(NAME) files_cub/test.cub
 
 .PHONY: clean fclean re all bonus init_submodules do_libft do_libmlx
 

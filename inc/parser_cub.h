@@ -31,8 +31,10 @@ int	extract_spath(char *src, char **dst);
 int	extract_wpath(char *src, char **dst);
 int	extract_epath(char *src, char **dst);
 
-int	get_frgb(char *src, int arr[]);
-int	get_srgb(char *src, int arr[]);
+int	extract_map(t_parser *parser);
+
+int	get_frgb(char *src, int (*arr)[]);
+int	get_srgb(char *src, int (*arr)[]);
 
 void	skip_spaces(char **tmp);
 #endif
