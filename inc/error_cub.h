@@ -61,7 +61,6 @@
 # define DIRECTIONS {"North", "East", "South", "West"}
 # define BOTOP {"Floor", "Ceiling"} 
 
-int	print_error(int err_code);
 void	print_single(int err);
 void	print_doublep(int err);
 void	print_unaccesp(int err);

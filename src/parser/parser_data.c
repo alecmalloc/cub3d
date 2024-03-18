@@ -46,10 +46,11 @@ int	extract_data(t_parser *parser)
 	while (tmp && !data_extracted(parser->grafics))
 	{
 		ret = extract_data_line(tmp, parser->grafics);
+		free(tmp);
 		if (ret != 0)
 			return (ret);
-		free(tmp);
 		tmp = get_next_line(parser->fd);
 	}
+	free(tmp);
 	return (0);
 }

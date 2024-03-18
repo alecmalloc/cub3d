@@ -1,6 +1,6 @@
 #include "cubed.h"
 
-int	print_error(int err_code)
+int	print_error(int err_code, t_cubed **cubed)
 {
 	if (err_code < 100)
 		print_single(err_code);
@@ -20,5 +20,6 @@ int	print_error(int err_code)
 		print_wrongn(err_code);
 	else if (err_code < 180)
 		print_wrongfn(err_code);
+	free_all(cubed);
 	return (EXIT_FAILURE);
 }
