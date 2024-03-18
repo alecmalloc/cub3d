@@ -25,7 +25,7 @@ static int	extract_arr_f(char *src, int *arr[])
 	int	z;
 
 	z = 0;
-	while (*src && (ft_isdigit(*src) || *src == ' '))
+	while (*src && ft_isdigit(*src))
 	{
 		(*arr)[z] = extract_nbr(src);
 		if ((*arr)[z] == -1)
@@ -33,14 +33,14 @@ static int	extract_arr_f(char *src, int *arr[])
 		z++;
 		while (ft_isdigit(*src))
 			src++;
-		if (*src == ' ')
+		if (*src == ',')
 			src++;
 	}
 	if (z != 3)
 		return (MFN_ERR);
 	while (*src && *src == ' ')
 		src++;
-	if (*src)
+	if (*src && *src != '\n')
 		return (WFF_ERR);
 	return (0);
 }
@@ -50,7 +50,7 @@ static int	extract_arr_s(char *src, int *arr[])
 	int	z;
 
 	z = 0;
-	while (*src && (ft_isdigit(*src) || *src == ' '))
+	while (*src && ft_isdigit(*src))
 	{
 		(*arr)[z] = extract_nbr(src);
 		if ((*arr)[z] == -1)
@@ -58,14 +58,14 @@ static int	extract_arr_s(char *src, int *arr[])
 		z++;
 		while (ft_isdigit(*src))
 			src++;
-		if (*src == ' ')
+		if (*src == ',')
 			src++;
 	}
 	if (z != 3)
 		return (MSN_ERR);
 	while (*src && *src == ' ')
 		src++;
-	if (*src)
+	if (*src && *src != '\n')
 		return (WFS_ERR);
 	return (0);
 }

@@ -1,6 +1,6 @@
 SO                             ./textures/s                                                            
-WE ./textures/w
-F 220,100,00                                                 a                              
+WE ./textures/w                                                          
+F 220,100,00                                                                               
 EA                                                             ./textures/e
 C 25,30,100
 NO ./textures/n
