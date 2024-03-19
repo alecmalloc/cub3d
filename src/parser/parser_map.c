@@ -22,5 +22,6 @@ int	extract_map(t_parser *parser)
 	if (!tmp)
 		return (MNF_ERR);
 	ret = printf("%s", tmp);
+	get_map_size(tmp, parser);
 	return (ret);
 }
