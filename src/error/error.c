@@ -4,10 +4,12 @@ static void	print_error_map(int err)
 {
 	if (err == 180)
 		printf("Erorr\nMap not found\n");
-	if (err == 181)
+	else if (err == 181)
 		printf("Error\nWrong Character in Map\n");
-	if (err == 182)
+	else if (err == 182)
 		printf("Error\nDouble Player in Map\n");	
+else if (err ==183)
+		printf("Error\nOpen Wall in Map\n");
 }
 
 int	print_error(int err_code, t_cubed **cubed)

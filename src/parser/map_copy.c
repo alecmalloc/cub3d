@@ -53,34 +53,6 @@ static int	map_copy(t_map *map)
 	return (0);
 }
 
-static int	check_map(t_map *map)
-{
-	int	y;
-	int	x;
-
-	y = 0;
-	while(map->map[y])
-	{
-		x = 0;
-		while (map->map[y][x] && ft_strchr(MAP_CHR, map->map[y][x]))
-		{
-			if (ft_strchr(PLR_CHR, map->map[y][x]))
-			{
-				if (map->player_dir != 0)
-					return (DPL_ERR);
-				map->player_dir = map->map[y][x];
-				map->player_pos[0] = x;
-				map->player_pos[1] = y;
-			}
-			x++;
-		}
-		if (!ft_strchr(MAP_CHR, map->map[y][x]))
-			return (WCM_ERR);
-		y++;
-	}
-	return (0);	
-}
-
 int	copy_map(t_map *map)
 {
 	int	ret;

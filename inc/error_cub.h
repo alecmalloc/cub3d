@@ -67,6 +67,9 @@
 //Double player
 # define DPL_ERR 182
 
+//Open Wall
+# define OPW_ERR 183
+
 # define DIRECTIONS {"North", "East", "South", "West"}
 # define BOTOP {"Floor", "Ceiling"} 
 

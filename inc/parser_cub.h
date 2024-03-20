@@ -3,6 +3,7 @@
 
 //MapCharacter
 # define MAP_CHR "0123NSWE "
+# define IMP_CHR "0123NSWE"
 # define PLR_CHR "NSWE"
 
 //store textures and colours
@@ -43,6 +44,7 @@ int	extract_epath(char *src, char **dst);
 int	extract_map(t_parser *parser);
 void	get_map_size(t_map *map, int fd);
 int	copy_map(t_map *map);
+int	check_map(t_map *map);
 
 int	get_frgb(char *src, int (*arr)[]);
 int	get_srgb(char *src, int (*arr)[]);
