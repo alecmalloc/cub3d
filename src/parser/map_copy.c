@@ -63,17 +63,19 @@ static int	check_map(t_map *map)
 	{
 		x = 0;
 		while (map->map[y][x] && ft_strchr(MAP_CHR, map->map[y][x]))
+		{
+			if (ft_strchr(PLR_CHR, map->map[y][x]))
+			{
+				if (map->player_dir != 0)
+					return (DPL_ERR);
+				map->player_dir = map->map[y][x];
+				map->player_pos[0] = x;
+				map->player_pos[1] = y;
+			}
 			x++;
+		}
 		if (!ft_strchr(MAP_CHR, map->map[y][x]))
 			return (WCM_ERR);
-		if (ft_strchr(PLR_CHR, map->map[y][x]))
-		{
-			if (map->player_dir != 0)
-				return (DPL_ERR);
-			map->player_dir = map->player_dir;
-			map->player_pos[0] = x;
-			map->player_pos[1] = y;
-		}
 		y++;
 	}
 	return (0);	
