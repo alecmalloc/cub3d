@@ -37,7 +37,7 @@ int	extract_npath(char *src, char **dst)
 	*dst = ft_strdup(src);
 	if (!*dst)
 		return (MALL_ERR);
-	tmp = open(*dst, O_RDONLY); 
+	tmp = open(*dst, O_RDONLY);
 	if (tmp == -1)
 		return (NPU_ERR);
 	close(tmp);
@@ -60,7 +60,7 @@ int	extract_spath(char *src, char **dst)
 	*dst = ft_strdup(src);
 	if (!*dst)
 		return (MALL_ERR);
-	tmp = open(*dst, O_RDONLY); 
+	tmp = open(*dst, O_RDONLY);
 	if (tmp == -1)
 		return (SPU_ERR);
 	close(tmp);
@@ -107,7 +107,7 @@ int	extract_epath(char *src, char **dst)
 	if (!*dst)
 		return (MALL_ERR);
 	tmp = open(*dst, O_RDONLY);
-	if (tmp  == -1)
+	if (tmp == -1)
 		return (EPU_ERR);
 	close(tmp);
 	return (0);

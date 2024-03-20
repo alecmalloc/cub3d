@@ -7,8 +7,8 @@ static void	print_error_map(int err)
 	else if (err == 181)
 		printf("Error\nWrong Character in Map\n");
 	else if (err == 182)
-		printf("Error\nDouble Player in Map\n");	
-else if (err ==183)
+		printf("Error\nDouble Player in Map\n");
+	else if (err ==183)
 		printf("Error\nOpen Wall in Map\n");
 }
 

@@ -8,7 +8,8 @@ int	wrong_char(t_map *map, int x, int y)
 		return (WCM_ERR);
 	if (map->map[y][x] == ' ' || map->map[y][x] == '1')
 		return (0);
-	if ((x - 1 < 0) || (x + 1 > map->x_len) || (y - 1 < 0) || (y + 1 > map->y_len))
+	if ((x - 1 < 0) || (x + 1 > map->x_len) || (y - 1 < 0) || \
+		(y + 1 > map->y_len))
 		return (OPW_ERR);
 	if (ft_strchr(IMP_CHR, map->map[y - 1][x - 1]) && \
 		ft_strchr(IMP_CHR, map->map[y - 1][x]) && \
@@ -28,7 +29,7 @@ int	check_map(t_map *map)
 	int	x;
 
 	y = 0;
-	while(map->map[y])
+	while (map->map[y])
 	{
 		x = 0;
 		while (map->map[y][x] && !wrong_char(map, x, y))
@@ -47,5 +48,5 @@ int	check_map(t_map *map)
 			return (wrong_char(map, x, y));
 		y++;
 	}
-	return (0);	
+	return (0);
 }

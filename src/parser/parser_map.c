@@ -10,9 +10,9 @@ static int	find_map(t_parser *parser, char **tmp)
 		free((*tmp));
 		(*tmp) = get_next_line(parser->fd);
 	}
-	
 	z = 0;
-	while ((*tmp) && (*tmp)[z] && (ft_strchr(MAP_CHR, (*tmp)[z]) || (*tmp)[z] == '\n'))
+	while ((*tmp) && (*tmp)[z] && (ft_strchr(MAP_CHR, (*tmp)[z]) \
+		|| (*tmp)[z] == '\n'))
 		z++;
 	if ((*tmp)[z] != '\0')
 		return (free((*tmp)), WRL_ERR);
@@ -58,7 +58,7 @@ static int	map_store(char **map_store, t_parser *parser, t_map *map)
 int	extract_map(t_parser *parser)
 {
 	int		ret;
-	
+
 	ret = map_store(&parser->map->map_storage, parser, parser->map);
 	if (ret)
 		return (ret);

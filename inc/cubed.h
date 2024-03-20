@@ -25,16 +25,21 @@
 # include "error_cub.h"
 # include "../libft/includes/libft.h"
 
-typedef struct Cubed {
+typedef struct Cubed
+{
 	mlx_t		*ptr_mlx;
 	t_parser	*parser;
 }	t_cubed;
 
 // /mlx
-int	mlx_handler(t_cubed	*cubed);
-int	init_all(t_cubed **cubed);
+int		mlx_handler(t_cubed	*cubed);
+//init
+int		init_all(t_cubed **cubed);
+//free
 void	free_all(t_cubed **cubed);
-int	print_error(int err_code, t_cubed **cubed);
-int	parser(char *pathname, t_cubed *master);
+//error
+int		print_error(int err_code, t_cubed **cubed);
+//parser
+int		parser(char *pathname, t_cubed *master);
 
 #endif
