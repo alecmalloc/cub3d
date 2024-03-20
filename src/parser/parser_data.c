@@ -40,14 +40,17 @@ int	extract_data(t_parser *parser)
 	int		ret;
 
 	tmp = get_next_line(parser->fd);
-	while (tmp && !data_extracted(parser->grafics))
+	while (tmp)
 	{
 		ret = extract_data_line(tmp, parser->grafics);
-		free(tmp);
 		if (ret != 0)
-			return (ret);
+			return (free(tmp), ret);
+		if (data_extracted(parser->grafics))
+			break ;
+		free(tmp);
 		tmp = get_next_line(parser->fd);
 	}
-	free(tmp);
+	if (tmp)
+		free(tmp);
 	return (0);
 }

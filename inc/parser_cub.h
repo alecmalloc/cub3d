@@ -1,6 +1,10 @@
 #ifndef PARSER_CUB_H
 # define PARSER_CUB_H
 
+//MapCharacter
+# define MAP_CHR "0123NSWE "
+# define PLR_CHR "NSWE"
+
 //store textures and colours
 
 typedef struct	s_graf{
@@ -13,7 +17,12 @@ typedef struct	s_graf{
 }	t_graf;
 
 typedef struct	s_map{
-	;
+	int	x_len;
+	int	y_len;
+	char	player_dir;
+	int	player_pos[2];
+	char	*map_storage;
+	char	**map;
 }	t_map;
 
 typedef struct	s_parser{
@@ -32,6 +41,8 @@ int	extract_wpath(char *src, char **dst);
 int	extract_epath(char *src, char **dst);
 
 int	extract_map(t_parser *parser);
+void	get_map_size(t_map *map, int fd);
+int	copy_map(t_map *map);
 
 int	get_frgb(char *src, int (*arr)[]);
 int	get_srgb(char *src, int (*arr)[]);

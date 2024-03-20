@@ -31,6 +31,8 @@ static void	print_parser(t_parser *parser)
 	printf("%d ", parser->grafics->sc[0]);
 	printf("%d ", parser->grafics->sc[1]);
 	printf("%d\n", parser->grafics->sc[2]);
+	for (int i = 0; parser->map->map[i]; i++)
+		printf("%s\n", parser->map->map[i]);
 }
 
 int	parser(char *file, t_cubed *master)
@@ -49,5 +51,5 @@ int	parser(char *file, t_cubed *master)
 	ret = extract_map(master->parser);
 	print_parser(master->parser);
 	//close fd
-	return (0);
+	return (ret);
 }

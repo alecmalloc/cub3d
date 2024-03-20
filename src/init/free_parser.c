@@ -15,6 +15,14 @@ static void	free_grafics(t_graf **grafics)
 
 static void	free_map(t_map **map)
 {
+	int	z;
+
+	z = 0;
+	if ((*map)->map_storage)
+		free((*map)->map_storage);
+	while ((*map)->map && (*map)->map[z])
+		free((*map)->map[z++]);
+	free((*map)->map);
 	free(*map);
 }
 

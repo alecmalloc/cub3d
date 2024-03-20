@@ -61,6 +61,12 @@
 //Map not found
 # define MNF_ERR 180
 
+//Wrong Char in Map
+# define WCM_ERR 181
+
+//Double player
+# define DPL_ERR 182
+
 # define DIRECTIONS {"North", "East", "South", "West"}
 # define BOTOP {"Floor", "Ceiling"} 
 

@@ -1,27 +1,67 @@
 #include "cubed.h"
 
-static char	*skip_newlines(int fd)
+static int	find_map(t_parser *parser, char **tmp)
+{
+	int		z;
+
+	(*tmp) = get_next_line(parser->fd);
+	while ((*tmp) && *(*tmp) == '\n')
+	{
+		free((*tmp));
+		(*tmp) = get_next_line(parser->fd);
+	}
+	
+	z = 0;
+	while ((*tmp) && (*tmp)[z] && (ft_strchr(MAP_CHR, (*tmp)[z]) || (*tmp)[z] == '\n'))
+		z++;
+	if ((*tmp)[z] != '\0')
+		return (free((*tmp)), WRL_ERR);
+	return (0);
+}
+
+static int	map_store_append(char **map_store, char *append)
 {
 	char	*tmp;
 
-	tmp = get_next_line(fd);
-	while (tmp && *tmp == '\n')
+	tmp = ft_strjoin(*map_store, append);
+	if (!tmp)
+		return (MALL_ERR);
+	free(*map_store);
+	*map_store = tmp;
+	return (0);
+}
+
+static int	map_store(char **map_store, t_parser *parser, t_map *map)
+{
+	char	*tmp;
+	int		len;
+	int		ret;
+
+	ret = find_map(parser, &tmp);
+	if (ret)
+		return (ret);
+	while (tmp)
 	{
+		len = ft_strlen(tmp);
+		if (len > map->x_len)
+			map->x_len = len;
+		ret = map_store_append(map_store, tmp);
 		free(tmp);
-		tmp = get_next_line(fd);
+		if (ret)
+			return (ret);
+		map->y_len++;
+		tmp = get_next_line(parser->fd);
 	}
-	return (tmp);
+	return (0);
 }
 
 int	extract_map(t_parser *parser)
 {
-	char	*tmp;
 	int		ret;
 	
-	tmp = skip_newlines(parser->fd);
-	if (!tmp)
-		return (MNF_ERR);
-	ret = printf("%s", tmp);
-	get_map_size(tmp, parser);
+	ret = map_store(&parser->map->map_storage, parser, parser->map);
+	if (ret)
+		return (ret);
+	ret = copy_map(parser->map);
 	return (ret);
 }

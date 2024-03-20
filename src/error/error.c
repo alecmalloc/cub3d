@@ -1,5 +1,15 @@
 #include "cubed.h"
 
+static void	print_error_map(int err)
+{
+	if (err == 180)
+		printf("Erorr\nMap not found\n");
+	if (err == 181)
+		printf("Error\nWrong Character in Map\n");
+	if (err == 182)
+		printf("Error\nDouble Player in Map\n");	
+}
+
 int	print_error(int err_code, t_cubed **cubed)
 {
 	if (err_code < 100)
@@ -20,6 +30,8 @@ int	print_error(int err_code, t_cubed **cubed)
 		print_wrongn(err_code);
 	else if (err_code < 180)
 		print_wrongfn(err_code);
+	else
+		print_error_map(err_code);
 	free_all(cubed);
 	return (EXIT_FAILURE);
 }
