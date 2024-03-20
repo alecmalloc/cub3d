@@ -21,10 +21,10 @@
 # include <stdio.h>
 
 // include libft
-# include "libft.h"
+# include "../libft/includes/libft.h"
 
 // include MLX42
-# include "MLX42.h"
+# include "../MLX42/include/MLX42/MLX42.h"
 
 // include cub3d headers
 # include "parser_cub.h"

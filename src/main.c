@@ -6,11 +6,7 @@
 /*   By: aeastman <aeastman@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/14 09:48:55 by aeastman          #+#    #+#             */
-<<<<<<< HEAD
-/*   Updated: 2024/03/16 17:29:01 by aeastman         ###   ########.fr       */
-=======
 /*   Updated: 2024/03/16 12:44:25 by mbartsch         ###   ########.fr       */
->>>>>>> parser
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +23,8 @@ int	main(int argc, char *argv[])
 	if (window_init(&cubed) == EXIT_FAILURE)
 		return (EXIT_FAILURE);
 	destroy_structs(&cubed);
-=======
+*/
+
 	t_cubed	*cubed;
 	int		ret;
 
@@ -38,9 +35,7 @@ int	main(int argc, char *argv[])
 	ret = parser(argv[1], cubed);
 	if (ret)
 		return (print_error(ret, &cubed));
-	//if (mlx_handler(&cubed) == EXIT_FAILURE)
-	//	return (EXIT_FAILURE);
 	free_all(&cubed);
-*/
+
 	return (EXIT_SUCCESS);
 }
