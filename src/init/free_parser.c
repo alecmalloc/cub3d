@@ -21,7 +21,11 @@ static void	free_map(t_map **map)
 	if ((*map)->map_storage)
 		free((*map)->map_storage);
 	while ((*map)->map && (*map)->map[z])
-		free((*map)->map[z++]);
+	{
+		free((*map)->map[z]);
+		(*map)->map[z] = NULL;
+		z++;
+	}
 	free((*map)->map);
 	free(*map);
 }

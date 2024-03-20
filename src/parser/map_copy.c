@@ -5,12 +5,18 @@ static int	alloc_map(t_map *map)
 	int	z;
 
 	z =0;
-	map->map = (char **)malloc(sizeof(char *) * map->y_len);
+	map->map = (char **)malloc(sizeof(char *) * (map->y_len + 1));
 	if (!map->map)
 		return(MALL_ERR);
-	while (z < map->x_len)
+	while (z < map->y_len)
 	{
-		map->map[z] = malloc(sizeof(char) * map->x_len);
+		map->map[z] = NULL;
+		z++;
+	}
+	z = 0;
+	while (z < map->y_len)
+	{
+		map->map[z] = (char *)malloc(sizeof(char) * map->x_len);
 		if (!map->map[z])
 			return (MALL_ERR);
 		z++;
@@ -20,7 +26,7 @@ static int	alloc_map(t_map *map)
 
 static void	fill_rest_line(char *tmp, int len)
 {
-	while (len--)
+	while (len-- > 1)
 	{
 		*tmp = ' ';
 		tmp++;
@@ -45,9 +51,11 @@ static int	map_copy(t_map *map)
 			z++;
 			y++;
 		}
-		map->map[y][x] = map->map_storage[z];
-		x++;
-		z++;
+		else
+		{
+			map->map[y][x] = map->map_storage[z++];
+			x++;
+		}
 	}
 	map->map[y] = NULL;
 	return (0);

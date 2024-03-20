@@ -2,9 +2,11 @@
 
 int	wrong_char(t_map *map, int x, int y)
 {
+	if (!map->map[y][x])
+		return (0);
 	if (!ft_strchr(MAP_CHR, map->map[y][x]))
 		return (WCM_ERR);
-	if (!map->map[y][x] || map->map[y][x] == ' ' || map->map[y][x] == '1')
+	if (map->map[y][x] == ' ' || map->map[y][x] == '1')
 		return (0);
 	if ((x - 1 < 0) || (x + 1 > map->x_len) || (y - 1 < 0) || (y + 1 > map->y_len))
 		return (OPW_ERR);
