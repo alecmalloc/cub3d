@@ -54,7 +54,7 @@ static int	extract_arr_s(char *src, int (*arr)[])
 	{
 		(*arr)[z] = extract_nbr(src);
 		if ((*arr)[z] == -1)
-			return (WSN_ERR);
+			return (WCN_ERR);
 		z++;
 		while (ft_isdigit(*src))
 			src++;
@@ -62,11 +62,11 @@ static int	extract_arr_s(char *src, int (*arr)[])
 			src++;
 	}
 	if (z != 3)
-		return (MSN_ERR);
+		return (MCN_ERR);
 	while (*src && *src == ' ')
 		src++;
 	if (*src && *src != '\n')
-		return (WFS_ERR);
+		return (WFC_ERR);
 	return (0);
 }
 
@@ -85,11 +85,11 @@ int	get_frgb(char *src, int (*arr)[])
 int	get_srgb(char *src, int (*arr)[])
 {
 	if ((*arr)[0] != -1)
-		return (DSN_ERR);
+		return (DCN_ERR);
 	while (*src && *src != ' ')
 		src++;
 	if (!*src)
-		return (MSN_ERR);
+		return (MCN_ERR);
 	skip_spaces(&src);
 	return (extract_arr_s(src, arr));
 }
