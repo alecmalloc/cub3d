@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   err_func.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aeastman <aeastman@student.42berlin.de>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/03/21 12:55:20 by aeastman          #+#    #+#             */
+/*   Updated: 2024/03/21 15:08:00 by aeastman         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "cubed.h"
 
 void	print_single(int err)
@@ -17,7 +29,7 @@ void	print_single(int err)
 void	print_doublep(int err)
 {
 	int		direction;
-	char	*tmp[] = DIRECTIONS;
+	char	*tmp[]= DIRECTIONS;
 
 	direction = err % 100;
 	printf("Error\nDouble assign of %s Path\n", tmp[direction]);

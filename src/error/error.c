@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   error.c                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aeastman <aeastman@student.42berlin.de>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/03/21 12:55:25 by aeastman          #+#    #+#             */
+/*   Updated: 2024/03/21 13:01:15 by aeastman         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "cubed.h"
 
 static void	print_error_map(int err)
@@ -8,7 +20,7 @@ static void	print_error_map(int err)
 		printf("Error\nWrong Character in Map\n");
 	else if (err == 182)
 		printf("Error\nDouble Player in Map\n");
-	else if (err ==183)
+	else if (err == 183)
 		printf("Error\nOpen Wall in Map\n");
 }
 

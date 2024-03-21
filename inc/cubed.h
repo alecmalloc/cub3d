@@ -6,7 +6,7 @@
 /*   By: aeastman <aeastman@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/14 10:23:21 by aeastman          #+#    #+#             */
-/*   Updated: 2024/03/16 12:38:01 by mbartsch         ###   ########.fr       */
+/*   Updated: 2024/03/21 14:56:35 by aeastman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ typedef struct Fill_img{
 	int			r;
 	int			g;
 	int			b;
-} t_f_img;
+}	t_f_img;
 
 // cubed main struct to store most everything
 typedef struct Cubed {
@@ -54,11 +54,9 @@ void	put_backdrop(t_cubed *cubed);
 
 // /structs
 void	*init_structs(t_cubed *cubed);
-void
-destroy_structs(t_cubed *cubed);
+void	destroy_structs(t_cubed *cubed);
 // /init
-int
-init_all(t_cubed **cubed);
+int		init_all(t_cubed **cubed);
 // /free
 void	free_all(t_cubed **cubed);
 // /error

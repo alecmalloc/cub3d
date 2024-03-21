@@ -10,7 +10,7 @@ SO ./textures/s
 
 
 
-EA                                        ./textures/e
+EA ./textures/e
 F       220,100,0
 
 
