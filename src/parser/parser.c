@@ -18,7 +18,7 @@ static int	open_file(char *file, t_cubed *master)
 		return (OPF_ERR);
 	return (0);
 }
-/*
+
 static void	print_parser(t_parser *parser)
 {
 	printf("%s\n", parser->grafics->ntex);
@@ -33,8 +33,9 @@ static void	print_parser(t_parser *parser)
 	printf("%d\n", parser->grafics->sc[2]);
 	for (int i = 0; parser->map->map[i]; i++)
 		printf("%s\n", parser->map->map[i]);
+	printf("%d\n", parser->map->player_dir);
 }
-*/
+
 
 int	parser(char *file, t_cubed *master)
 {
@@ -50,5 +51,6 @@ int	parser(char *file, t_cubed *master)
 	if (ret)
 		return (ret);
 	ret = extract_map(master->parser);
+	print_parser(master->parser);
 	return (ret);
 }
