@@ -35,3 +35,12 @@ void	print_wrongfn(int err)
 	direction = err % 170;
 	printf("Error\n%s RGB Number wrong format\n", tmp[direction]);
 }
+
+void	print_wrongsf(int err)
+{
+	int		direction;
+	char	*tmp[] = DIRECTIONS;
+
+	direction = err % 180;
+	printf("Error\n%s Path Wrong Suffix\n", tmp[direction]);
+}

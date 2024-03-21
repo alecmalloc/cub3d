@@ -2,13 +2,15 @@
 
 static void	print_error_map(int err)
 {
-	if (err == 180)
+	if (err < 190)
+		print_wrongsf(err);
+	else if (err == 200)
 		printf("Erorr\nMap not found\n");
-	else if (err == 181)
+	else if (err == 201)
 		printf("Error\nWrong Character in Map\n");
-	else if (err == 182)
+	else if (err == 202)
 		printf("Error\nDouble Player in Map\n");
-	else if (err ==183)
+	else if (err ==203)
 		printf("Error\nOpen Wall in Map\n");
 }
 

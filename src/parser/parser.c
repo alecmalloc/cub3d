@@ -1,14 +1,13 @@
 #include "cubed.h"
 
-static int	check_suffix(char *file)
+int	check_suffix(char *file, char *ending)
 {
 	char	*tmp;
 
 	tmp = ft_strrchr(file, '.');
-	if (tmp && tmp[0] == '.' && tmp[1] == 'c' && tmp[2] == 'u' && tmp[3] == 'b'\
-		&& tmp[4] == '\0')
-		return (0);
-	return (WRS_ERR);
+	if (ft_memcmp((void *)tmp, (void *)ending, ft_strlen(ending)))
+		return (WRS_ERR);
+	return (0);
 }
 
 static int	open_file(char *file, t_cubed *master)
@@ -41,7 +40,7 @@ int	parser(char *file, t_cubed *master)
 {
 	int	ret;
 
-	ret = check_suffix(file);
+	ret = check_suffix(file, FIL_END);
 	if (ret)
 		return (ret);
 	ret = open_file(file, master);

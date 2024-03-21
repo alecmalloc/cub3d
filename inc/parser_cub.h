@@ -3,6 +3,8 @@
 
 //MapCharacter
 # define MAP_CHR "0123NSWE "
+# define TEX_END ".xpm"
+# define FIL_END ".cub"
 # define IMP_CHR "0123NSWE"
 # define PLR_CHR "NSWE"
 
@@ -37,6 +39,8 @@ typedef struct s_parser
 
 int		init_parser(t_parser **parser);
 void	free_parser(t_parser **parser);
+
+int		check_suffix(char *file, char *ending);
 
 int		extract_data(t_parser *parser);
 int		extract_npath(char *src, char **dst);

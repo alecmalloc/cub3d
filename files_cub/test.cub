@@ -1,16 +1,16 @@
 
-NO ./textures/n
+NO ./textures/n.xpm
 
 
 
-SO ./textures/s
+SO ./textures/s.xpm
 
 
 
 
 
 
-EA                                        ./textures/e
+EA                                        ./textures/e.xpm
 F       220,100,0
 
 
@@ -18,7 +18,7 @@ F       220,100,0
 C                         225,30,0
 
 
-WE ./textures/w
+WE ./textures/w.xpm
 
 
 

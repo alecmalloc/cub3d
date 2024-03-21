@@ -44,31 +44,37 @@
 
 //RGB Number missing
 # define MFN_ERR 140
-# define MSN_ERR 141
+# define MCN_ERR 141
 
 //double Rgb Number
 # define DFN_ERR 150
-# define DSN_ERR 151
+# define DCN_ERR 151
 
 //RGB Number Wrong
 # define WFN_ERR 160
-# define WSN_ERR 161
+# define WCN_ERR 161
 
 //RGB wrong format
 # define WFF_ERR 170
-# define WFS_ERR 171
+# define WFC_ERR 171
+
+//Path Wrong Suffix
+# define WSN_ERR 180
+# define WSE_ERR 181
+# define WSS_ERR 182
+# define WSW_ERR 183
 
 //Map not found
-# define MNF_ERR 180
+# define MNF_ERR 200
 
 //Wrong Char in Map
-# define WCM_ERR 181
+# define WCM_ERR 201
 
 //Double player
-# define DPL_ERR 182
+# define DPL_ERR 202
 
 //Open Wall
-# define OPW_ERR 183
+# define OPW_ERR 203
 
 # define DIRECTIONS {"North", "East", "South", "West"}
 # define BOTOP {"Floor", "Ceiling"} 
@@ -82,5 +88,6 @@ void	print_missingn(int err);
 void	print_doublen(int err);
 void	print_wrongn(int err);
 void	print_wrongfn(int err);
+void	print_wrongsf(int err);
 
 #endif
