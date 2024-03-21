@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   err_func_2.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aeastman <aeastman@student.42berlin.de>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/03/21 12:55:23 by aeastman          #+#    #+#             */
+/*   Updated: 2024/03/21 12:55:29 by aeastman         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "cubed.h"
 
 void	print_missingn(int err)
@@ -34,4 +46,13 @@ void	print_wrongfn(int err)
 
 	direction = err % 170;
 	printf("Error\n%s RGB Number wrong format\n", tmp[direction]);
+}
+
+void	print_wrongsf(int err)
+{
+	int		direction;
+	char	*tmp[] = DIRECTIONS;
+
+	direction = err % 180;
+	printf("Error\n%s Path Wrong Suffix\n", tmp[direction]);
 }

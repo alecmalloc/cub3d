@@ -25,14 +25,15 @@ static int	init_map(t_map **map)
 		return (MALL_ERR);
 	(*map)->x_len = 0;
 	(*map)->y_len = 0;
+	(*map)->player_pos[0] = -1;
+	(*map)->player_pos[1] = -1;
+	(*map)->player_dir = -1;
+	(*map)->map = NULL;
+	(*map)->map_storage = NULL;
 	(*map)->map_storage = (char *)malloc(sizeof(char));
 	if (!(*map)->map_storage)
 		return (MALL_ERR);
 	(*map)->map_storage[0] = '\0';
-	(*map)->map = NULL;
-	(*map)->player_dir = 0;
-	(*map)->player_pos[0] = -1;
-	(*map)->player_pos[1] = -1;
 	return (0);
 }
 

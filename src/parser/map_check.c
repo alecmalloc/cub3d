@@ -1,5 +1,19 @@
 #include "cubed.h"
 
+static int	dir_to_int(char c)
+{
+	if (c == 'N')
+		return (0);
+	if (c == 'E')
+		return (90);
+	if (c == 'S')
+		return (180);
+	if (c == 'W')
+		return (270);
+	else
+		return (-1);
+}
+
 int	wrong_char(t_map *map, int x, int y)
 {
 	if (!map->map[y][x])
@@ -36,9 +50,9 @@ int	check_map(t_map *map)
 		{
 			if (ft_strchr(PLR_CHR, map->map[y][x]))
 			{
-				if (map->player_dir != 0)
+				if (map->player_dir != -1)
 					return (DPL_ERR);
-				map->player_dir = map->map[y][x];
+				map->player_dir = dir_to_int(map->map[y][x]);
 				map->player_pos[0] = x;
 				map->player_pos[1] = y;
 			}
