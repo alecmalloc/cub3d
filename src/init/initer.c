@@ -6,7 +6,7 @@
 /*   By: aeastman <aeastman@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/21 12:58:14 by aeastman          #+#    #+#             */
-/*   Updated: 2024/03/21 15:12:46 by aeastman         ###   ########.fr       */
+/*   Updated: 2024/03/21 15:22:55 by aeastman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,9 +54,18 @@ int	init_all(t_cubed **cubed)
 	return (0);
 }
 
+void	free_f_imgs(t_cubed **cubed)
+{
+	if ((*cubed)->ceiling)
+		free((*cubed)->ceiling);
+	if ((*cubed)->floor)
+		free((*cubed)->floor);
+}
+
 void	free_all(t_cubed **cubed)
 {
 	if ((*cubed)->parser)
 		free_parser(&(*cubed)->parser);
+	free_f_imgs(cubed);
 	free(*cubed);
 }
