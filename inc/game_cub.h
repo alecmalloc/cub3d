@@ -4,7 +4,7 @@
 # define MOVESPEED 0.25
 # define ROTSPEED 0.10
 
-struct Cubed;
+struct	s_cubed;
 
 typedef struct s_game
 {
@@ -15,15 +15,23 @@ typedef struct s_game
 	int		l;
 	int		r;
 	int		space;
-	int		dir;
+	double	dir;
 	char	**map;
 	double	pos[2];
 
 }	t_game;
 
-int	init_game(t_game **game);
+int		init_game(t_game **game);
 void	free_game(t_game **game);
 
-void	move(struct Cubed *master);
-void	set_mlx(struct Cubed *master);
+int		check_mouse(struct s_cubed *master);
+int		check_keys(struct s_cubed *master);
+void	check_door(mlx_key_data_t key, void *tmp);
+
+int		move(int rot, struct s_cubed *master);
+int		rotate(int dir, struct s_cubed *master);
+int		handle_door(struct s_cubed *master);
+void	exit_game(void *master);
+void	set_mlx(struct s_cubed *master);
+
 #endif

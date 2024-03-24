@@ -19,7 +19,7 @@ void	print_single(int err)
 void	print_doublep(int err)
 {
 	int		direction;
-	char	*tmp[]= DIRECTIONS;
+	char	*tmp[] = DIRECTIONS;
 
 	direction = err % 100;
 	printf("Error\nDouble assign of %s Path\n", tmp[direction]);

@@ -1,6 +1,6 @@
-#ifndef MLX_KEYCODE_H
+#ifndef MLX_KEYCODES_H
 
-# define MLX_KEYCODE_H
+# define MLX_KEYCODES_H
 
 /*
 ** Macros for mlx_hook function

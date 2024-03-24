@@ -6,39 +6,35 @@ static void	set_game(t_cubed *master)
 	master->game->pos[0] = master->parser->map->player_pos[0];
 	master->game->pos[1] = master->parser->map->player_pos[1];
 	master->game->map = master->parser->map->map;
+	mlx_set_cursor_mode(master->mlx_inst, MLX_MOUSE_HIDDEN);
+	mlx_set_mouse_pos(master->mlx_inst, WIDTH / 2, HIGHT / 2);
 }
 
-/*int	player_moved(t_cubed *master)
+void	exit_game(void *tmp)
 {
-	if (master->game->w)
-		return (move(master));
-	if (master->game->a)
-		return (move(master));
-	if (master->game->s)
-		return (move(master));
-	if (master->game->d)
-		return (move(master));
-	if (master->game->l)
-		return (rotate(master));
-	if (master->game->r)
-		return (rotate(master));
-	if (master->game->space)
-		return (interact_door(master));
-	return (0);
-}*/
+	t_cubed	*master;
+
+	master = (t_cubed *)tmp;
+	mlx_close_window(master->mlx_inst);
+	mlx_terminate(master->mlx_inst);
+	free_all(&master);
+	exit(0);
+}
 
 static void	loop_cubed(void *tmp)
 {
 	t_cubed	*master;
-	//player_moved((t_cubed *)master);
+
 	master = (t_cubed *)tmp;
-	move(master);
-	//render
+	check_mouse(master);
+	check_keys(master);
 }
 
 int	start_game(t_cubed *master)
 {
 	set_game(master);
+	mlx_close_hook(master->mlx_inst, exit_game, master);
+	mlx_key_hook(master->mlx_inst, check_door, master);
 	mlx_loop_hook(master->mlx_inst, &loop_cubed, master);
 	mlx_loop(master->mlx_inst);
 	return (0);

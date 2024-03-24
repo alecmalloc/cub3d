@@ -37,7 +37,6 @@ static void	print_parser(t_parser *parser)
 	printf("%d\n", parser->map->player_dir);
 }
 
-
 int	parser(char *file, t_cubed *master)
 {
 	int	ret;

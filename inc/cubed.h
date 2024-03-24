@@ -18,10 +18,12 @@
 # include "parser_cub.h"
 # include "error_cub.h"
 # include "game_cub.h"
-# include "mlx_keycodes.h"
 
+# define WIDTH 1800
+# define HIGHT 800
 // strucure for custom RBG filled images
-typedef struct Fill_img{
+typedef struct Fill_img
+{
 	mlx_image_t	*image;
 	int			r;
 	int			g;
@@ -29,7 +31,8 @@ typedef struct Fill_img{
 }	t_f_img;
 
 // cubed main struct to store most everything
-typedef struct Cubed {
+typedef struct s_cubed
+{
 	t_parser	*parser;
 	mlx_t		*mlx_inst;
 	t_f_img		*ceiling;
