@@ -24,7 +24,7 @@ typedef struct s_map
 {
 	int		x_len;
 	int		y_len;
-	int		player_pos[2];
+	double		player_pos[2];
 	int		player_dir;
 	char	*map_storage;
 	char	**map;

@@ -23,6 +23,7 @@ int	main(int argc, char *argv[])
 	ret = parser(argv[1], cubed);
 	if (ret)
 		return (print_error(ret, &cubed));
+	start_game(cubed);
 	free_all(&cubed);
 
 	return (EXIT_SUCCESS);
