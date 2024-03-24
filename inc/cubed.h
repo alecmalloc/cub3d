@@ -7,6 +7,7 @@
 # include <fcntl.h>
 # include <sys/stat.h>
 # include <stdio.h>
+# include <math.h>
 
 // include libft
 # include "../libft/includes/libft.h"
@@ -17,6 +18,7 @@
 // include cub3d headers
 # include "parser_cub.h"
 # include "error_cub.h"
+# include "casting.h"
 
 // strucure for custom RBG filled images
 typedef struct Fill_img{
@@ -32,6 +34,7 @@ typedef struct Cubed {
 	mlx_t		*mlx_inst;
 	t_f_img		*ceiling;
 	t_f_img		*floor;
+	t_casting	*casting;
 }	t_cubed;
 
 // /mlx
@@ -51,5 +54,8 @@ void	free_all(t_cubed **cubed);
 int		print_error(int err_code, t_cubed **cubed);
 // /parser
 int		parser(char *pathname, t_cubed *master);
+
+// / casting
+void	casting(t_cubed *cubed);
 
 #endif

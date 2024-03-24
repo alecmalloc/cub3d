@@ -31,6 +31,18 @@ static int	init_f_imgs(t_cubed **cubed)
 	return (0);
 }
 
+int	init_casting(t_cubed **cubed)
+{
+	t_casting *casting;
+	casting = malloc(sizeof(t_casting));
+	if (!casting)
+		return (MALL_ERR);
+	casting->resolution_w = 800;
+	casting->focal_len = 0;
+	(*cubed)->casting = casting;
+	return (0);
+}
+
 int	init_all(t_cubed **cubed)
 {
 	if (init_cubed(cubed))
@@ -38,6 +50,8 @@ int	init_all(t_cubed **cubed)
 	if (init_f_imgs(cubed))
 		return (MALL_ERR);
 	if (init_parser(&(*cubed)->parser))
+		return (MALL_ERR);
+	if (init_casting(cubed))
 		return (MALL_ERR);
 	return (0);
 }
@@ -50,10 +64,18 @@ void	free_f_imgs(t_cubed **cubed)
 		free((*cubed)->floor);
 }
 
+void	free_casting(t_cubed **cubed)
+{
+	// free sub elements
+	free((*cubed)->casting);
+}
+
 void	free_all(t_cubed **cubed)
 {
 	if ((*cubed)->parser)
 		free_parser(&(*cubed)->parser);
+	if ((*cubed)->casting)
+		free_casting(cubed);
 	free_f_imgs(cubed);
 	free(*cubed);
 }
