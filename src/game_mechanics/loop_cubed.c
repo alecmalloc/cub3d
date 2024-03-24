@@ -8,7 +8,7 @@ static void	set_game(t_cubed *master)
 	master->game->map = master->parser->map->map;
 }
 
-int	player_moved(t_cubed *master)
+/*int	player_moved(t_cubed *master)
 {
 	if (master->game->w)
 		return (move(master));
@@ -18,25 +18,27 @@ int	player_moved(t_cubed *master)
 		return (move(master));
 	if (master->game->d)
 		return (move(master));
-/*	if (master->game->l)
+	if (master->game->l)
 		return (rotate(master));
 	if (master->game->r)
 		return (rotate(master));
 	if (master->game->space)
-		return (interact_door(master));*/
+		return (interact_door(master));
 	return (0);
-}
+}*/
 
-static void	loop_cubed(void *master)
+static void	loop_cubed(void *tmp)
 {
-	player_moved((t_cubed *)master);
+	t_cubed	*master;
+	//player_moved((t_cubed *)master);
+	master = (t_cubed *)tmp;
+	move(master);
 	//render
 }
 
 int	start_game(t_cubed *master)
 {
 	set_game(master);
-	set_mlx(master);
 	mlx_loop_hook(master->mlx_inst, &loop_cubed, master);
 	mlx_loop(master->mlx_inst);
 	return (0);

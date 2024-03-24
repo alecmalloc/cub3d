@@ -24,6 +24,6 @@ typedef struct s_game
 int	init_game(t_game **game);
 void	free_game(t_game **game);
 
-int	move(struct Cubed *master);
+void	move(struct Cubed *master);
 void	set_mlx(struct Cubed *master);
 #endif

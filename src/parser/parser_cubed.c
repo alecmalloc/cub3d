@@ -5,6 +5,8 @@ int	check_suffix(char *file, char *ending)
 	char	*tmp;
 
 	tmp = ft_strrchr(file, '.');
+	if (!tmp)
+		return (WRA_ERR);
 	if (ft_memcmp((void *)tmp, (void *)ending, ft_strlen(ending)))
 		return (WRS_ERR);
 	return (0);
