@@ -2,8 +2,8 @@
 # define CASTING_H
 
 typedef struct casting {
-	int	resolution_w;
-	int focal_len;
+	double	resolution_w;
+	double	focal_len;
 } t_casting;
 
 #endif
