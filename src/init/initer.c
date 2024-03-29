@@ -38,7 +38,6 @@ int	init_casting(t_cubed **cubed)
 	if (!casting)
 		return (MALL_ERR);
 	casting->resolution_w = 800.0;
-	casting->focal_len = 0;
 	(*cubed)->casting = casting;
 	return (0);
 }
