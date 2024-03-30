@@ -57,5 +57,7 @@ int		parser(char *pathname, t_cubed *master);
 
 // / casting
 void	casting(t_cubed *cubed);
+double	conv_deg_rad(double deg);
+double	conv_rad_deg(double rad);
 
 #endif
