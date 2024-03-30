@@ -56,7 +56,7 @@ int		print_error(int err_code, t_cubed **cubed);
 int		parser(char *pathname, t_cubed *master);
 
 // / casting
-void	casting(t_cubed *cubed);
+int		casting(t_cubed *cubed);
 double	conv_deg_rad(double deg);
 double	conv_rad_deg(double rad);
 
