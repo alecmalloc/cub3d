@@ -7,6 +7,7 @@ typedef struct ray {
 	double org_x;
 	double org_y;
 	double angle;
+	double angle_r;
 	double ray_len_x;
 	double ray_len_y;
 } t_ray;
