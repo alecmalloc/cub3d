@@ -87,7 +87,7 @@ int		casting(t_cubed *cubed)
 	(void)cubed;
 
 	ray = NULL;
-	angle = 0;
+	angle = 360;
 
 	if (init_ray(&ray, angle, 0.5, 3.5) != 0)
 		return (MALL_ERR);
