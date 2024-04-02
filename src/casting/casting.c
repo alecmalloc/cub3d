@@ -17,22 +17,22 @@ void	calc_init_distance(t_ray *ray)
 	if (ray->angle > 90 && ray->angle < 270)
 	{
 		ray->len_x = fabs((ray->org_x - (int)ray->org_x) / cos(ray->angle_r));
-		ray->map_x = ray->org_x - ray->len_x;
+		ray->map_x = ray->org_x - fabs(ray->org_x - (int)ray->org_x);
 	}
 	if (ray->angle > 270 || ray->angle < 90)
 	{
 		ray->len_x = fabs(((int)ray->org_x + 1 - ray->org_x) / cos(ray->angle_r));
-		ray->map_x = ray->org_x + ray->len_x;
+		ray->map_x = ray->org_x + fabs((int)ray->org_x + 1 - ray->org_x);
 	}
 	if (ray->angle < 180 && ray->angle > 0)
 	{
 		ray->len_y = fabs((ray->org_y - (int)ray->org_y) / sin(ray->angle_r));
-		ray->map_y = ray->org_y - ray->len_y;
+		ray->map_y = ray->org_y - fabs(ray->org_y - (int)ray->org_y);
 	}
 	if (ray->angle > 180 && ray->angle < 360)
 	{
 		ray->len_y = fabs(((int)ray->org_y + 1 - ray->org_y) / sin(ray->angle_r));
-		ray->map_y = ray->org_y + ray->len_y;
+		ray->map_y = ray->org_y + fabs((int)ray->org_y + 1 - ray->org_y);
 	}
 }
 
@@ -87,7 +87,7 @@ int		casting(t_cubed *cubed)
 	(void)cubed;
 
 	ray = NULL;
-	angle = 45;
+	angle = 0;
 
 	if (init_ray(&ray, angle, 0.5, 3.5) != 0)
 		return (MALL_ERR);
