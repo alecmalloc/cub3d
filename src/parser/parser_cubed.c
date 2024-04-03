@@ -5,6 +5,8 @@ int	check_suffix(char *file, char *ending)
 	char	*tmp;
 
 	tmp = ft_strrchr(file, '.');
+	if (!tmp)
+		return (WRA_ERR);
 	if (ft_memcmp((void *)tmp, (void *)ending, ft_strlen(ending)))
 		return (WRS_ERR);
 	return (0);
@@ -34,7 +36,6 @@ static int	open_file(char *file, t_cubed *master)
 // 		printf("%s\n", parser->map->map[i]);
 // 	printf("%d\n", parser->map->player_dir);
 // }
-
 
 int	parser(char *file, t_cubed *master)
 {

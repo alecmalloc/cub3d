@@ -18,10 +18,14 @@
 // include cub3d headers
 # include "parser_cub.h"
 # include "error_cub.h"
+# include "game_cub.h"
 # include "casting.h"
 
+# define WIDTH 1800
+# define HIGHT 800
 // strucure for custom RBG filled images
-typedef struct Fill_img{
+typedef struct Fill_img
+{
 	mlx_image_t	*image;
 	int			r;
 	int			g;
@@ -29,11 +33,13 @@ typedef struct Fill_img{
 }	t_f_img;
 
 // cubed main struct to store most everything
-typedef struct Cubed {
+typedef struct s_cubed
+{
 	t_parser	*parser;
 	mlx_t		*mlx_inst;
 	t_f_img		*ceiling;
 	t_f_img		*floor;
+	t_game		*game;
 	t_casting	*casting;
 }	t_cubed;
 
@@ -54,6 +60,8 @@ void	free_all(t_cubed **cubed);
 int		print_error(int err_code, t_cubed **cubed);
 // /parser
 int		parser(char *pathname, t_cubed *master);
+//start game
+int		start_game(t_cubed *master);
 
 // / casting
 int		casting(t_cubed *cubed);

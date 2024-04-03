@@ -1,4 +1,4 @@
-NAME ?= cub3d
+NAME ?= cub3D
 BONUS_NAME ?=
 
 BUILD_DIR ?= ./obj
@@ -66,6 +66,9 @@ init_submodules:
 
 valgrind: all
 	valgrind --leak-check=full --show-leak-kinds=all --track-fds=yes -s ./$(NAME) files_cub/test.cub
+
+gdb: all
+	gdb --args $(NAME) ./files_cub/test.cub
 
 .PHONY: clean fclean re all bonus init_submodules do_libft do_libmlx
 

@@ -12,10 +12,13 @@ int	main(int argc, char **argv)
 		return (print_error(WRA_ERR, &cubed));
 	ret = parser(argv[1], cubed);
 	if (ret)
-	 	return (print_error(ret, &cubed));
+		return (print_error(ret, &cubed));
+	ret = window_init(cubed);
+	if (ret)
+		return (print_error(ret, &cubed));
+	start_game(cubed);
 	casting(cubed);
 	
 	free_all(&cubed);
-
 	return (EXIT_SUCCESS);
 }
