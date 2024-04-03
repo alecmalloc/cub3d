@@ -7,6 +7,7 @@
 # include <fcntl.h>
 # include <sys/stat.h>
 # include <stdio.h>
+# include <math.h>
 
 // include libft
 # include "../libft/includes/libft.h"
@@ -18,6 +19,7 @@
 # include "parser_cub.h"
 # include "error_cub.h"
 # include "game_cub.h"
+# include "casting.h"
 
 # define WIDTH 1800
 # define HIGHT 800
@@ -38,6 +40,7 @@ typedef struct s_cubed
 	t_f_img		*ceiling;
 	t_f_img		*floor;
 	t_game		*game;
+	t_casting	*casting;
 }	t_cubed;
 
 // /mlx
@@ -59,5 +62,10 @@ int		print_error(int err_code, t_cubed **cubed);
 int		parser(char *pathname, t_cubed *master);
 //start game
 int		start_game(t_cubed *master);
+
+// / casting
+int		casting(t_cubed *cubed);
+double	conv_deg_rad(double deg);
+double	conv_rad_deg(double rad);
 
 #endif

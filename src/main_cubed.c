@@ -1,7 +1,7 @@
 #include "cubed.h"
 
 // load up main struct and initalize the mlx window
-int	main(int argc, char *argv[])
+int	main(int argc, char **argv)
 {
 	t_cubed	*cubed;
 	int		ret;
@@ -17,6 +17,8 @@ int	main(int argc, char *argv[])
 	if (ret)
 		return (print_error(ret, &cubed));
 	start_game(cubed);
+	casting(cubed);
+	
 	free_all(&cubed);
 	return (EXIT_SUCCESS);
 }
