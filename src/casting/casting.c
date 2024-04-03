@@ -46,19 +46,23 @@ int		ray_check_outside(void)
 	return (0);
 }
 
-void	ray_calc_steps(t_ray *ray)
+void	ray_calc_steps(t_cubed *cubed, t_ray *ray)
 {
 	//int out_hit;
 
 	//out_hit = 0;
+	char **map;
+	map = cubed->parser->map->map;
+
 	set_steps_x_y(ray);
 	calc_init_distance(ray);
 
-	while (ray_check_hit() == 0)
-	{
-		if (ray_check_outside() == 0)
-			return ;
-	}
+	int y;
+
+	y = -1;
+	while (map[y++])
+		printf("%s\n", map[y]);
+
 
 }
 
@@ -91,17 +95,17 @@ int		casting(t_cubed *cubed)
 
 	if (init_ray(&ray, angle, 0.5, 3.5) != 0)
 		return (MALL_ERR);
-	ray_calc_steps(ray);
+	ray_calc_steps(cubed, ray);
 
-	printf("ray angle: %f \n", ray->angle);
-	printf("ray step_x: %d \n", ray->step_x);
-	printf("ray step_y: %d \n", ray->step_y);
-	printf("ray org_x: %f \n", ray->org_x);
-	printf("ray org_y: %f \n", ray->org_y);
-	printf("ray len_x: %f \n", ray->len_x);
-	printf("ray len_y: %f \n", ray->len_y);
-	printf("ray map_x: %f \n", ray->map_x);
-	printf("ray map_y: %f \n", ray->map_y);
+	// printf("ray angle: %f \n", ray->angle);
+	// printf("ray step_x: %d \n", ray->step_x);
+	// printf("ray step_y: %d \n", ray->step_y);
+	// printf("ray org_x: %f \n", ray->org_x);
+	// printf("ray org_y: %f \n", ray->org_y);
+	// printf("ray len_x: %f \n", ray->len_x);
+	// printf("ray len_y: %f \n", ray->len_y);
+	// printf("ray map_x: %f \n", ray->map_x);
+	// printf("ray map_y: %f \n", ray->map_y);
 
 	free(ray);
 	return (0);
