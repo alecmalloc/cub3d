@@ -92,6 +92,40 @@ void	print_map(t_cubed *cubed)
 	}
 }
 
+int		ray_check_hit_out(t_cubed *cubed, t_ray *ray)
+{
+	if (ray_check_outside(cubed, ray))
+		return (OUT_ERR);
+	if (ray_check_hit(cubed, ray))
+		return (ray->hit = HIT_WALL);
+	return (0);
+}
+
+void	ray_vector_x(t_cubed *cubed, t_ray *ray)
+{
+	ray->map_x += ray->step_x;
+	if (ray->angle_r == (M_PI / 2) || ray->angle_r == ((3 * M_PI) / 2))
+	{
+		ray->len_x += 1e30;
+		return;
+	}
+	ray->len_x += fabs(1 / cos(ray->angle_r));
+	(void)cubed;
+}
+
+void	ray_vector_y(t_cubed *cubed, t_ray *ray)
+{
+	ray->map_y += ray->step_y;
+	if (ray->angle_r == M_PI || ray->angle_r == 0)
+	{
+		ray->len_y += 1e30;
+		return;
+	}
+	ray->len_y += fabs(1 / sin(ray->angle_r));
+	printf("i len_y %f\n", ray->len_y);
+	(void)cubed;
+}
+
 void	ray_calc_steps(t_cubed *cubed, t_ray *ray)
 {
 	// int hit;
@@ -106,10 +140,15 @@ void	ray_calc_steps(t_cubed *cubed, t_ray *ray)
 
 	while (ray_check_hit_out(cubed, ray) == 0)
 	{
-
+		if (ray->len_x < ray->len_y)
+			ray_vector_x(cubed, ray);
+		else
+			ray_vector_y(cubed, ray);
 	}
-	if (ray->hit)
-		printf("omg i hit a wall distance: %f\n", ray.)
+	if (ray->hit != HIT_WALL)
+		return;
+	printf("i hit a wall at x: %f y: %f \n", ray->map_x, ray->map_y);
+	printf("len_x: %f len_y: %f\n", ray->len_x, ray->len_y);
 
 	(void)cubed;
 
