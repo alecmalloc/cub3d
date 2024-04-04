@@ -1,6 +1,11 @@
 #ifndef CASTING_H
 # define CASTING_H
 
+
+
+# define OUT_ERR 501
+# define HIT_WALL 501
+
 typedef struct ray {
 	int step_x;
 	int	step_y;

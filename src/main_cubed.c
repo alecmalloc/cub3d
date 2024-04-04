@@ -13,10 +13,14 @@ int	main(int argc, char **argv)
 	ret = parser(argv[1], cubed);
 	if (ret)
 		return (print_error(ret, &cubed));
-	ret = window_init(cubed);
+	// ret = window_init(cubed);
 	if (ret)
 		return (print_error(ret, &cubed));
 	// start_game(cubed);
+
+	cubed->game->dir = (double)cubed->parser->map->player_dir;
+	cubed->game->pos[0] = cubed->parser->map->player_pos[0];
+	cubed->game->pos[1] = cubed->parser->map->player_pos[1];
 	casting(cubed);
 
 	free_all(&cubed);

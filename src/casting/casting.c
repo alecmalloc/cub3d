@@ -36,41 +36,81 @@ void	calc_init_distance(t_ray *ray)
 	}
 }
 
-int		ray_check_hit(void)
+int		ray_check_hit(t_cubed *cubed, t_ray *ray)
 {
+	char **map;
+	map = cubed->parser->map->map;
+
+	if (map[(int)ray->map_x][(int)ray->map_y] == '1')
+		return (HIT_WALL);
 	return (0);
 }
 
-int		ray_check_outside(void)
+int		ray_check_outside(t_cubed *cubed, t_ray *ray)
 {
+	if (ray->map_x < 0)
+		return (OUT_ERR);
+	if (ray->map_y < 0)
+		return (OUT_ERR);
+	if (ray->map_x >= cubed->parser->map->x_len)
+		return (OUT_ERR);
+	if (ray->map_y >= cubed->parser->map->y_len)
+		return (OUT_ERR);
 	return (0);
+}
+
+void	print_ray(t_ray *ray)
+{
+	printf("ray angle: %f \n", ray->angle);
+	printf("ray step_x: %d \n", ray->step_x);
+	printf("ray step_y: %d \n", ray->step_y);
+	printf("ray org_x: %f \n", ray->org_x);
+	printf("ray org_y: %f \n", ray->org_y);
+	printf("ray len_x: %f \n", ray->len_x);
+	printf("ray len_y: %f \n", ray->len_y);
+	printf("ray map_x: %f \n", ray->map_x);
+	printf("ray map_y: %f \n", ray->map_y);
+}
+
+void	print_map(t_cubed *cubed)
+{
+	int y;
+	char **map;
+	map = cubed->parser->map->map;
+
+
+	y = 0;
+	while (map[y])
+	{
+		printf("%s\n", map[y]);
+		y++;
+	}
 }
 
 void	ray_calc_steps(t_cubed *cubed, t_ray *ray)
 {
-	//int out_hit;
+	// int hit;
 
-	//out_hit = 0;
-	char **map;
-	map = cubed->parser->map->map;
+	// hit = 0;
 
 	set_steps_x_y(ray);
 	calc_init_distance(ray);
 
-	int y;
+	print_ray(ray);
+	print_map(cubed);
 
-	y = -1;
-	while (map[y++])
-		printf("%s\n", map[y]);
+	printf("hit: %d\n", ray_check_hit(cubed, ray));
+	printf("out: %d\n", ray_check_outside(cubed, ray));
 
+	(void)cubed;
 
 }
 
-void	*init_ray(t_ray **ray, double angle, double org_x, double org_y)
+int		init_ray(t_ray **ray, double angle, double org_x, double org_y)
 {
 	*ray = malloc(sizeof(t_ray));
 	if (!(*ray))
-		return ((void *)1);
+		return (1);
 	(*ray)->step_x = 0;
 	(*ray)->step_y = 0;
 	(*ray)->org_x = org_x;
@@ -86,26 +126,16 @@ void	*init_ray(t_ray **ray, double angle, double org_x, double org_y)
 
 int		casting(t_cubed *cubed)
 {
-	t_ray *ray;
-	double angle;
+	t_ray	*ray;
 	(void)cubed;
 
 	ray = NULL;
-	angle = 360;
 
-	if (init_ray(&ray, angle, 0.5, 3.5) != 0)
+	printf("dir: %f\n", cubed->game->dir);
+
+	if (init_ray(&ray, cubed->game->dir, cubed->game->pos[0], cubed->game->pos[1]) != 0)
 		return (MALL_ERR);
 	ray_calc_steps(cubed, ray);
-
-	// printf("ray angle: %f \n", ray->angle);
-	// printf("ray step_x: %d \n", ray->step_x);
-	// printf("ray step_y: %d \n", ray->step_y);
-	// printf("ray org_x: %f \n", ray->org_x);
-	// printf("ray org_y: %f \n", ray->org_y);
-	// printf("ray len_x: %f \n", ray->len_x);
-	// printf("ray len_y: %f \n", ray->len_y);
-	// printf("ray map_x: %f \n", ray->map_x);
-	// printf("ray map_y: %f \n", ray->map_y);
 
 	free(ray);
 	return (0);
