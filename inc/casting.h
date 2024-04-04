@@ -4,9 +4,10 @@
 
 
 # define OUT_ERR 501
-# define HIT_WALL 501
+# define HIT_WALL 502
 
 typedef struct ray {
+	int hit;
 	int step_x;
 	int	step_y;
 	double org_x;

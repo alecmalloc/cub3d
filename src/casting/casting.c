@@ -38,10 +38,15 @@ void	calc_init_distance(t_ray *ray)
 
 int		ray_check_hit(t_cubed *cubed, t_ray *ray)
 {
+	int map_x;
+	int map_y;
 	char **map;
+
+	map_x = (int)ray->map_x;
+	map_y = (int)ray->map_y;
 	map = cubed->parser->map->map;
 
-	if (map[(int)ray->map_x][(int)ray->map_y] == '1')
+	if (map[map_y][map_x] == '1')
 		return (HIT_WALL);
 	return (0);
 }
@@ -99,8 +104,12 @@ void	ray_calc_steps(t_cubed *cubed, t_ray *ray)
 	print_ray(ray);
 	print_map(cubed);
 
-	printf("hit: %d\n", ray_check_hit(cubed, ray));
-	printf("out: %d\n", ray_check_outside(cubed, ray));
+	while (ray_check_hit_out(cubed, ray) == 0)
+	{
+
+	}
+	if (ray->hit)
+		printf("omg i hit a wall distance: %f\n", ray.)
 
 	(void)cubed;
 
@@ -111,6 +120,7 @@ int		init_ray(t_ray **ray, double angle, double org_x, double org_y)
 	*ray = malloc(sizeof(t_ray));
 	if (!(*ray))
 		return (1);
+	(*ray)->hit = 0;
 	(*ray)->step_x = 0;
 	(*ray)->step_y = 0;
 	(*ray)->org_x = org_x;
