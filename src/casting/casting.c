@@ -114,9 +114,7 @@ void	ray_vector_y(t_cubed *cubed, t_ray *ray)
 
 void	ray_calc_steps(t_cubed *cubed, t_ray *ray)
 {
-	// int hit;
-
-	// hit = 0;
+	double min_len;
 
 	set_steps_x_y(ray);
 	calc_init_distance(ray);
@@ -131,11 +129,18 @@ void	ray_calc_steps(t_cubed *cubed, t_ray *ray)
 		else
 			ray_vector_y(cubed, ray);
 	}
+
+	if (ray->hit == HIT_WALL)
+		printf("i hit a wall at x: %f y: %f\n", ray->map_x, ray->map_y);
+
 	if (ray->hit != HIT_WALL)
-	{
-		return;
-	}
-	printf("i hit a wall at x: %f y: %f \n", ray->map_x, ray->map_y);
+		min_len = -1;
+	else if (ray->len_x < ray->len_y)
+		min_len = ray->len_x;
+	else
+		min_len = ray->len_y;
+	
+	printf("ray min dist: %f\n", min_len);
 
 	(void)cubed;
 
@@ -174,7 +179,7 @@ int		casting(t_cubed *cubed)
 	// printf("dir: %f\n", cubed->game->dir);
 
 	angle = 45.0;
-	pos_x = 12.4;
+	pos_x = 12.5;
 	pos_y = cubed->game->pos[1];
 
 	if (init_ray(&ray, angle, pos_x, pos_y) != 0)
