@@ -67,5 +67,7 @@ int		start_game(t_cubed *master);
 int		casting(t_cubed *cubed);
 double	conv_deg_rad(double deg);
 double	conv_rad_deg(double rad);
+void	print_ray(t_ray *ray);
+void	print_map_c(t_cubed *cubed);
 
 #endif

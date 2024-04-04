@@ -3,17 +3,19 @@
 void	set_steps_x_y(t_ray *ray)
 {
 	if (ray->angle > 90 && ray->angle < 270)
-		ray->step_x = -1;
-	if (ray->angle > 270 || ray->angle < 90)
 		ray->step_x = 1;
+	if (ray->angle > 270 || ray->angle < 90)
+		ray->step_x = +1;
 	if (ray->angle > 180 && ray->angle < 360)
-		ray->step_y = -1;
-	if (ray->angle < 180 && ray->angle > 0)
 		ray->step_y = 1;
+	if (ray->angle < 180 && ray->angle > 0)
+		ray->step_y = -1;
 }
 
-void	calc_init_distance(t_ray *ray)
+void	calc_init_distance_x(t_ray *ray)
 {
+	if (ray->org_x == (int)ray->org_x)
+		return ;
 	if (ray->angle > 90 && ray->angle < 270)
 	{
 		ray->len_x = fabs((ray->org_x - (int)ray->org_x) / cos(ray->angle_r));
@@ -24,7 +26,13 @@ void	calc_init_distance(t_ray *ray)
 		ray->len_x = fabs(((int)ray->org_x + 1 - ray->org_x) / cos(ray->angle_r));
 		ray->map_x = ray->org_x + fabs((int)ray->org_x + 1 - ray->org_x);
 	}
-	if (ray->angle < 180 && ray->angle > 0)
+}
+
+void	calc_init_distance_y(t_ray *ray)
+{
+	if (ray->org_y == (int)ray->org_y)
+		return ;
+	if (ray->angle > 0 && ray->angle < 180)
 	{
 		ray->len_y = fabs((ray->org_y - (int)ray->org_y) / sin(ray->angle_r));
 		ray->map_y = ray->org_y - fabs(ray->org_y - (int)ray->org_y);
@@ -34,6 +42,12 @@ void	calc_init_distance(t_ray *ray)
 		ray->len_y = fabs(((int)ray->org_y + 1 - ray->org_y) / sin(ray->angle_r));
 		ray->map_y = ray->org_y + fabs((int)ray->org_y + 1 - ray->org_y);
 	}
+}
+
+void	calc_init_distance(t_ray *ray)
+{
+	calc_init_distance_x(ray);
+	calc_init_distance_y(ray);
 }
 
 int		ray_check_hit(t_cubed *cubed, t_ray *ray)
@@ -64,33 +78,6 @@ int		ray_check_outside(t_cubed *cubed, t_ray *ray)
 	return (0);
 }
 
-void	print_ray(t_ray *ray)
-{
-	printf("ray angle: %f \n", ray->angle);
-	printf("ray step_x: %d \n", ray->step_x);
-	printf("ray step_y: %d \n", ray->step_y);
-	printf("ray org_x: %f \n", ray->org_x);
-	printf("ray org_y: %f \n", ray->org_y);
-	printf("ray len_x: %f \n", ray->len_x);
-	printf("ray len_y: %f \n", ray->len_y);
-	printf("ray map_x: %f \n", ray->map_x);
-	printf("ray map_y: %f \n", ray->map_y);
-}
-
-void	print_map(t_cubed *cubed)
-{
-	int y;
-	char **map;
-	map = cubed->parser->map->map;
-
-
-	y = 0;
-	while (map[y])
-	{
-		printf("%s\n", map[y]);
-		y++;
-	}
-}
 
 int		ray_check_hit_out(t_cubed *cubed, t_ray *ray)
 {
@@ -122,7 +109,6 @@ void	ray_vector_y(t_cubed *cubed, t_ray *ray)
 		return;
 	}
 	ray->len_y += fabs(1 / sin(ray->angle_r));
-	printf("i len_y %f\n", ray->len_y);
 	(void)cubed;
 }
 
@@ -136,7 +122,7 @@ void	ray_calc_steps(t_cubed *cubed, t_ray *ray)
 	calc_init_distance(ray);
 
 	print_ray(ray);
-	print_map(cubed);
+	print_map_c(cubed);
 
 	while (ray_check_hit_out(cubed, ray) == 0)
 	{
@@ -146,9 +132,10 @@ void	ray_calc_steps(t_cubed *cubed, t_ray *ray)
 			ray_vector_y(cubed, ray);
 	}
 	if (ray->hit != HIT_WALL)
+	{
 		return;
+	}
 	printf("i hit a wall at x: %f y: %f \n", ray->map_x, ray->map_y);
-	printf("len_x: %f len_y: %f\n", ray->len_x, ray->len_y);
 
 	(void)cubed;
 
@@ -175,15 +162,24 @@ int		init_ray(t_ray **ray, double angle, double org_x, double org_y)
 
 int		casting(t_cubed *cubed)
 {
+	double	angle;
+	double	pos_x;
+	double	pos_y;
+
 	t_ray	*ray;
 	(void)cubed;
 
 	ray = NULL;
 
-	printf("dir: %f\n", cubed->game->dir);
+	// printf("dir: %f\n", cubed->game->dir);
 
-	if (init_ray(&ray, cubed->game->dir, cubed->game->pos[0], cubed->game->pos[1]) != 0)
+	angle = 45.0;
+	pos_x = 12.4;
+	pos_y = cubed->game->pos[1];
+
+	if (init_ray(&ray, angle, pos_x, pos_y) != 0)
 		return (MALL_ERR);
+
 	ray_calc_steps(cubed, ray);
 
 	free(ray);
