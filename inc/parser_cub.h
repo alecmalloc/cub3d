@@ -2,10 +2,10 @@
 # define PARSER_CUB_H
 
 //MapCharacter
-# define MAP_CHR "0123NSWE "
+# define MAP_CHR "01234NSWE "
 # define TEX_END ".xpm"
 # define FIL_END ".cub"
-# define IMP_CHR "0123NSWE"
+# define IMP_CHR "01234NSWE"
 # define PLR_CHR "NSWE"
 
 //store textures and colours

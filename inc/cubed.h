@@ -23,6 +23,8 @@
 
 # define WIDTH 1800
 # define HIGHT 800
+# define MM_WIDTH WIDTH / 10
+# define MM_HIGHT HIGHT / 10
 // strucure for custom RBG filled images
 typedef struct Fill_img
 {
