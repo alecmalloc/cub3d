@@ -127,7 +127,7 @@ void	ray_calc_steps(t_cubed *cubed, t_ray *ray)
 	set_steps_x_y(ray);
 	calc_init_distance(ray);
 
-	// print_ray(ray);
+	print_ray(ray);
 	// print_map_c(cubed);
 
 	while (ray_check_hit_out(cubed, ray) == 0)
@@ -189,16 +189,17 @@ int		init_spread_rays(t_cubed *cubed, double angle, double pos_x, double pos_y)
 	num_rays = 5;
 	i = num_rays;
 	angle_col = fov / num_rays;
-	start_angle = angle - ((((num_rays + 1) / 2) - 1) * angle_col);
+	start_angle = ((((num_rays + 1) / 2) - 1) * angle_col) - angle;
 
 	while (i)
 	{
-		printf("ray num: %d\n", (num_rays - i));
-		if (init_ray(&ray, ((start_angle) * (num_rays - i)), pos_x, pos_y) == MALL_ERR)
+		printf("RAY NUM: %d\n", (num_rays - i));
+		if (init_ray(&ray, ((start_angle) + (angle_col * (num_rays - i))), pos_x, pos_y) == MALL_ERR)
 			return (MALL_ERR);
 		ray_calc_steps(cubed, ray);
 		free(ray);
 		i--;
+		printf("---------------------\n");
 	}
 	return (0);
 }
