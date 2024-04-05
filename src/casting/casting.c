@@ -3,9 +3,9 @@
 void	set_steps_x_y(t_ray *ray)
 {
 	if (ray->angle > 90 && ray->angle < 270)
-		ray->step_x = 1;
+		ray->step_x = -1;
 	if (ray->angle > 270 || ray->angle < 90)
-		ray->step_x = +1;
+		ray->step_x = 1;
 	if (ray->angle > 180 && ray->angle < 360)
 		ray->step_y = 1;
 	if (ray->angle < 180 && ray->angle > 0)
@@ -14,8 +14,12 @@ void	set_steps_x_y(t_ray *ray)
 
 void	calc_init_distance_x(t_ray *ray)
 {
-	if (ray->org_x == (int)ray->org_x)
+	if ((ray->org_x == (int)ray->org_x) && ((ray->angle != 90 && ray->angle != 270)))
+	{
+		ray->map_x = ray->org_x + ray->step_x;
+		ray->len_x += abs(ray->step_x);
 		return ;
+	}
 	if (ray->angle > 90 && ray->angle < 270)
 	{
 		ray->len_x = fabs((ray->org_x - (int)ray->org_x) / cos(ray->angle_r));
@@ -30,8 +34,12 @@ void	calc_init_distance_x(t_ray *ray)
 
 void	calc_init_distance_y(t_ray *ray)
 {
-	if (ray->org_y == (int)ray->org_y)
+	if ((ray->org_y == (int)ray->org_y) && ((ray->angle != 90 && ray->angle != 270)))
+	{
+		ray->map_y = ray->org_y + ray->step_y;
+		ray->len_y += abs(ray->step_y);
 		return ;
+	}
 	if (ray->angle > 0 && ray->angle < 180)
 	{
 		ray->len_y = fabs((ray->org_y - (int)ray->org_y) / sin(ray->angle_r));
@@ -119,8 +127,8 @@ void	ray_calc_steps(t_cubed *cubed, t_ray *ray)
 	set_steps_x_y(ray);
 	calc_init_distance(ray);
 
-	print_ray(ray);
-	print_map_c(cubed);
+	// print_ray(ray);
+	// print_map_c(cubed);
 
 	while (ray_check_hit_out(cubed, ray) == 0)
 	{
@@ -142,6 +150,9 @@ void	ray_calc_steps(t_cubed *cubed, t_ray *ray)
 	
 	printf("ray min dist: %f\n", min_len);
 
+	// euclidean distance
+	// sqrt(pow((ray->map_x - ray->org_x), 2) + pow((ray->map_y - ray->org_y), 2)));
+
 	(void)cubed;
 
 }
@@ -150,7 +161,7 @@ int		init_ray(t_ray **ray, double angle, double org_x, double org_y)
 {
 	*ray = malloc(sizeof(t_ray));
 	if (!(*ray))
-		return (1);
+		return (MALL_ERR);
 	(*ray)->hit = 0;
 	(*ray)->step_x = 0;
 	(*ray)->step_y = 0;
@@ -165,28 +176,47 @@ int		init_ray(t_ray **ray, double angle, double org_x, double org_y)
 	return (0);
 }
 
+int		init_spread_rays(t_cubed *cubed, double angle, double pos_x, double pos_y)
+{
+	int i;
+	double fov;
+	int num_rays;
+	double angle_col;
+	double start_angle;
+	t_ray *ray;
+
+	fov = 80;
+	num_rays = 5;
+	i = num_rays;
+	angle_col = fov / num_rays;
+	start_angle = angle - ((((num_rays + 1) / 2) - 1) * angle_col);
+
+	while (i)
+	{
+		printf("ray num: %d\n", (num_rays - i));
+		if (init_ray(&ray, ((start_angle) * (num_rays - i)), pos_x, pos_y) == MALL_ERR)
+			return (MALL_ERR);
+		ray_calc_steps(cubed, ray);
+		free(ray);
+		i--;
+	}
+	return (0);
+}
+
 int		casting(t_cubed *cubed)
 {
 	double	angle;
 	double	pos_x;
 	double	pos_y;
 
-	t_ray	*ray;
-	(void)cubed;
-
-	ray = NULL;
-
 	// printf("dir: %f\n", cubed->game->dir);
 
-	angle = 45.0;
-	pos_x = 12.5;
+	angle = cubed->game->dir;
+	pos_x = cubed->game->pos[1];
 	pos_y = cubed->game->pos[1];
 
-	if (init_ray(&ray, angle, pos_x, pos_y) != 0)
+	if (init_spread_rays(cubed, angle, pos_x, pos_y) != 0)
 		return (MALL_ERR);
 
-	ray_calc_steps(cubed, ray);
-
-	free(ray);
 	return (0);
 }
