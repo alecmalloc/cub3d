@@ -18,6 +18,8 @@ typedef struct ray {
 	double angle_r;
 	double len_x;
 	double len_y;
+	double delta_x;
+	double delta_y;
 } t_ray;
 
 typedef struct casting {

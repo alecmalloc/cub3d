@@ -14,40 +14,28 @@ void	set_steps_x_y(t_ray *ray)
 
 void	calc_init_distance_x(t_ray *ray)
 {
-	if ((ray->org_x == (int)ray->org_x) && ((ray->angle != 90 && ray->angle != 270)))
-	{
-		ray->map_x = ray->org_x + ray->step_x;
-		ray->len_x += abs(ray->step_x);
-		return ;
-	}
 	if (ray->angle > 90 && ray->angle < 270)
 	{
-		ray->len_x = fabs((ray->org_x - (int)ray->org_x) / cos(ray->angle_r));
+		ray->len_x = fabs((ray->org_x - (int)ray->org_x) * ray->delta_x);
 		ray->map_x = ray->org_x - fabs(ray->org_x - (int)ray->org_x);
 	}
 	if (ray->angle > 270 || ray->angle < 90)
 	{
-		ray->len_x = fabs(((int)ray->org_x + 1 - ray->org_x) / cos(ray->angle_r));
+		ray->len_x = fabs(((int)ray->org_x + 1 - ray->org_x) * ray->delta_y);
 		ray->map_x = ray->org_x + fabs((int)ray->org_x + 1 - ray->org_x);
 	}
 }
 
 void	calc_init_distance_y(t_ray *ray)
 {
-	if ((ray->org_y == (int)ray->org_y) && ((ray->angle != 90 && ray->angle != 270)))
-	{
-		ray->map_y = ray->org_y + ray->step_y;
-		ray->len_y += abs(ray->step_y);
-		return ;
-	}
 	if (ray->angle > 0 && ray->angle < 180)
 	{
-		ray->len_y = fabs((ray->org_y - (int)ray->org_y) / sin(ray->angle_r));
+		ray->len_y = fabs((ray->org_y - (int)ray->org_y) * ray->delta_y);
 		ray->map_y = ray->org_y - fabs(ray->org_y - (int)ray->org_y);
 	}
 	if (ray->angle > 180 && ray->angle < 360)
 	{
-		ray->len_y = fabs(((int)ray->org_y + 1 - ray->org_y) / sin(ray->angle_r));
+		ray->len_y = fabs(((int)ray->org_y + 1 - ray->org_y) * ray->delta_y);
 		ray->map_y = ray->org_y + fabs((int)ray->org_y + 1 - ray->org_y);
 	}
 }
@@ -104,7 +92,7 @@ void	ray_vector_x(t_cubed *cubed, t_ray *ray)
 		ray->len_x += 1e30;
 		return;
 	}
-	ray->len_x += fabs(1 / cos(ray->angle_r));
+	ray->len_x += ray->delta_x;
 	(void)cubed;
 }
 
@@ -116,7 +104,7 @@ void	ray_vector_y(t_cubed *cubed, t_ray *ray)
 		ray->len_y += 1e30;
 		return;
 	}
-	ray->len_y += fabs(1 / sin(ray->angle_r));
+	ray->len_y += ray->delta_y;
 	(void)cubed;
 }
 
@@ -138,8 +126,8 @@ void	ray_calc_steps(t_cubed *cubed, t_ray *ray)
 			ray_vector_y(cubed, ray);
 	}
 
-	if (ray->hit == HIT_WALL)
-		printf("hit wall at x: %f y: %f\n", ray->map_x, ray->map_y);
+	// if (ray->hit == HIT_WALL)
+	printf("hit wall x: %f y: %f\n", ray->map_x, ray->map_y);
 
 	if (ray->hit != HIT_WALL)
 		min_len = -1;
@@ -148,15 +136,12 @@ void	ray_calc_steps(t_cubed *cubed, t_ray *ray)
 	else
 		min_len = ray->len_y;
 	
-	printf("c len_x: %f\n", ray->len_x);
-	printf("c len_y: %f\n", ray->len_y);
+	// printf("c len_x: %f\n", ray->len_x);
+	// printf("c len_y: %f\n", ray->len_y);
 	printf("ray min dist: %f\n", min_len);
 
-	// euclidean distance
-	// sqrt(pow((ray->map_x - ray->org_x), 2) + pow((ray->map_y - ray->org_y), 2)));
-
-	(void)cubed;
-
+	// double corr_dist = min_len * cos(ray->angle_r - conv_deg_rad(cubed->game->dir));
+	// printf("CORR DIST: %f\n", corr_dist);
 }
 
 int		init_ray(t_ray **ray, double angle, double org_x, double org_y)
@@ -175,6 +160,8 @@ int		init_ray(t_ray **ray, double angle, double org_x, double org_y)
 	(*ray)->angle_r = conv_deg_rad(angle);
 	(*ray)->len_x = 0;
 	(*ray)->len_y = 0;
+	(*ray)->delta_x = fabs(1 / (cos((*ray)->angle_r)));
+	(*ray)->delta_y = fabs(1 / (sin((*ray)->angle_r)));
 	return (0);
 }
 
@@ -188,14 +175,11 @@ int		init_spread_rays(t_cubed *cubed, double angle, double pos_x, double pos_y)
 	double start_angle;
 	t_ray *ray;
 
-	// need to write condition for when angle is 0 or east
-	fov = 80;
+	fov = 120;
 	num_rays = 11;
 	i = num_rays;
 	angle_col = fov / num_rays;
 	start_angle = angle + ((((num_rays + 1) / 2) - 1) * angle_col);
-
-	printf("start angle: %f\n", start_angle);
 
 	while (i)
 	{
@@ -227,14 +211,14 @@ int		casting(t_cubed *cubed)
 	pos_x = cubed->game->pos[0];
 	pos_y = cubed->game->pos[1];
 
-	// if (init_spread_rays(cubed, angle, pos_x, pos_y) != 0)
-	// 	return (MALL_ERR);
-
-	t_ray *ray;
-	if (init_ray(&ray, 126.363636, pos_x, pos_y) != 0)
+	if (init_spread_rays(cubed, angle, pos_x, pos_y) != 0)
 		return (MALL_ERR);
-	ray_calc_steps(cubed, ray);
-	free(ray);
+
+	// t_ray *ray;
+	// if (init_ray(&ray, 126.363636, 12.5, 3.5) != 0)
+	// 	return (MALL_ERR);
+	// ray_calc_steps(cubed, ray);
+	// free(ray);
 
 	return (0);
 }
