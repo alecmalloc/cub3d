@@ -10,6 +10,7 @@ int		ray_check_hit(t_cubed *cubed, t_ray *ray)
 	map_y = (int)ray->map_y;
 	map = cubed->parser->map->map;
 
+	// printf("checking at x: %d y: %d\n", map_x, map_y);
 	if (map[map_y][map_x] == '1')
 		return (HIT_WALL);
 	return (0);

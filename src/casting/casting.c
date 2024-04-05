@@ -50,14 +50,14 @@ int		casting(t_cubed *cubed)
 	pos_x = cubed->game->pos[0];
 	pos_y = cubed->game->pos[1];
 
-	// if (init_spread_rays(cubed, angle, pos_x, pos_y) != 0)
-	// 	return (MALL_ERR);
-
-	t_ray *ray;
-	if (init_ray(&ray, 144, 12.5, 3.5) != 0)
+	if (init_spread_rays(cubed, angle, pos_x, pos_y) != 0)
 		return (MALL_ERR);
-	ray_calc_steps(cubed, ray);
-	free(ray);
+
+	// t_ray *ray;
+	// if (init_ray(&ray, 144, 12.5, 3.5) != 0)
+	// 	return (MALL_ERR);
+	// ray_calc_steps(cubed, ray);
+	// free(ray);
 
 	return (0);
 }

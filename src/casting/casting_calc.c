@@ -65,6 +65,8 @@ void	ray_calc_steps(t_cubed *cubed, t_ray *ray)
 	// printf("c len_x: %f\n", ray->len_x);
 	// printf("c len_y: %f\n", ray->len_y);
 	printf("ray min dist: %f\n", min_len);
+	double distance = sqrt(pow(ray->map_x - ray->org_x, 2) + pow(ray->map_y - ray->org_y, 2));
+	printf("euc dist: %f\n", distance);
 
 	// double corr_dist = min_len * cos(ray->angle_r - conv_deg_rad(cubed->game->dir));
 	// printf("CORR DIST: %f\n", corr_dist);
