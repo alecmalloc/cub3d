@@ -33,14 +33,14 @@ int		init_spread_rays(t_cubed *cubed, double angle, double pos_x, double pos_y)
 	t_ray *ray;
 
 	fov = 120;
-	num_rays = 11;
+	num_rays = 200;
 	i = num_rays;
 	angle_col = fov / num_rays;
 	start_angle = angle + ((((num_rays + 1) / 2) - 1) * angle_col);
 
 	while (i)
 	{
-		printf("RAY NUM: %d\n", (num_rays - i));
+		// printf("RAY NUM: %d\n", (num_rays - i));
 
 		ray_angle = ((start_angle) - (angle_col * (num_rays - i)));
 		if (ray_angle < 0)
