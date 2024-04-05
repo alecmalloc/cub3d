@@ -139,7 +139,7 @@ void	ray_calc_steps(t_cubed *cubed, t_ray *ray)
 	}
 
 	if (ray->hit == HIT_WALL)
-		printf("i hit a wall at x: %f y: %f\n", ray->map_x, ray->map_y);
+		printf("hit wall at x: %f y: %f\n", ray->map_x, ray->map_y);
 
 	if (ray->hit != HIT_WALL)
 		min_len = -1;
@@ -148,6 +148,8 @@ void	ray_calc_steps(t_cubed *cubed, t_ray *ray)
 	else
 		min_len = ray->len_y;
 	
+	printf("c len_x: %f\n", ray->len_x);
+	printf("c len_y: %f\n", ray->len_y);
 	printf("ray min dist: %f\n", min_len);
 
 	// euclidean distance
@@ -181,20 +183,29 @@ int		init_spread_rays(t_cubed *cubed, double angle, double pos_x, double pos_y)
 	int i;
 	double fov;
 	int num_rays;
+	int ray_angle;
 	double angle_col;
 	double start_angle;
 	t_ray *ray;
 
+	// need to write condition for when angle is 0 or east
 	fov = 80;
-	num_rays = 5;
+	num_rays = 11;
 	i = num_rays;
 	angle_col = fov / num_rays;
-	start_angle = ((((num_rays + 1) / 2) - 1) * angle_col) - angle;
+	start_angle = angle + ((((num_rays + 1) / 2) - 1) * angle_col);
+
+	printf("start angle: %f\n", start_angle);
 
 	while (i)
 	{
 		printf("RAY NUM: %d\n", (num_rays - i));
-		if (init_ray(&ray, ((start_angle) + (angle_col * (num_rays - i))), pos_x, pos_y) == MALL_ERR)
+
+		ray_angle = ((start_angle) - (angle_col * (num_rays - i)));
+		if (ray_angle < 0)
+			ray_angle += 360;
+		
+		if (init_ray(&ray, ray_angle, pos_x, pos_y) == MALL_ERR)
 			return (MALL_ERR);
 		ray_calc_steps(cubed, ray);
 		free(ray);
@@ -213,11 +224,17 @@ int		casting(t_cubed *cubed)
 	// printf("dir: %f\n", cubed->game->dir);
 
 	angle = cubed->game->dir;
-	pos_x = cubed->game->pos[1];
+	pos_x = cubed->game->pos[0];
 	pos_y = cubed->game->pos[1];
 
-	if (init_spread_rays(cubed, angle, pos_x, pos_y) != 0)
+	// if (init_spread_rays(cubed, angle, pos_x, pos_y) != 0)
+	// 	return (MALL_ERR);
+
+	t_ray *ray;
+	if (init_ray(&ray, 126.363636, pos_x, pos_y) != 0)
 		return (MALL_ERR);
+	ray_calc_steps(cubed, ray);
+	free(ray);
 
 	return (0);
 }
