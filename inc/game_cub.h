@@ -33,5 +33,6 @@ int		rotate(int dir, struct s_cubed *master);
 int		handle_door(struct s_cubed *master);
 void	exit_game(void *master);
 void	set_mlx(struct s_cubed *master);
+void	make_image(struct s_cubed *master);
 
 #endif

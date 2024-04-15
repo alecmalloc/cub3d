@@ -8,6 +8,7 @@ static void	set_game(t_cubed *master)
 	master->game->map = master->parser->map->map;
 	mlx_set_cursor_mode(master->mlx_inst, MLX_MOUSE_HIDDEN);
 	mlx_set_mouse_pos(master->mlx_inst, WIDTH / 2, HIGHT / 2);
+	set_minimap(master);
 }
 
 void	exit_game(void *tmp)
@@ -28,6 +29,7 @@ static void	loop_cubed(void *tmp)
 	master = (t_cubed *)tmp;
 	check_mouse(master);
 	check_keys(master);
+	make_image(master)
 }
 
 int	start_game(t_cubed *master)

@@ -23,8 +23,7 @@
 
 # define WIDTH 1800
 # define HIGHT 800
-# define MM_WIDTH WIDTH / 10
-# define MM_HIGHT HIGHT / 10
+
 // strucure for custom RBG filled images
 typedef struct Fill_img
 {
@@ -39,9 +38,11 @@ typedef struct s_cubed
 {
 	t_parser	*parser;
 	mlx_t		*mlx_inst;
+	mlx_image_t	*img;
 	t_f_img		*ceiling;
 	t_f_img		*floor;
 	t_game		*game;
+	t_map		*map;
 	t_casting	*casting;
 }	t_cubed;
 

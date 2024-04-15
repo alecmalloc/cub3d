@@ -4,7 +4,9 @@
 //define ErrorCodes
 
 //MLX init error
-# define MLXI_ERR 94
+# define MLX_INIT_ERR 91
+
+# define MLX_IMG_ERR 92
 
 //Faulty line error
 # define WRL_ERR 95

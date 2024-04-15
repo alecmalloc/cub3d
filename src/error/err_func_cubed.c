@@ -12,8 +12,10 @@ void	print_single(int err)
 		printf("Error\nFaulty Line in .cub file\n");
 	else if (err == WRA_ERR)
 		printf("Error\nOne Argument. Path to .cub\n");
-	else if (err == MLXI_ERR)
+	else if (err == MLX_INIT_ERR)
 		printf("Error\nMLX init failed\n");
+	else if (err == MLX_IMG_ERR)
+		printf("Error\nMLX image failed\n");
 }
 
 void	print_doublep(int err)
