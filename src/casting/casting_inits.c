@@ -32,8 +32,8 @@ int		init_spread_rays(t_cubed *cubed, double angle, double pos_x, double pos_y)
 	double start_angle;
 	t_ray *ray;
 
-	fov = 120;
-	num_rays = 200;
+	fov = 90;
+	num_rays = 100;
 	i = num_rays;
 	angle_col = fov / num_rays;
 	start_angle = angle + ((((num_rays + 1) / 2) - 1) * angle_col);
