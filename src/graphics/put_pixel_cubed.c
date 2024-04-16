@@ -14,9 +14,9 @@ void	put_pixel_cubed(mlx_image_t *img, uint32_t x, uint32_t y, uint32_t color)
 
 	if (img)
 	{
-		if (x < img->width && y < img->hight)
+		if (x < img->width && y < img->height)
 		{
-			pixelstart = &image->pixels[(y * image->width + x) * sizeof(int32_t)];
+			pixelstart = &img->pixels[(y * img->width + x) * sizeof(int32_t)];
 			draw_pixel_cubed(pixelstart, color);
 		}
 	}

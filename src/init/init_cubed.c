@@ -84,6 +84,8 @@ void	free_all(t_cubed **cubed)
 		free_game(&(*cubed)->game);
 	if ((*cubed)->casting)
 		free_casting(cubed);
+	if ((*cubed)->map)
+		free_minimap(&(*cubed)->map);
 	free_f_imgs(cubed);
 	free(*cubed);
 }

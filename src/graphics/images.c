@@ -11,8 +11,9 @@ int	make_image(t_cubed *master)
 	//casting stuff
 	load_minimap(new, master);
 	if (master->img)
-		mlx_delete_image(master->mlx_inst, master->mlx_img);
+		mlx_delete_image(master->mlx_inst, master->img);
 	master->img = new;
-	if (mlx_image_to_window(master->mlx_inst, mlx->img, 0, 0) < 0)
+	if (mlx_image_to_window(master->mlx_inst, new, 0, 0) < 0)
 		return (MLX_IMG_ERR);
+	return (0);
 }

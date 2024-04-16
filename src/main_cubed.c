@@ -13,9 +13,6 @@ int	main(int argc, char **argv)
 	ret = parser(argv[1], cubed);
 	if (ret)
 		return (print_error(ret, &cubed));
-	ret = window_init(cubed);
-	if (ret)
-		return (print_error(ret, &cubed));
 	start_game(cubed);
 	// casting(cubed);
 
