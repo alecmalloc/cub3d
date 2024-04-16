@@ -24,6 +24,7 @@ void	ray_vector_x(t_cubed *cubed, t_ray *ray)
 		return;
 	}
 	ray->len_x += ray->delta_x;
+	ray->len_y += fabs(ray->step_y * (ray->delta_x * tan(ray->angle_r)));
 	(void)cubed;
 }
 
@@ -37,6 +38,7 @@ void	ray_vector_y(t_cubed *cubed, t_ray *ray)
 		return;
 	}
 	ray->len_y += ray->delta_y;
+	ray->len_x +=fabs(ray->step_x * (ray->delta_y / tan(ray->angle_r)));
 	(void)cubed;
 }
 
@@ -49,7 +51,7 @@ int		casting(t_cubed *cubed)
 	// printf("dir: %f\n", cubed->game->dir);
 
 	// angle = cubed->game->dir;
-	angle = 63;
+	angle = 45;
 	pos_x = cubed->game->pos[0];
 	pos_y = cubed->game->pos[1];
 
