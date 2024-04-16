@@ -2,6 +2,8 @@
 
 void	calc_init_distance_x(t_ray *ray)
 {
+	if (ray->org_x == (int)ray->org_x)
+		return ;
 	if (ray->angle > 90 && ray->angle < 270)
 	{
 		ray->len_x = fabs((ray->org_x - (int)ray->org_x) * ray->delta_x);
@@ -16,6 +18,8 @@ void	calc_init_distance_x(t_ray *ray)
 
 void	calc_init_distance_y(t_ray *ray)
 {
+	if (ray->org_y == (int)ray->org_y)
+		return ;
 	if (ray->angle > 0 && ray->angle < 180)
 	{
 		ray->len_y = fabs((ray->org_y - (int)ray->org_y) * ray->delta_y);
@@ -52,6 +56,8 @@ void	ray_calc_steps(t_cubed *cubed, t_ray *ray)
 			ray_vector_y(cubed, ray);
 	}
 
+	printf("dx: %f dy: %f\n", ray->delta_x, ray->delta_y);
+
 	// if (ray->hit == HIT_WALL)
 	// printf("hit wall x: %f y: %f\n", ray->map_x, ray->map_y);
 
@@ -64,6 +70,7 @@ void	ray_calc_steps(t_cubed *cubed, t_ray *ray)
 	
 	// printf("c len_x: %f\n", ray->len_x);
 	// printf("c len_y: %f\n", ray->len_y);
+	// min_len = min_len / cos(89);
 	printf("ray min dist: %f\n", min_len);
 	// double distance = sqrt(pow(ray->map_x - ray->org_x, 2) + pow(ray->map_y - ray->org_y, 2));
 	// printf("euc dist: %f\n", distance);
