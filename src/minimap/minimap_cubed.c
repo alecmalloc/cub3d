@@ -14,20 +14,20 @@ void	set_minimap(t_cubed *master)
 static uint32_t	get_color(int x, int y, t_cubed *master)
 {
 	if (x < 0 || y < 0)
-		return (0xC0C0C0);
+		return (0xC0C0C0FF);
 	else if (x >= master->parser->map->x_len || y >= master->parser->map->y_len)
-		return (0xC0C0C0);
+		return (0xC0C0C0FF);
 	else if (x == (int)master->game->pos[0] && y == (int)master->game->pos[1])
-		return (0x47006b);
+		return (0x47006bFF);
 	else if ((int)master->game->map[y][x] == '1')
-		return (0xf7c93f);
+		return (0xf7c93fFF);
 	else if ((int)master->game->map[y][x] == '0' || master->game->map[y][x] == '3')
-		return (0xdddcd7);
+		return (0xdddcd7FF);
 	else if ((int)master->game->map[y][x] == '2')
-		return (0x333333);
+		return (0x333333FF);
 	else if ((int)master->game->map[y][x] == '4')
-		return (0x254194);
-	return (0xC0C0C0);
+		return (0x254194FF);
+	return (0xC0C0C0FF);
 }
 
 static void	put_minimap(int x, int y, mlx_image_t *img, t_cubed *master)
