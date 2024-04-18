@@ -55,7 +55,8 @@ void	ray_calc_steps(t_cubed *cubed, t_ray *ray)
 		else
 			ray_vector_y(cubed, ray);
 		printf("* mapx: %f mapy: %f \n", ray->map_x, ray->map_y);
-		printf("-> lenx: %f leny: %f \n", ray->len_x, ray->len_y);
+		printf("-> diffx %f diffy %f\n", (fabs(ray->map_x - ray->org_x)), ((fabs(ray->map_y - ray->org_y))));
+		printf("--> lenx: %f leny: %f \n", ray->len_x, ray->len_y);
 	}
 
 	printf("dx: %f dy: %f\n", ray->delta_x, ray->delta_y);
