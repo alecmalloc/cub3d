@@ -6,6 +6,6 @@ int	init_window(t_cubed **cubed)
 	if (!((*cubed)->mlx_inst))
 		return (MLX_INIT_ERR);
 	(*cubed)->img = NULL;
-	mlx_set_window_pos((*cubed)->mlx_inst, 210, 133);
+	mlx_set_window_pos((*cubed)->mlx_inst, 0, 0);
 	return (0);
 }

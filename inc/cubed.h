@@ -22,8 +22,8 @@
 # include "casting.h"
 # include "mimimap_cub.h"
 
-# define WIDTH 1800
-# define HIGHT 800
+# define WIDTH 1920
+# define HIGHT 1080
 
 // strucure for custom RBG filled images
 typedef struct Fill_img

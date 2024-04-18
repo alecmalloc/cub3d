@@ -33,6 +33,8 @@ static void	loop_cubed(void *tmp)
 
 int	start_game(t_cubed *master)
 {
+	if (init_window(&master))
+		return (MLX_INIT_ERR);
 	set_game(master);
 	printf("%f %f\n", master->game->pos[0], master->game->pos[1]);
 	mlx_close_hook(master->mlx_inst, exit_game, master);

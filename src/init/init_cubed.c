@@ -56,8 +56,6 @@ int	init_all(t_cubed **cubed)
 		return (MALL_ERR);
 	if (init_casting(cubed))
 		return (MALL_ERR);
-	if (init_window(cubed))
-		return (MLX_INIT_ERR);
 	if (init_minimap(cubed))
 		return (MALL_ERR);
 	return (0);
