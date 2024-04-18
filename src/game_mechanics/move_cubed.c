@@ -59,7 +59,7 @@ static void	get_direction_move(double *x, double *y, int dir, t_game *game)
 		*x = 0;
 }
 
-static void	print_map(t_cubed *master)
+/*static void	print_map(t_cubed *master)
 {
 	for (int i = 0; master->game->map[i]; i++)
 	{
@@ -72,7 +72,7 @@ static void	print_map(t_cubed *master)
 		}
 		printf("\n");
 	}
-}
+}*/
 
 int	move(int rot, t_cubed *master)
 {
@@ -90,7 +90,5 @@ int	move(int rot, t_cubed *master)
 	get_direction_move(&x, &y, tmp, master->game);
 	master->game->pos[0] += x;
 	master->game->pos[1] += y;
-	if (x || y)
-		print_map(master);
 	return ((int)(x + y));
 }

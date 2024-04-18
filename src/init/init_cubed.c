@@ -34,7 +34,8 @@ static int	init_f_imgs(t_cubed **cubed)
 
 int	init_casting(t_cubed **cubed)
 {
-	t_casting *casting;
+	t_casting	*casting;
+
 	casting = malloc(sizeof(t_casting));
 	if (!casting)
 		return (MALL_ERR);
@@ -60,32 +61,4 @@ int	init_all(t_cubed **cubed)
 	if (init_minimap(cubed))
 		return (MALL_ERR);
 	return (0);
-}
-
-void	free_f_imgs(t_cubed **cubed)
-{
-	if ((*cubed)->ceiling)
-		free((*cubed)->ceiling);
-	if ((*cubed)->floor)
-		free((*cubed)->floor);
-}
-
-void	free_casting(t_cubed **cubed)
-{
-	// free sub elements
-	free((*cubed)->casting);
-}
-
-void	free_all(t_cubed **cubed)
-{
-	if ((*cubed)->parser)
-		free_parser(&(*cubed)->parser);
-	if ((*cubed)->game)
-		free_game(&(*cubed)->game);
-	if ((*cubed)->casting)
-		free_casting(cubed);
-	if ((*cubed)->map)
-		free_minimap(&(*cubed)->map);
-	free_f_imgs(cubed);
-	free(*cubed);
 }

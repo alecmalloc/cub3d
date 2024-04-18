@@ -14,8 +14,6 @@ int	main(int argc, char **argv)
 	if (ret)
 		return (print_error(ret, &cubed));
 	start_game(cubed);
-	// casting(cubed);
-
 	free_all(&cubed);
 	return (EXIT_SUCCESS);
 }

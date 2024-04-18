@@ -1,8 +1,8 @@
 #ifndef GAME_CUB_H
 # define GAME_CUB_H
 
-# define MOVESPEED 0.10
-# define ROTSPEED 0.10
+# define MOVESPEED 1
+# define ROTSPEED 0.50
 
 struct	s_cubed;
 
@@ -33,6 +33,6 @@ int		rotate(int dir, struct s_cubed *master);
 int		handle_door(struct s_cubed *master);
 void	exit_game(void *master);
 void	set_mlx(struct s_cubed *master);
-int	make_image(struct s_cubed *master);
+int		make_image(struct s_cubed *master);
 
 #endif

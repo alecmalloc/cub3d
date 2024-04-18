@@ -1,32 +1,36 @@
 #include "cubed.h"
 
-// setting each color in its own channel, rgb(a) -> a is opacity 
-void	fill_image_color(mlx_image_t *image, int r, int g, int b)
+// 'Encodes' four individual bytes into an int.
+int	get_rgba(int r, int g, int b, int a)
 {
-	int	i;
-	int	px;
-	int	bpp;
-
-	i = 0;
-	bpp = sizeof(int32_t);
-	px = image->width * image->height * bpp;
-	while (i < px)
-	{
-		image->pixels[i] = r;
-		image->pixels[i + 1] = g;
-		image->pixels[i + 2] = b;
-		image->pixels[i + 3] = 255;
-		i += 4;
-	}
+	return (r << 24 | g << 16 | b << 8 | a);
 }
 
 // create a ceiling and a floor -> get user input to do this
-void	put_backdrop(t_cubed *cubed)
+void	put_backdrop(mlx_image_t *img, t_cubed *master)
 {
-	cubed->ceiling->image = mlx_new_image(cubed->mlx_inst, 1500, 400);
-	cubed->floor->image = mlx_new_image(cubed->mlx_inst, 1500, 400);
-	fill_image_color(cubed->ceiling->image, 0, 100, 100);
-	fill_image_color(cubed->floor->image, 100, 9, 100);
-	mlx_image_to_window(cubed->mlx_inst, cubed->ceiling->image, 0, 0);
-	mlx_image_to_window(cubed->mlx_inst, cubed->floor->image, 0, 400);
+	int	z;
+	int	z2;
+
+	z = 0;
+	while (z < HIGHT / 2)
+	{
+		z2 = 0;
+		while (z2 <= WIDTH)
+			put_pixel_cubed(img, z2++, z, get_rgba(\
+			master->parser->grafics->sc[0], \
+			master->parser->grafics->sc[1], \
+			master->parser->grafics->sc[2], 255));
+		z++;
+	}
+	while (z < HIGHT)
+	{
+		z2 = 0;
+		while (z2 <= WIDTH)
+			put_pixel_cubed(img, z2++, z, get_rgba(\
+			master->parser->grafics->fc[0], \
+			master->parser->grafics->fc[1], \
+			master->parser->grafics->fc[2], 255));
+		z++;
+	}
 }

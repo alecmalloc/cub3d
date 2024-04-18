@@ -8,6 +8,7 @@ int	make_image(t_cubed *master)
 	new = mlx_new_image(master->mlx_inst, WIDTH, HIGHT);
 	if (!new)
 		return (MLX_IMG_ERR);
+	put_backdrop(new, master);
 	//casting stuff
 	load_minimap(new, master);
 	if (master->img)

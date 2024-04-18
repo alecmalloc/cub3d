@@ -9,9 +9,7 @@ int	rotate(int dir, t_cubed *master)
 		tmp = 360;
 	else if (tmp >= 360)
 		tmp = 0;
-	printf("\nold:dir %f", master->game->dir);
 	master->game->dir = tmp;
-	printf("\nnew:dir %f\n\n", master->game->dir);
 	return (1);
 }
 

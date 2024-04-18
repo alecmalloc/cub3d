@@ -51,8 +51,9 @@ typedef struct s_cubed
 int		init_window(t_cubed **cubed);
 
 // /graphics
-void	put_backdrop(t_cubed *cubed);
-void	put_pixel_cubed(mlx_image_t *img, uint32_t x, uint32_t y, uint32_t color);
+void	put_backdrop(mlx_image_t *img, t_cubed *cubed);
+void	put_pixel_cubed(mlx_image_t *img, uint32_t x, uint32_t y, \
+		uint32_t color);
 
 // /structs
 void	*init_structs(t_cubed *cubed);
