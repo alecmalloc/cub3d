@@ -8,8 +8,8 @@ struct s_cubed;
 typedef struct s_minimap{
 	int	start_x;
 	int	start_y;
-	int	end_x;
-	int	end_y;
+	int	offset_x;
+	int	offset_y;
 	int	size;
 	int	cur_x;
 	int	cur_y;

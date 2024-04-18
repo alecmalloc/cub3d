@@ -1,7 +1,7 @@
 #ifndef GAME_CUB_H
 # define GAME_CUB_H
 
-# define MOVESPEED 0.25
+# define MOVESPEED 0.10
 # define ROTSPEED 0.10
 
 struct	s_cubed;

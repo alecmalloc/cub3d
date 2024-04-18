@@ -4,8 +4,8 @@ void	set_minimap(t_cubed *master)
 {
 	master->map->start_x = (int)(WIDTH * 0.05);
 	master->map->start_y = (int)(WIDTH * 0.05);
-	master->map->end_x = master->map->start_x * 2;
-	master->map->end_y = master->map->start_y * 2;
+	master->map->offset_x = master->map->start_x / 2;
+	master->map->offset_y = master->map->start_y / 2;
 	master->map->size =  master->map->start_x / MINI_SIZE;
 	master->map->cur_x = master->map->start_x;
 	master->map->cur_y = master->map->start_y;
@@ -30,11 +30,6 @@ static uint32_t	get_color(int x, int y, t_cubed *master)
 	return (0xC0C0C0);
 }
 
-static void	draw_player(mlx_image_t *img, t_cubed *master, int x, int y)
-{
-	
-}
-
 static void	put_minimap(int x, int y, mlx_image_t *img, t_cubed *master)
 {
 	uint32_t	color;
@@ -51,8 +46,6 @@ static void	put_minimap(int x, int y, mlx_image_t *img, t_cubed *master)
 			mlx_put_pixel(img, z_x, z_y, color);
 			z_x++;
 		}
-		if (x == (int)master->game->pos[0] && y == (int)master->game->pos[1])
-			draw_player(img, master, (z_x - master->map->size), (z_y - master->map->size));
 		z_y++;
 	}
 }
@@ -74,8 +67,8 @@ void	load_minimap(mlx_image_t *img, t_cubed *master)
 		}
 		y++;
 		master->map->cur_y += master->map->size;
-		master->map->cur_x = master->map->start_x;
+		master->map->cur_x = master->map->offset_x;
 	}
-	master->map->cur_x = master->map->start_x;
-	master->map->cur_y = master->map->start_y;
+	master->map->cur_x = master->map->offset_x;
+	master->map->cur_y = master->map->offset_y;
 }
