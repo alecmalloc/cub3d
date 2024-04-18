@@ -1,64 +1,59 @@
 #include "cubed.h"
 
-void	calc_end(int cx, int cy, int *ex, int *ey, t_cubed *master)
+static void	calc_end(t_player *player, t_cubed *master)
 {
 	double	radius;
-	int	standart;
+	int		standart;
 
 	standart = ((int)master->game->dir - 90);
 	if (standart >= 360)
 		standart = standart - 360;
 	radius = standart * M_PI / 180;
-	*ex = cx + (MINI_SIZE * 2 * cos(radius));
-	*ey = cy + (MINI_SIZE * 2 * sin(radius));
+	player->ex = player->cx + (MINI_SIZE * 2 * cos(radius));
+	player->ey = player->cy + (MINI_SIZE * 2 * sin(radius));
 }
 
-void	draw_line(int cx, int cy, int ex, int ey, mlx_image_t *img)
+static void	setup_player(t_player *player)
 {
-	int	dx;
-	int	dy;
-	int	sx;
-	int	sy;
-	int	tmp;
-	int	tmp2; 
-
-	dx = abs(ex - cx);
-	dy = abs(ey - cy);
-	if (cx < ex)
-		sx = 1;
+	player->dx = abs(player->ex - player->cx);
+	player->dy = abs(player->ey - player->cy);
+	if (player->cx < player->ex)
+		player->sx = 1;
 	else 
-		sx = -1;
-	if (cy < ey)
-		sy = 1;
+		player->sx = -1;
+	if (player->cy < player->ey)
+		player->sy = 1;
 	else
-		sy = -1;
-	tmp = dx - dy;
-	while (cx != ex || cy != ey)
+		player->sy = -1;
+	player->tmp = player->dx - player->dy;
+}
+
+static void	draw(t_player *player, mlx_image_t *img)
+{
+	while (player->cx != player->ex || player->cy != player->ey)
 	{
-		put_pixel_cubed(img, cx, cy, 0xFF0000FF);
-		tmp2 = 2 * tmp;
-		if (tmp2 > -dy)
+		put_pixel_cubed(img, player->cx, player->cy, 0xFF0000FF);
+		player->tmp2 = 2 * player->tmp;
+		if (player->tmp2 > -(player->dy))
 		{
-			tmp -= dy;
-			cx += sx;
+			player->tmp -= player->dy;
+			player->cx += player->sx;
 		}
-		if (tmp2 < dx)
+		if (player->tmp2 < player->dx)
 		{
-			tmp += dx;
-			cy += sy;
+			player->tmp += player->dx;
+			player->cy += player->sy;
 		}
 	}
 }
 
 void	draw_player(int x, int y, mlx_image_t *img, t_cubed *master)
 {
-	int	center_x;
-	int	center_y;
-	int	end_x;
-	int	end_y;
+	t_player	player;
 
-	center_x = x - master->map->size / 2;
-	center_y = y - master->map->size / 2;
-	calc_end(center_x, center_y, &end_x, &end_y, master);
-	draw_line(center_x, center_y, end_x, end_y, img);
+	player.cx = x - master->map->size / 2;
+	player.cy = y - master->map->size / 2;
+	calc_end(&player, master);
+	setup_player(&player);
+	draw(&player, img);
 }

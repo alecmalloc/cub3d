@@ -5,6 +5,19 @@
 
 struct	s_cubed;
 
+typedef struct s_player{
+	int	cx;
+	int	cy;
+	int	ex;
+	int	ey;
+	int	dx;
+	int	dy;
+	int	sx;
+	int	sy;
+	int	tmp;
+	int	tmp2;
+}	t_player;
+
 typedef struct s_minimap{
 	int	start_x;
 	int	start_y;
