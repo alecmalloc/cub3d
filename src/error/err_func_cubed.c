@@ -20,36 +20,20 @@ void	print_single(int err)
 
 void	print_doublep(int err)
 {
-	int		direction;
-	char	*tmp[] = DIRECTIONS;
-
-	direction = err % 100;
-	printf("Error\nDouble assign of %s Path\n", tmp[direction]);
+	printf("Error\nDouble assign of %s Path\n", print_direction(err % 100));
 }
 
 void	print_unaccesp(int err)
 {
-	int		direction;
-	char	*tmp[] = DIRECTIONS;
-
-	direction = err % 110;
-	printf("Error\n%s Path not accessable\n", tmp[direction]);
+	printf("Error\n%s Path not accessable\n", print_direction(err % 110));
 }
 
 void	print_missingp(int err)
 {
-	int		direction;
-	char	*tmp[] = DIRECTIONS;
-
-	direction = err % 120;
-	printf("Error\n%s Path missing\n", tmp[direction]);
+	printf("Error\n%s Path missing\n", print_direction(err % 120));
 }
 
 void	print_wrongp(int err)
 {
-	int		direction;
-	char	*tmp[] = DIRECTIONS;
-
-	direction = err % 130;
-	printf("Error\n%s Path not in right format\n", tmp[direction]);
+	printf("Error\n%s Path not in right format\n", print_direction(err % 130));
 }

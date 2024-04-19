@@ -7,6 +7,10 @@ static int	init_cubed(t_cubed **cubed)
 		return (MALL_ERR);
 	(*cubed)->parser = NULL;
 	(*cubed)->game = NULL;
+	(*cubed)->mlx_inst = NULL;
+	(*cubed)->map = NULL;
+	(*cubed)->tex = NULL;
+	(*cubed)->casting = NULL;
 	return (0);
 }
 
@@ -57,6 +61,8 @@ int	init_all(t_cubed **cubed)
 	if (init_casting(cubed))
 		return (MALL_ERR);
 	if (init_minimap(cubed))
+		return (MALL_ERR);
+	if (init_tex(cubed))
 		return (MALL_ERR);
 	return (0);
 }

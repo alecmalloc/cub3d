@@ -5,7 +5,6 @@
 
 //MLX init error
 # define MLX_INIT_ERR 91
-
 # define MLX_IMG_ERR 92
 
 //Faulty line error
@@ -69,6 +68,14 @@
 # define WSS_ERR 182
 # define WSW_ERR 183
 
+//Loading Textures Error
+# define LTN_ERR 190
+# define LTE_ERR 191
+# define LTS_ERR 192
+# define LTW_ERR 193
+# define LTD_ERR 194
+# define LTSP_ERR 195
+
 //Map not found
 # define MNF_ERR 200
 
@@ -81,9 +88,6 @@
 //Open Wall
 # define OPW_ERR 203
 
-# define DIRECTIONS {"North", "East", "South", "West"}
-# define BOTOP {"Floor", "Ceiling"} 
-
 void	print_single(int err);
 void	print_doublep(int err);
 void	print_unaccesp(int err);
@@ -94,5 +98,8 @@ void	print_doublen(int err);
 void	print_wrongn(int err);
 void	print_wrongfn(int err);
 void	print_wrongsf(int err);
+char	*print_direction(int err);
+char	*print_boto(int err);
+void	print_loadtex(int err);
 
 #endif

@@ -4,6 +4,8 @@ static void	print_error_map(int err)
 {
 	if (err < 190)
 		print_wrongsf(err);
+	else if (err < 200)
+		print_loadtex(err);
 	else if (err == 200)
 		printf("Erorr\nMap not found\n");
 	else if (err == 201)

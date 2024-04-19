@@ -4,7 +4,7 @@ int	rotate(int dir, t_cubed *master)
 {
 	double	tmp;
 
-	tmp = master->game->dir + (dir * ROTSPEED);
+	tmp = master->game->dir - (dir * ROTSPEED);
 	if (tmp <= 0)
 		tmp = 360;
 	else if (tmp >= 360)

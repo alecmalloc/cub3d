@@ -14,6 +14,23 @@ void	free_casting(t_cubed **cubed)
 	free((*cubed)->casting);
 }
 
+void	free_tex(t_tex **tex)
+{
+	if ((*tex)->nw)
+		mlx_delete_xpm42((*tex)->nw);
+	if ((*tex)->ew)
+		mlx_delete_xpm42((*tex)->ew);
+	if ((*tex)->sw)
+		mlx_delete_xpm42((*tex)->sw);
+	if ((*tex)->ww)
+		mlx_delete_xpm42((*tex)->ww);
+	if ((*tex)->d)
+		mlx_delete_xpm42((*tex)->d);
+	if ((*tex)->s)
+		mlx_delete_xpm42((*tex)->s);
+	free((*tex));
+}
+
 void	free_all(t_cubed **cubed)
 {
 	if ((*cubed)->parser)
@@ -24,6 +41,8 @@ void	free_all(t_cubed **cubed)
 		free_casting(cubed);
 	if ((*cubed)->map)
 		free_minimap(&(*cubed)->map);
+	if ((*cubed)->tex)
+		free_tex(&(*cubed)->tex);
 	free_f_imgs(cubed);
 	free(*cubed);
 }

@@ -21,6 +21,7 @@
 # include "game_cub.h"
 # include "casting.h"
 # include "mimimap_cub.h"
+# include "textures_cub.h"
 
 # define WIDTH 1920
 # define HIGHT 1080
@@ -44,6 +45,7 @@ typedef struct s_cubed
 	t_f_img		*floor;
 	t_game		*game;
 	t_minimap	*map;
+	t_tex		*tex;
 	t_casting	*casting;
 }	t_cubed;
 

@@ -2,45 +2,25 @@
 
 void	print_missingn(int err)
 {
-	int		direction;
-	char	*tmp[] = BOTOP;
-
-	direction = err % 140;
-	printf("Error\n%s RGB number missing\n", tmp[direction]);
+	printf("Error\n%s RGB number missing\n", print_boto(err % 140));
 }
 
 void	print_doublen(int err)
 {
-	int		direction;
-	char	*tmp[] = BOTOP;
-
-	direction = err % 150;
-	printf("Error\n%s double assingment\n", tmp[direction]);
+	printf("Error\n%s double assingment\n", print_boto(err % 150));
 }
 
 void	print_wrongn(int err)
 {
-	int		direction;
-	char	*tmp[] = BOTOP;
-
-	direction = err % 160;
-	printf("Error\n%s RGB Number wrong\n", tmp[direction]);
+	printf("Error\n%s RGB Number wrong\n", print_boto(err % 160));
 }
 
 void	print_wrongfn(int err)
 {
-	int		direction;
-	char	*tmp[] = BOTOP;
-
-	direction = err % 170;
-	printf("Error\n%s RGB Number wrong format\n", tmp[direction]);
+	printf("Error\n%s RGB Number wrong format\n", print_boto(err % 170));
 }
 
 void	print_wrongsf(int err)
 {
-	int		direction;
-	char	*tmp[] = DIRECTIONS;
-
-	direction = err % 180;
-	printf("Error\n%s Path Wrong Suffix\n", tmp[direction]);
+	printf("Error\n%s Path Wrong Suffix\n", print_direction(err % 180));
 }
