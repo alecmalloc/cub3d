@@ -78,6 +78,7 @@ void	ray_calc_steps(t_cubed *cubed, t_ray *ray);
 void	set_steps_x_y(t_ray *ray);
 void	ray_vector_x(t_cubed *cubed, t_ray *ray);
 void	ray_vector_y(t_cubed *cubed, t_ray *ray);
-void	CastRay(t_cubed *cubed, t_ray *ray);
+void	calc_step_x(t_cubed *cubed, t_ray *ray);
+void	calc_step_y(t_cubed *cubed, t_ray *ray);
 
 #endif

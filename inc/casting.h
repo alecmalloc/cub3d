@@ -8,8 +8,8 @@
 
 typedef struct ray {
 	int hit;
-	int step_x;
-	int	step_y;
+	double	step_x;
+	double	step_y;
 	double org_x;
 	double org_y;
 	double map_x;
