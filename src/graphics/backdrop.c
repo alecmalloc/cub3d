@@ -13,24 +13,22 @@ void	put_backdrop(mlx_image_t *img, t_cubed *master)
 	int	z2;
 
 	z = 0;
-	while (z < HIGHT / 2)
-	{
-		z2 = 0;
-		while (z2 <= WIDTH)
-			put_pixel_cubed(img, z2++, z, get_rgba(\
-			master->parser->grafics->sc[0], \
-			master->parser->grafics->sc[1], \
-			master->parser->grafics->sc[2], 255));
-		z++;
-	}
 	while (z < HIGHT)
 	{
 		z2 = 0;
 		while (z2 <= WIDTH)
-			put_pixel_cubed(img, z2++, z, get_rgba(\
-			master->parser->grafics->fc[0], \
-			master->parser->grafics->fc[1], \
-			master->parser->grafics->fc[2], 255));
+		{
+			if (z < HIGHT / 2)
+				put_pixel_cubed(img, z2++, z, get_rgba(\
+				master->parser->grafics->sc[0], \
+				master->parser->grafics->sc[1], \
+				master->parser->grafics->sc[2], 255));
+			else
+				put_pixel_cubed(img, z2++, z, get_rgba(\
+				master->parser->grafics->fc[0], \
+				master->parser->grafics->fc[1], \
+				master->parser->grafics->fc[2], 255));
+		}
 		z++;
 	}
 }
