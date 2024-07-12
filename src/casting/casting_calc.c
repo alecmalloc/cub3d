@@ -47,6 +47,8 @@ void	ray_calc_steps(t_cubed *cubed, t_ray *ray)
 	set_steps_x_y(ray);
 	while (ray_check_hit_out(cubed, ray) == 0)
 	{
+		calc_step_x(cubed, ray);
+		calc_step_y(cubed, ray);
 		printf("stepx: %f stepy %f\n", ray->step_x, ray->step_y);
 
 		// DDA LOOP BITCH

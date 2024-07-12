@@ -32,7 +32,7 @@ void	set_steps_x_y(t_ray *ray)
 void	ray_vector_x(t_cubed *cubed, t_ray *ray)
 {
 	ray->map_x += ray->step_x;
-	ray->map_y -= sin(ray->angle_r) * ray->delta_x;
+	ray->map_y += ray->step_y * ray->delta_x;
 	if (ray->angle_r == (M_PI / 2) || ray->angle_r == ((3 * M_PI) / 2))
 	{
 		ray->len_x += 1e30;
@@ -49,7 +49,7 @@ void	ray_vector_x(t_cubed *cubed, t_ray *ray)
 void	ray_vector_y(t_cubed *cubed, t_ray *ray)
 {
 	ray->map_y += ray->step_y;
-	ray->map_x += cos(ray->angle_r) * ray->delta_y;
+	ray->map_x += ray->step_x * ray->delta_y;
 	if (ray->angle_r == M_PI || ray->angle_r == 0)
 	{
 		ray->len_y += 1e30;
@@ -72,7 +72,7 @@ int		casting(t_cubed *cubed)
 	// printf("dir: %f\n", cubed->game->dir);
 
 	// angle = cubed->game->dir;
-	angle = 200;
+	angle = 45;
 	pos_x = cubed->game->pos[0];
 	pos_y = cubed->game->pos[1];
 
