@@ -19,6 +19,8 @@ int		init_ray(t_ray **ray, double angle, double org_x, double org_y)
 	(*ray)->len_y = 0;
 	(*ray)->delta_x = fabs(1 / (cos((*ray)->angle_r)));
 	(*ray)->delta_y = fabs(1 / (sin((*ray)->angle_r)));
+	(*ray)->dist_next_x = 0;
+	(*ray)->dist_next_y = 0;
 	return (0);
 }
 

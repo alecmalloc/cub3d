@@ -44,13 +44,13 @@ void	ray_calc_steps(t_cubed *cubed, t_ray *ray)
 
 	print_ray(ray);
 
+	set_steps_x_y(ray);
 	while (ray_check_hit_out(cubed, ray) == 0)
 	{
-		calc_step_x(cubed, ray);
-		calc_step_y(cubed, ray);
 		printf("stepx: %f stepy %f\n", ray->step_x, ray->step_y);
 
-		if ((ray->delta_x + ray->len_x) < (ray->delta_y + ray->len_y))
+		// DDA LOOP BITCH
+		if ((ray->dist_next_x) < (ray->dist_next_y))
 			ray_vector_x(cubed, ray);
 		else
 			ray_vector_y(cubed, ray);
