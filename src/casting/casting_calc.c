@@ -49,15 +49,15 @@ void	ray_calc_steps(t_cubed *cubed, t_ray *ray)
 {
 	double min_len;
 
-	print_ray(ray);
+	//print_ray(ray);
 	printf("ray angle: %f\n", ray->angle);
 
 	while (ray_check_hit_out(cubed, ray) == 0)
 	{
-		printf("-----------------\n");
+		//printf("-----------------\n");
 		calc_step_x(cubed, ray);
 		calc_step_y(cubed, ray);
-		printf("stepx: %f stepy %f\n", ray->step_x, ray->step_y);
+		//printf("stepx: %f stepy %f\n", ray->step_x, ray->step_y);
 
 		calc_dist_next_x(ray);
 		calc_dist_next_y(ray);
@@ -66,8 +66,8 @@ void	ray_calc_steps(t_cubed *cubed, t_ray *ray)
 		else
 			ray_vector_y(cubed, ray);
 
-		printf("* mapx: %f mapy: %f \n", ray->map_x, ray->map_y);
-		printf("len ray: %f \n", ray->len_ray);
+		//printf("* mapx: %f mapy: %f \n", ray->map_x, ray->map_y);
+		// printf("len ray: %f \n", ray->len_ray);
 	}
 
 	// printf("=================\n");
