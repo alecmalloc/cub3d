@@ -21,13 +21,16 @@ void	ray_vector_x(t_cubed *cubed, t_ray *ray)
 {
 	double y_dist;
 	double x_dist;
-	// printf("vy\n");
+	printf("vx\n");
 
 	x_dist = ray->dist_next_x;
 	y_dist = (x_dist * ray->delta_x) / ray->delta_y;
 
 	ray->map_x += x_dist * (ray->step_x);
 	ray->map_y += y_dist * (ray->step_y);
+
+	if (ray_check_hit(cubed, ray) == HIT_WALL)
+		return ;
 
 	ray->len_ray += ray->dist_next_x * ray->delta_x;
 
@@ -38,15 +41,18 @@ void	ray_vector_y(t_cubed *cubed, t_ray *ray)
 {
 	double y_dist;
 	double x_dist;
-	// printf("vy\n");
+	printf("vy\n");
 
 	y_dist = ray->dist_next_y;
 	x_dist = (y_dist * ray->delta_y) / ray->delta_x;
 
-
 	ray->map_y += y_dist * ray->step_y;
 	ray->map_x += x_dist * ray->step_x;
 
+	if (ray_check_hit(cubed, ray) == HIT_WALL)
+		return ;
+
+	printf("dist_next_y: %f\n", ray->dist_next_y);
 	ray->len_ray += ray->dist_next_y * ray->delta_y;
 
 	(void)cubed;
@@ -61,20 +67,19 @@ int		casting(t_cubed *cubed)
 	// printf("dir: %f\n", cubed->game->dir);
 
 	// angle = cubed->game->dir;
-	angle = 45;
+	angle = 75;
 	pos_x = cubed->game->pos[0];
 	pos_y = cubed->game->pos[1];
 
-	if (init_spread_rays(cubed, angle, pos_x, pos_y) != 0)
-		return (MALL_ERR);
-
-	// TESTING:
-	// t_ray *ray;
-	// if (init_ray(&ray, angle, pos_x, pos_y) != 0)
+	// if (init_spread_rays(cubed, angle, pos_x, pos_y) != 0)
 	// 	return (MALL_ERR);
-	// ray_calc_steps(cubed, ray);
-	// free(ray);
-	// printf("---------------------\n");
+
+	t_ray *ray;
+	if (init_ray(&ray, angle, pos_x, pos_y) != 0)
+	 	return (MALL_ERR);
+	ray_calc_steps(cubed, ray);
+	free(ray);
+	printf("---------------------\n");
 
 	return (0);
 }
