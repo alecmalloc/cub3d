@@ -7,15 +7,15 @@ void	calc_step_x(t_cubed *cubed, t_ray *ray)
 	{
 		if (ray->map_x == (int)ray->map_x)
 			ray->step_x = -1;
-		else
-			ray->step_x = (int)ray->map_x - ray->map_x;
+		// else
+		// 	ray->step_x = (int)ray->map_x - ray->map_x;
 	}
 	if (ray->angle > 270 || ray->angle < 90)
 	{
 		if (ray->map_x == (int)ray->map_x)
 			ray->step_x = 1;
-		else
-			ray->step_x = ((int)ray->map_x + 1) - ray->map_x;
+		// else
+		// 	ray->step_x = ((int)ray->map_x + 1) - ray->map_x;
 	}
 }
 
@@ -26,16 +26,32 @@ void	calc_step_y(t_cubed *cubed, t_ray *ray)
 	{
 		if (ray->map_y == (int)ray->map_y)
 			ray->step_y = 1;
-		else
-			ray->step_y = ((int)ray->map_y + 1) - ray->map_y;
+		// else
+		//	ray->step_y = ((int)ray->map_y + 1) - ray->map_y;
 	}
 	if (ray->angle < 180 && ray->angle > 0)
 	{
 		if (ray->map_y == (int)ray->map_y)
 			ray->step_y = -1;
-		else
-			ray->step_y = (int)ray->map_y - ray->map_y;
+		// else
+		// 	ray->step_y = (int)ray->map_y - ray->map_y;
 	}
+}
+
+void	calc_dist_next_x(t_ray *ray)
+{
+	if ((int)ray->map_x == ray->map_x)
+		ray->dist_next_x =  1;
+	else
+		ray->dist_next_x = (ray->map_x - (int)ray->map_x); 
+}
+
+void	calc_dist_next_y(t_ray *ray)
+{
+	if ((int)ray->map_y == ray->map_y)
+		ray->dist_next_y =  1;
+	else
+		ray->dist_next_y = (ray->map_y - (int)ray->map_y); 
 }
 
 void	ray_calc_steps(t_cubed *cubed, t_ray *ray)
@@ -44,40 +60,30 @@ void	ray_calc_steps(t_cubed *cubed, t_ray *ray)
 
 	print_ray(ray);
 
-	set_steps_x_y(ray);
 	while (ray_check_hit_out(cubed, ray) == 0)
 	{
+		printf("-----------------\n");
 		calc_step_x(cubed, ray);
 		calc_step_y(cubed, ray);
 		printf("stepx: %f stepy %f\n", ray->step_x, ray->step_y);
 
 		// DDA LOOP BITCH
-		if ((ray->dist_next_x) < (ray->dist_next_y))
+		calc_dist_next_x(ray);
+		calc_dist_next_y(ray);
+		if ((ray->dist_next_x * ray->delta_x) < (ray->dist_next_y * ray->delta_y))
 			ray_vector_x(cubed, ray);
 		else
 			ray_vector_y(cubed, ray);
 
 		printf("* mapx: %f mapy: %f \n", ray->map_x, ray->map_y);
-		printf("-> diffx %f diffy %f\n", (fabs(ray->map_x - ray->org_x)), ((fabs(ray->map_y - ray->org_y))));
-		printf("--> lenx: %f leny: %f \n", ray->len_x, ray->len_y);
 	}
 
-	printf("dx: %f dy: %f\n", ray->delta_x, ray->delta_y);
-
+	printf("=================\n");
 	if (ray->hit == HIT_WALL)
-		printf("hit wall x: %f y: %f\n", ray->map_x, ray->map_y);
+		printf("hit wall x: %d y: %d\n", (int)ray->map_x, (int)ray->map_y);
 
-	if (ray->hit != HIT_WALL)
-		min_len = -1;
-	else if (ray->len_x == 0 && ray->len_y > 0)
-		min_len = ray->len_y;
-	else if (ray->len_y == 0 && ray->len_x > 0)
-		min_len = ray->len_x;
-	else if (ray->len_x < ray->len_y)
-		min_len = ray->len_x;
-	else
-		min_len = ray->len_y;
+	min_len = ray->len_ray;
 
-	printf("ray min dist: %f\n", min_len);
+	printf("len ray: %f\n", min_len);
 
 }
