@@ -51,8 +51,8 @@ void	ray_calc_steps(t_cubed *cubed, t_ray *ray)
 
 	//print_ray(ray);
 	printf("ray angle: %f\n", ray->angle);
-
-	while (ray_check_hit_out(cubed, ray) == 0)
+	printf("dirx %f, diry %f\n", ray->dir_x, ray->dir_y);
+	while (ray->hit == 0)
 	{
 		//printf("-----------------\n");
 		calc_step_x(cubed, ray);
@@ -68,6 +68,7 @@ void	ray_calc_steps(t_cubed *cubed, t_ray *ray)
 
 		//printf("* mapx: %f mapy: %f \n", ray->map_x, ray->map_y);
 		// printf("len ray: %f \n", ray->len_ray);
+		ray->hit = ray_check_hit(cubed, ray);
 	}
 
 	// printf("=================\n");

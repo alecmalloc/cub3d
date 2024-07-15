@@ -66,12 +66,12 @@ int		casting(t_cubed *cubed)
 	// printf("dir: %f\n", cubed->game->dir);
 
 	// angle = cubed->game->dir;
-	angle = 75;
-	pos_x = cubed->game->pos[0];
-	pos_y = cubed->game->pos[1];
+	
 
-	if (init_spread_rays(cubed, angle, pos_x, pos_y) != 0)
-	 	return (MALL_ERR);
+	simple_caster(cubed);
+
+	// if (init_spread_rays(cubed, angle, pos_x, pos_y) != 0)
+	// 	return (MALL_ERR);
 
 	/* t_ray *ray;
 	if (init_ray(&ray, angle, pos_x, pos_y) != 0)
