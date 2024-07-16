@@ -38,7 +38,6 @@ int	init_casting(t_cubed **cubed)
 	casting = malloc(sizeof(t_casting));
 	if (!casting)
 		return (MALL_ERR);
-	casting->resolution_w = 800.0;
 	(*cubed)->casting = casting;
 	return (0);
 }
