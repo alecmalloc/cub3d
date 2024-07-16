@@ -59,9 +59,6 @@ void	ray_vector_y(t_cubed *cubed, t_ray *ray)
 
 int		casting(t_cubed *cubed)
 {
-	double	angle;
-	double	pos_x;
-	double	pos_y;
 
 	// printf("dir: %f\n", cubed->game->dir);
 

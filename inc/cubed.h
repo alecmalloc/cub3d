@@ -81,4 +81,7 @@ void	ray_vector_y(t_cubed *cubed, t_ray *ray);
 void	calc_step_x(t_cubed *cubed, t_ray *ray);
 void	calc_step_y(t_cubed *cubed, t_ray *ray);
 
+
+void	simple_caster(t_cubed *cubed);
+
 #endif

@@ -3,8 +3,8 @@
 void	simple_caster(t_cubed *cubed)
 {
 	char ** map = cubed->parser->map->map;
-	double pos_x = cubed->game->pos[0];
-	double pos_y = cubed->game->pos[1];
+	double pos_x = cubed->game->pos[1];
+	double pos_y = cubed->game->pos[0];
 	double angle_d = cubed->game->dir;
 	double angle_r = conv_deg_rad(angle_d);
 	double dir_x = cos(angle_r);
@@ -22,68 +22,71 @@ void	simple_caster(t_cubed *cubed)
 	while (x++ < screen_w)
 	{
 		double camera_x = 2 * x / (double)screen_w - 1;
-		double rayDirX = dir_x + plane_x * camera_x;
-		double rayDirY = dir_y + plane_y * camera_x;
+		double ray_dir_x = dir_x + plane_x * camera_x;
+		double ray_dir_y = dir_y + plane_y * camera_x;
 
-		int mapX = (int)pos_x;
-		int mapY = (int)pos_y;
+		int map_x = (int)pos_x;
+		int map_y = (int)pos_y;
 
-		double sideDist_x;
-      	double sideDist_y;
-		double deltaDistX = (rayDirX == 0) ? 1e30 : fabs(1 / rayDirX);
-      	double deltaDistY = (rayDirY == 0) ? 1e30 : fabs(1 / rayDirY);
+		double side_dist_x;
+      	double side_dist_y;
+		double delta_dist_x = (ray_dir_x == 0) ? 1e30 : fabs(1 / ray_dir_x);
+      	double delta_dist_y = (ray_dir_y == 0) ? 1e30 : fabs(1 / ray_dir_y);
 
-		int stepX;
-      	int stepY;
+		int step_x;
+      	int step_y;
 
 		int hit = 0; //was there a wall hit?
       	int side; //was a NS or a EW wall hit?
 
-
-		if (rayDirX < 0)
+		if (ray_dir_x < 0)
 		{
-			stepX = -1;
-			sideDist_x = (pos_x - mapX) * deltaDistX;
+			step_x = -1;
+			side_dist_x = (pos_x - map_x) * delta_dist_x;
 		}
 		else
 		{
-			stepX = 1;
-			sideDist_x = (mapX + 1.0 - pos_x) * deltaDistX;
+			step_x = 1;
+			side_dist_x = (map_x + 1.0 - pos_x) * delta_dist_x;
 		}
-		if (rayDirY < 0)
+		if (ray_dir_y < 0)
 		{
-			stepY = -1;
-			sideDist_y = (pos_y - mapY) * deltaDistY;
+			step_y = -1;
+			side_dist_y = (pos_y - map_y) * delta_dist_y;
 		}
 		else
 		{
-			stepY = 1;
-			sideDist_y = (mapY + 1.0 - pos_y) * deltaDistY;
+			step_y = 1;
+			side_dist_y = (map_y + 1.0 - pos_y) * delta_dist_y;
 		}
 
 		//perform DDA
 		while (hit == 0)
 		{
 			//jump to next map square, either in x-direction, or in y-direction
-			if (sideDist_x < sideDist_y)
+			if (side_dist_x < side_dist_y)
 			{
-				sideDist_x += deltaDistX;
-				mapX += stepX;
+				side_dist_x += delta_dist_x;
+				map_x += step_x;
 				side = 0;
 			}
 			else
 			{
-				sideDist_y += deltaDistY;
-				mapY += stepY;
+				side_dist_y += delta_dist_y;
+				map_y += step_y;
 				side = 1;
 			}
 			//Check if ray has hit a wall
-			if (map[mapX][mapY] > 0) hit = 1;
+			printf("map_x: %d, map_y: %d\n", map_x, map_y);
+			printf("pos_x: %f, pos_y: %f\n", pos_x, pos_y);
+
+
+			if (map[map_x][map_y] == '1') hit = 1;
 		}
 
 		double perpWallDist;
-		if(side == 0) perpWallDist = (sideDist_x - deltaDistX);
-      	else          perpWallDist = (sideDist_y - deltaDistY);
+		if(side == 0) perpWallDist = (side_dist_x - delta_dist_x);
+      	else          perpWallDist = (side_dist_y - delta_dist_y);
 
 		//Calculate height of line to draw on screen
 		int lineHeight = (int)(screen_h / perpWallDist);
@@ -93,6 +96,9 @@ void	simple_caster(t_cubed *cubed)
 		if(drawStart < 0)drawStart = 0;
 		int drawEnd = lineHeight / 2 + screen_h / 2;
 		if(drawEnd >= screen_h)drawEnd = screen_h - 1;
-		printf("perpwall = %f", perpWallDist);
+		printf("Ray %d: pos(%.3f, %.3f) map(%d, %d)\n", x, pos_x, pos_y, map_x, map_y);
+		printf("  rayDir(%.3f, %.3f) deltaDist(%.3f, %.3f)\n", ray_dir_x, ray_dir_y, delta_dist_x, delta_dist_y);
+		printf("  step(%d, %d) sideDist(%.3f, %.3f)\n", step_x, step_y, side_dist_x, side_dist_y);
+		printf("  perpWallDist: %.3f side: %d\n", perpWallDist, side);
 	}
 }
