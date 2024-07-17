@@ -67,18 +67,8 @@ int		start_game(t_cubed *master);
 int		casting(t_cubed *cubed);
 double	conv_deg_rad(double deg);
 double	conv_rad_deg(double rad);
-void	print_ray(t_ray *ray);
-void	print_map_c(t_cubed *cubed);
-int		ray_check_hit_out(t_cubed *cubed, t_ray *ray);
-int		ray_check_outside(t_cubed *cubed, t_ray *ray);
-int		ray_check_hit(t_cubed *cubed, t_ray *ray);
-int		init_ray(t_ray **ray, double angle, double org_x, double org_y);
-int		init_spread_rays(t_cubed *cubed, double angle, double pos_x, double pos_y);
-void	ray_calc_steps(t_cubed *cubed, t_ray *ray);
-void	set_steps_x_y(t_ray *ray);
-void	ray_vector_x(t_cubed *cubed, t_ray *ray);
-void	ray_vector_y(t_cubed *cubed, t_ray *ray);
-void	calc_step_x(t_cubed *cubed, t_ray *ray);
-void	calc_step_y(t_cubed *cubed, t_ray *ray);
+
+
+void	simple_caster(t_cubed *cubed);
 
 #endif
