@@ -76,4 +76,7 @@ int		casting(t_cubed *cubed);
 double	conv_deg_rad(double deg);
 double	conv_rad_deg(double rad);
 
+
+void	simple_caster(t_cubed *cubed);
+
 #endif

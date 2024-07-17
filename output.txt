@@ -1,0 +1,3206 @@
+angle:90.000000
+hit wall at: 23 0
+Ray 0: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.649, -1.000) deltaDist(1.540, 1.000)
+  step(-1, -1) sideDist(3.080, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 1: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.647, -1.000) deltaDist(1.545, 1.000)
+  step(-1, -1) sideDist(3.089, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 2: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.645, -1.000) deltaDist(1.550, 1.000)
+  step(-1, -1) sideDist(3.099, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 3: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.643, -1.000) deltaDist(1.554, 1.000)
+  step(-1, -1) sideDist(3.109, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 4: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.641, -1.000) deltaDist(1.559, 1.000)
+  step(-1, -1) sideDist(3.119, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 5: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.639, -1.000) deltaDist(1.564, 1.000)
+  step(-1, -1) sideDist(3.129, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 6: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.637, -1.000) deltaDist(1.569, 1.000)
+  step(-1, -1) sideDist(3.139, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 7: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.635, -1.000) deltaDist(1.574, 1.000)
+  step(-1, -1) sideDist(3.149, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 8: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.633, -1.000) deltaDist(1.579, 1.000)
+  step(-1, -1) sideDist(3.159, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 9: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.631, -1.000) deltaDist(1.584, 1.000)
+  step(-1, -1) sideDist(3.169, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 10: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.629, -1.000) deltaDist(1.590, 1.000)
+  step(-1, -1) sideDist(3.179, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 11: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.627, -1.000) deltaDist(1.595, 1.000)
+  step(-1, -1) sideDist(3.189, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 12: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.625, -1.000) deltaDist(1.600, 1.000)
+  step(-1, -1) sideDist(3.200, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 13: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.623, -1.000) deltaDist(1.605, 1.000)
+  step(-1, -1) sideDist(3.210, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 14: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.621, -1.000) deltaDist(1.610, 1.000)
+  step(-1, -1) sideDist(3.221, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 15: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.619, -1.000) deltaDist(1.616, 1.000)
+  step(-1, -1) sideDist(3.231, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 16: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.617, -1.000) deltaDist(1.621, 1.000)
+  step(-1, -1) sideDist(3.242, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 17: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.615, -1.000) deltaDist(1.626, 1.000)
+  step(-1, -1) sideDist(3.253, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 18: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.613, -1.000) deltaDist(1.632, 1.000)
+  step(-1, -1) sideDist(3.263, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 19: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.611, -1.000) deltaDist(1.637, 1.000)
+  step(-1, -1) sideDist(3.274, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 20: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.609, -1.000) deltaDist(1.643, 1.000)
+  step(-1, -1) sideDist(3.285, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 21: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.607, -1.000) deltaDist(1.648, 1.000)
+  step(-1, -1) sideDist(3.296, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 22: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.605, -1.000) deltaDist(1.654, 1.000)
+  step(-1, -1) sideDist(3.307, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 23: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.603, -1.000) deltaDist(1.659, 1.000)
+  step(-1, -1) sideDist(3.318, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 24: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.601, -1.000) deltaDist(1.665, 1.000)
+  step(-1, -1) sideDist(3.329, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 25: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.599, -1.000) deltaDist(1.670, 1.000)
+  step(-1, -1) sideDist(3.341, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 26: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.597, -1.000) deltaDist(1.676, 1.000)
+  step(-1, -1) sideDist(3.352, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 27: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.595, -1.000) deltaDist(1.682, 1.000)
+  step(-1, -1) sideDist(3.364, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 28: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.593, -1.000) deltaDist(1.688, 1.000)
+  step(-1, -1) sideDist(3.375, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 29: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.591, -1.000) deltaDist(1.693, 1.000)
+  step(-1, -1) sideDist(3.387, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 30: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.589, -1.000) deltaDist(1.699, 1.000)
+  step(-1, -1) sideDist(3.398, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 31: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.586, -1.000) deltaDist(1.705, 1.000)
+  step(-1, -1) sideDist(3.410, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 32: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.584, -1.000) deltaDist(1.711, 1.000)
+  step(-1, -1) sideDist(3.422, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 33: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.582, -1.000) deltaDist(1.717, 1.000)
+  step(-1, -1) sideDist(3.434, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 34: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.580, -1.000) deltaDist(1.723, 1.000)
+  step(-1, -1) sideDist(3.446, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 35: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.578, -1.000) deltaDist(1.729, 1.000)
+  step(-1, -1) sideDist(3.458, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 36: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.576, -1.000) deltaDist(1.735, 1.000)
+  step(-1, -1) sideDist(3.470, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 37: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.574, -1.000) deltaDist(1.741, 1.000)
+  step(-1, -1) sideDist(3.482, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 38: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.572, -1.000) deltaDist(1.747, 1.000)
+  step(-1, -1) sideDist(3.495, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 39: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.570, -1.000) deltaDist(1.754, 1.000)
+  step(-1, -1) sideDist(3.507, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 40: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.568, -1.000) deltaDist(1.760, 1.000)
+  step(-1, -1) sideDist(3.520, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 41: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.566, -1.000) deltaDist(1.766, 1.000)
+  step(-1, -1) sideDist(3.532, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 42: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.564, -1.000) deltaDist(1.773, 1.000)
+  step(-1, -1) sideDist(3.545, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 43: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.562, -1.000) deltaDist(1.779, 1.000)
+  step(-1, -1) sideDist(3.558, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 44: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.560, -1.000) deltaDist(1.785, 1.000)
+  step(-1, -1) sideDist(3.571, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 45: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.558, -1.000) deltaDist(1.792, 1.000)
+  step(-1, -1) sideDist(3.584, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 46: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.556, -1.000) deltaDist(1.798, 1.000)
+  step(-1, -1) sideDist(3.597, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 47: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.554, -1.000) deltaDist(1.805, 1.000)
+  step(-1, -1) sideDist(3.610, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 48: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.552, -1.000) deltaDist(1.812, 1.000)
+  step(-1, -1) sideDist(3.623, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 49: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.550, -1.000) deltaDist(1.818, 1.000)
+  step(-1, -1) sideDist(3.637, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 50: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.548, -1.000) deltaDist(1.825, 1.000)
+  step(-1, -1) sideDist(3.650, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 51: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.546, -1.000) deltaDist(1.832, 1.000)
+  step(-1, -1) sideDist(3.664, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 52: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.544, -1.000) deltaDist(1.839, 1.000)
+  step(-1, -1) sideDist(3.677, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 53: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.542, -1.000) deltaDist(1.846, 1.000)
+  step(-1, -1) sideDist(3.691, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 54: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.540, -1.000) deltaDist(1.852, 1.000)
+  step(-1, -1) sideDist(3.705, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 55: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.538, -1.000) deltaDist(1.859, 1.000)
+  step(-1, -1) sideDist(3.719, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 56: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.536, -1.000) deltaDist(1.867, 1.000)
+  step(-1, -1) sideDist(3.733, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 57: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.534, -1.000) deltaDist(1.874, 1.000)
+  step(-1, -1) sideDist(3.747, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 58: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.532, -1.000) deltaDist(1.881, 1.000)
+  step(-1, -1) sideDist(3.762, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 59: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.530, -1.000) deltaDist(1.888, 1.000)
+  step(-1, -1) sideDist(3.776, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 60: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.528, -1.000) deltaDist(1.895, 1.000)
+  step(-1, -1) sideDist(3.790, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 61: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.526, -1.000) deltaDist(1.903, 1.000)
+  step(-1, -1) sideDist(3.805, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 62: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.524, -1.000) deltaDist(1.910, 1.000)
+  step(-1, -1) sideDist(3.820, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 63: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.522, -1.000) deltaDist(1.917, 1.000)
+  step(-1, -1) sideDist(3.835, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 64: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.520, -1.000) deltaDist(1.925, 1.000)
+  step(-1, -1) sideDist(3.850, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 65: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.517, -1.000) deltaDist(1.932, 1.000)
+  step(-1, -1) sideDist(3.865, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 66: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.515, -1.000) deltaDist(1.940, 1.000)
+  step(-1, -1) sideDist(3.880, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 67: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.513, -1.000) deltaDist(1.948, 1.000)
+  step(-1, -1) sideDist(3.895, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 68: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.511, -1.000) deltaDist(1.955, 1.000)
+  step(-1, -1) sideDist(3.911, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 69: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.509, -1.000) deltaDist(1.963, 1.000)
+  step(-1, -1) sideDist(3.926, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 70: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.507, -1.000) deltaDist(1.971, 1.000)
+  step(-1, -1) sideDist(3.942, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 71: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.505, -1.000) deltaDist(1.979, 1.000)
+  step(-1, -1) sideDist(3.958, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 72: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.503, -1.000) deltaDist(1.987, 1.000)
+  step(-1, -1) sideDist(3.974, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 73: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.501, -1.000) deltaDist(1.995, 1.000)
+  step(-1, -1) sideDist(3.990, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 74: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.499, -1.000) deltaDist(2.003, 1.000)
+  step(-1, -1) sideDist(4.006, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 75: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.497, -1.000) deltaDist(2.011, 1.000)
+  step(-1, -1) sideDist(4.023, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 76: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.495, -1.000) deltaDist(2.019, 1.000)
+  step(-1, -1) sideDist(4.039, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 77: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.493, -1.000) deltaDist(2.028, 1.000)
+  step(-1, -1) sideDist(4.056, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 78: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.491, -1.000) deltaDist(2.036, 1.000)
+  step(-1, -1) sideDist(4.072, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 79: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.489, -1.000) deltaDist(2.045, 1.000)
+  step(-1, -1) sideDist(4.089, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 80: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.487, -1.000) deltaDist(2.053, 1.000)
+  step(-1, -1) sideDist(4.106, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 81: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.485, -1.000) deltaDist(2.062, 1.000)
+  step(-1, -1) sideDist(4.123, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 82: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.483, -1.000) deltaDist(2.070, 1.000)
+  step(-1, -1) sideDist(4.141, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 83: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.481, -1.000) deltaDist(2.079, 1.000)
+  step(-1, -1) sideDist(4.158, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 84: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.479, -1.000) deltaDist(2.088, 1.000)
+  step(-1, -1) sideDist(4.176, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 85: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.477, -1.000) deltaDist(2.097, 1.000)
+  step(-1, -1) sideDist(4.194, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 86: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.475, -1.000) deltaDist(2.106, 1.000)
+  step(-1, -1) sideDist(4.212, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 87: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.473, -1.000) deltaDist(2.115, 1.000)
+  step(-1, -1) sideDist(4.230, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 88: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.471, -1.000) deltaDist(2.124, 1.000)
+  step(-1, -1) sideDist(4.248, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 89: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.469, -1.000) deltaDist(2.133, 1.000)
+  step(-1, -1) sideDist(4.266, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 90: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.467, -1.000) deltaDist(2.142, 1.000)
+  step(-1, -1) sideDist(4.285, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 91: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.465, -1.000) deltaDist(2.152, 1.000)
+  step(-1, -1) sideDist(4.304, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 92: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.463, -1.000) deltaDist(2.161, 1.000)
+  step(-1, -1) sideDist(4.322, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 93: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.461, -1.000) deltaDist(2.171, 1.000)
+  step(-1, -1) sideDist(4.341, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 94: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.459, -1.000) deltaDist(2.180, 1.000)
+  step(-1, -1) sideDist(4.361, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 95: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.457, -1.000) deltaDist(2.190, 1.000)
+  step(-1, -1) sideDist(4.380, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 96: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.455, -1.000) deltaDist(2.200, 1.000)
+  step(-1, -1) sideDist(4.400, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 97: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.453, -1.000) deltaDist(2.210, 1.000)
+  step(-1, -1) sideDist(4.419, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 98: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.451, -1.000) deltaDist(2.220, 1.000)
+  step(-1, -1) sideDist(4.439, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 99: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.448, -1.000) deltaDist(2.230, 1.000)
+  step(-1, -1) sideDist(4.459, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 100: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.446, -1.000) deltaDist(2.240, 1.000)
+  step(-1, -1) sideDist(4.480, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 101: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.444, -1.000) deltaDist(2.250, 1.000)
+  step(-1, -1) sideDist(4.500, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 102: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.442, -1.000) deltaDist(2.260, 1.000)
+  step(-1, -1) sideDist(4.521, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 103: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.440, -1.000) deltaDist(2.271, 1.000)
+  step(-1, -1) sideDist(4.542, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 104: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.438, -1.000) deltaDist(2.281, 1.000)
+  step(-1, -1) sideDist(4.563, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 105: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.436, -1.000) deltaDist(2.292, 1.000)
+  step(-1, -1) sideDist(4.584, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 106: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.434, -1.000) deltaDist(2.303, 1.000)
+  step(-1, -1) sideDist(4.605, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 107: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.432, -1.000) deltaDist(2.313, 1.000)
+  step(-1, -1) sideDist(4.627, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 108: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.430, -1.000) deltaDist(2.324, 1.000)
+  step(-1, -1) sideDist(4.649, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 109: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.428, -1.000) deltaDist(2.335, 1.000)
+  step(-1, -1) sideDist(4.671, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 110: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.426, -1.000) deltaDist(2.346, 1.000)
+  step(-1, -1) sideDist(4.693, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 111: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.424, -1.000) deltaDist(2.358, 1.000)
+  step(-1, -1) sideDist(4.715, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 112: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.422, -1.000) deltaDist(2.369, 1.000)
+  step(-1, -1) sideDist(4.738, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 113: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.420, -1.000) deltaDist(2.380, 1.000)
+  step(-1, -1) sideDist(4.761, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 114: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.418, -1.000) deltaDist(2.392, 1.000)
+  step(-1, -1) sideDist(4.784, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 115: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.416, -1.000) deltaDist(2.404, 1.000)
+  step(-1, -1) sideDist(4.807, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 116: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.414, -1.000) deltaDist(2.415, 1.000)
+  step(-1, -1) sideDist(4.831, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 117: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.412, -1.000) deltaDist(2.427, 1.000)
+  step(-1, -1) sideDist(4.855, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 118: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.410, -1.000) deltaDist(2.439, 1.000)
+  step(-1, -1) sideDist(4.879, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 119: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.408, -1.000) deltaDist(2.452, 1.000)
+  step(-1, -1) sideDist(4.903, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 120: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.406, -1.000) deltaDist(2.464, 1.000)
+  step(-1, -1) sideDist(4.928, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 121: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.404, -1.000) deltaDist(2.476, 1.000)
+  step(-1, -1) sideDist(4.952, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 122: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.402, -1.000) deltaDist(2.489, 1.000)
+  step(-1, -1) sideDist(4.977, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 123: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.400, -1.000) deltaDist(2.501, 1.000)
+  step(-1, -1) sideDist(5.003, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 124: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.398, -1.000) deltaDist(2.514, 1.000)
+  step(-1, -1) sideDist(5.028, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 125: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.396, -1.000) deltaDist(2.527, 1.000)
+  step(-1, -1) sideDist(5.054, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 126: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.394, -1.000) deltaDist(2.540, 1.000)
+  step(-1, -1) sideDist(5.080, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 127: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.392, -1.000) deltaDist(2.553, 1.000)
+  step(-1, -1) sideDist(5.106, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 128: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.390, -1.000) deltaDist(2.566, 1.000)
+  step(-1, -1) sideDist(5.133, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 129: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.388, -1.000) deltaDist(2.580, 1.000)
+  step(-1, -1) sideDist(5.160, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 130: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.386, -1.000) deltaDist(2.593, 1.000)
+  step(-1, -1) sideDist(5.187, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 131: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.384, -1.000) deltaDist(2.607, 1.000)
+  step(-1, -1) sideDist(5.214, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 132: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.382, -1.000) deltaDist(2.621, 1.000)
+  step(-1, -1) sideDist(5.242, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 133: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.379, -1.000) deltaDist(2.635, 1.000)
+  step(-1, -1) sideDist(5.270, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 134: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.377, -1.000) deltaDist(2.649, 1.000)
+  step(-1, -1) sideDist(5.298, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 135: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.375, -1.000) deltaDist(2.664, 1.000)
+  step(-1, -1) sideDist(5.327, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 136: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.373, -1.000) deltaDist(2.678, 1.000)
+  step(-1, -1) sideDist(5.356, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 137: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.371, -1.000) deltaDist(2.693, 1.000)
+  step(-1, -1) sideDist(5.385, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 138: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.369, -1.000) deltaDist(2.707, 1.000)
+  step(-1, -1) sideDist(5.415, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 139: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.367, -1.000) deltaDist(2.722, 1.000)
+  step(-1, -1) sideDist(5.445, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 140: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.365, -1.000) deltaDist(2.738, 1.000)
+  step(-1, -1) sideDist(5.475, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 141: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.363, -1.000) deltaDist(2.753, 1.000)
+  step(-1, -1) sideDist(5.506, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 142: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.361, -1.000) deltaDist(2.768, 1.000)
+  step(-1, -1) sideDist(5.537, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 143: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.359, -1.000) deltaDist(2.784, 1.000)
+  step(-1, -1) sideDist(5.568, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 144: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.357, -1.000) deltaDist(2.800, 1.000)
+  step(-1, -1) sideDist(5.600, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 145: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.355, -1.000) deltaDist(2.816, 1.000)
+  step(-1, -1) sideDist(5.632, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 146: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.353, -1.000) deltaDist(2.832, 1.000)
+  step(-1, -1) sideDist(5.664, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 147: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.351, -1.000) deltaDist(2.848, 1.000)
+  step(-1, -1) sideDist(5.697, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 148: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.349, -1.000) deltaDist(2.865, 1.000)
+  step(-1, -1) sideDist(5.730, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 149: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.347, -1.000) deltaDist(2.882, 1.000)
+  step(-1, -1) sideDist(5.763, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 150: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.345, -1.000) deltaDist(2.899, 1.000)
+  step(-1, -1) sideDist(5.797, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 151: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.343, -1.000) deltaDist(2.916, 1.000)
+  step(-1, -1) sideDist(5.831, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 152: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.341, -1.000) deltaDist(2.933, 1.000)
+  step(-1, -1) sideDist(5.866, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 153: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.339, -1.000) deltaDist(2.951, 1.000)
+  step(-1, -1) sideDist(5.901, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 154: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.337, -1.000) deltaDist(2.968, 1.000)
+  step(-1, -1) sideDist(5.937, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 23 0
+Ray 155: pos(25.000, 4.000) map(23, 0)
+  rayDir(-0.335, -1.000) deltaDist(2.986, 1.000)
+  step(-1, -1) sideDist(5.973, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 156: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.333, -1.000) deltaDist(3.005, 1.000)
+  step(-1, -1) sideDist(3.005, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 157: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.331, -1.000) deltaDist(3.023, 1.000)
+  step(-1, -1) sideDist(3.023, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 158: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.329, -1.000) deltaDist(3.042, 1.000)
+  step(-1, -1) sideDist(3.042, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 159: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.327, -1.000) deltaDist(3.061, 1.000)
+  step(-1, -1) sideDist(3.061, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 160: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.325, -1.000) deltaDist(3.080, 1.000)
+  step(-1, -1) sideDist(3.080, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 161: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.323, -1.000) deltaDist(3.099, 1.000)
+  step(-1, -1) sideDist(3.099, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 162: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.321, -1.000) deltaDist(3.119, 1.000)
+  step(-1, -1) sideDist(3.119, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 163: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.319, -1.000) deltaDist(3.139, 1.000)
+  step(-1, -1) sideDist(3.139, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 164: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.317, -1.000) deltaDist(3.159, 1.000)
+  step(-1, -1) sideDist(3.159, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 165: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.315, -1.000) deltaDist(3.179, 1.000)
+  step(-1, -1) sideDist(3.179, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 166: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.313, -1.000) deltaDist(3.200, 1.000)
+  step(-1, -1) sideDist(3.200, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 167: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.310, -1.000) deltaDist(3.221, 1.000)
+  step(-1, -1) sideDist(3.221, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 168: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.308, -1.000) deltaDist(3.242, 1.000)
+  step(-1, -1) sideDist(3.242, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 169: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.306, -1.000) deltaDist(3.263, 1.000)
+  step(-1, -1) sideDist(3.263, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 170: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.304, -1.000) deltaDist(3.285, 1.000)
+  step(-1, -1) sideDist(3.285, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 171: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.302, -1.000) deltaDist(3.307, 1.000)
+  step(-1, -1) sideDist(3.307, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 172: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.300, -1.000) deltaDist(3.329, 1.000)
+  step(-1, -1) sideDist(3.329, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 173: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.298, -1.000) deltaDist(3.352, 1.000)
+  step(-1, -1) sideDist(3.352, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 174: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.296, -1.000) deltaDist(3.375, 1.000)
+  step(-1, -1) sideDist(3.375, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 175: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.294, -1.000) deltaDist(3.398, 1.000)
+  step(-1, -1) sideDist(3.398, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 176: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.292, -1.000) deltaDist(3.422, 1.000)
+  step(-1, -1) sideDist(3.422, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 177: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.290, -1.000) deltaDist(3.446, 1.000)
+  step(-1, -1) sideDist(3.446, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 178: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.288, -1.000) deltaDist(3.470, 1.000)
+  step(-1, -1) sideDist(3.470, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 179: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.286, -1.000) deltaDist(3.495, 1.000)
+  step(-1, -1) sideDist(3.495, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 180: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.284, -1.000) deltaDist(3.520, 1.000)
+  step(-1, -1) sideDist(3.520, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 181: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.282, -1.000) deltaDist(3.545, 1.000)
+  step(-1, -1) sideDist(3.545, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 182: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.280, -1.000) deltaDist(3.571, 1.000)
+  step(-1, -1) sideDist(3.571, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 183: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.278, -1.000) deltaDist(3.597, 1.000)
+  step(-1, -1) sideDist(3.597, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 184: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.276, -1.000) deltaDist(3.623, 1.000)
+  step(-1, -1) sideDist(3.623, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 185: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.274, -1.000) deltaDist(3.650, 1.000)
+  step(-1, -1) sideDist(3.650, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 186: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.272, -1.000) deltaDist(3.677, 1.000)
+  step(-1, -1) sideDist(3.677, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 187: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.270, -1.000) deltaDist(3.705, 1.000)
+  step(-1, -1) sideDist(3.705, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 188: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.268, -1.000) deltaDist(3.733, 1.000)
+  step(-1, -1) sideDist(3.733, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 189: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.266, -1.000) deltaDist(3.762, 1.000)
+  step(-1, -1) sideDist(3.762, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 190: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.264, -1.000) deltaDist(3.790, 1.000)
+  step(-1, -1) sideDist(3.790, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 191: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.262, -1.000) deltaDist(3.820, 1.000)
+  step(-1, -1) sideDist(3.820, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 192: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.260, -1.000) deltaDist(3.850, 1.000)
+  step(-1, -1) sideDist(3.850, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 193: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.258, -1.000) deltaDist(3.880, 1.000)
+  step(-1, -1) sideDist(3.880, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 194: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.256, -1.000) deltaDist(3.911, 1.000)
+  step(-1, -1) sideDist(3.911, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 195: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.254, -1.000) deltaDist(3.942, 1.000)
+  step(-1, -1) sideDist(3.942, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 196: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.252, -1.000) deltaDist(3.974, 1.000)
+  step(-1, -1) sideDist(3.974, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 197: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.250, -1.000) deltaDist(4.006, 1.000)
+  step(-1, -1) sideDist(4.006, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 198: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.248, -1.000) deltaDist(4.039, 1.000)
+  step(-1, -1) sideDist(4.039, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 199: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.246, -1.000) deltaDist(4.072, 1.000)
+  step(-1, -1) sideDist(4.072, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 200: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.244, -1.000) deltaDist(4.106, 1.000)
+  step(-1, -1) sideDist(4.106, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 201: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.241, -1.000) deltaDist(4.141, 1.000)
+  step(-1, -1) sideDist(4.141, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 202: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.239, -1.000) deltaDist(4.176, 1.000)
+  step(-1, -1) sideDist(4.176, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 203: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.237, -1.000) deltaDist(4.212, 1.000)
+  step(-1, -1) sideDist(4.212, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 204: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.235, -1.000) deltaDist(4.248, 1.000)
+  step(-1, -1) sideDist(4.248, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 205: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.233, -1.000) deltaDist(4.285, 1.000)
+  step(-1, -1) sideDist(4.285, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 206: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.231, -1.000) deltaDist(4.322, 1.000)
+  step(-1, -1) sideDist(4.322, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 207: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.229, -1.000) deltaDist(4.361, 1.000)
+  step(-1, -1) sideDist(4.361, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 208: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.227, -1.000) deltaDist(4.400, 1.000)
+  step(-1, -1) sideDist(4.400, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 209: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.225, -1.000) deltaDist(4.439, 1.000)
+  step(-1, -1) sideDist(4.439, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 210: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.223, -1.000) deltaDist(4.480, 1.000)
+  step(-1, -1) sideDist(4.480, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 211: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.221, -1.000) deltaDist(4.521, 1.000)
+  step(-1, -1) sideDist(4.521, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 212: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.219, -1.000) deltaDist(4.563, 1.000)
+  step(-1, -1) sideDist(4.563, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 213: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.217, -1.000) deltaDist(4.605, 1.000)
+  step(-1, -1) sideDist(4.605, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 214: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.215, -1.000) deltaDist(4.649, 1.000)
+  step(-1, -1) sideDist(4.649, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 215: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.213, -1.000) deltaDist(4.693, 1.000)
+  step(-1, -1) sideDist(4.693, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 216: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.211, -1.000) deltaDist(4.738, 1.000)
+  step(-1, -1) sideDist(4.738, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 217: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.209, -1.000) deltaDist(4.784, 1.000)
+  step(-1, -1) sideDist(4.784, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 218: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.207, -1.000) deltaDist(4.831, 1.000)
+  step(-1, -1) sideDist(4.831, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 219: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.205, -1.000) deltaDist(4.879, 1.000)
+  step(-1, -1) sideDist(4.879, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 220: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.203, -1.000) deltaDist(4.928, 1.000)
+  step(-1, -1) sideDist(4.928, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 221: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.201, -1.000) deltaDist(4.977, 1.000)
+  step(-1, -1) sideDist(4.977, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 222: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.199, -1.000) deltaDist(5.028, 1.000)
+  step(-1, -1) sideDist(5.028, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 223: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.197, -1.000) deltaDist(5.080, 1.000)
+  step(-1, -1) sideDist(5.080, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 224: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.195, -1.000) deltaDist(5.133, 1.000)
+  step(-1, -1) sideDist(5.133, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 225: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.193, -1.000) deltaDist(5.187, 1.000)
+  step(-1, -1) sideDist(5.187, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 226: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.191, -1.000) deltaDist(5.242, 1.000)
+  step(-1, -1) sideDist(5.242, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 227: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.189, -1.000) deltaDist(5.298, 1.000)
+  step(-1, -1) sideDist(5.298, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 228: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.187, -1.000) deltaDist(5.356, 1.000)
+  step(-1, -1) sideDist(5.356, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 229: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.185, -1.000) deltaDist(5.415, 1.000)
+  step(-1, -1) sideDist(5.415, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 230: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.183, -1.000) deltaDist(5.475, 1.000)
+  step(-1, -1) sideDist(5.475, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 231: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.181, -1.000) deltaDist(5.537, 1.000)
+  step(-1, -1) sideDist(5.537, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 232: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.179, -1.000) deltaDist(5.600, 1.000)
+  step(-1, -1) sideDist(5.600, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 233: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.177, -1.000) deltaDist(5.664, 1.000)
+  step(-1, -1) sideDist(5.664, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 234: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.175, -1.000) deltaDist(5.730, 1.000)
+  step(-1, -1) sideDist(5.730, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 235: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.172, -1.000) deltaDist(5.797, 1.000)
+  step(-1, -1) sideDist(5.797, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 236: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.170, -1.000) deltaDist(5.866, 1.000)
+  step(-1, -1) sideDist(5.866, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 237: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.168, -1.000) deltaDist(5.937, 1.000)
+  step(-1, -1) sideDist(5.937, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 238: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.166, -1.000) deltaDist(6.009, 1.000)
+  step(-1, -1) sideDist(6.009, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 239: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.164, -1.000) deltaDist(6.083, 1.000)
+  step(-1, -1) sideDist(6.083, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 240: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.162, -1.000) deltaDist(6.159, 1.000)
+  step(-1, -1) sideDist(6.159, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 241: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.160, -1.000) deltaDist(6.237, 1.000)
+  step(-1, -1) sideDist(6.237, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 242: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.158, -1.000) deltaDist(6.317, 1.000)
+  step(-1, -1) sideDist(6.317, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 243: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.156, -1.000) deltaDist(6.399, 1.000)
+  step(-1, -1) sideDist(6.399, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 244: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.154, -1.000) deltaDist(6.484, 1.000)
+  step(-1, -1) sideDist(6.484, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 245: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.152, -1.000) deltaDist(6.570, 1.000)
+  step(-1, -1) sideDist(6.570, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 246: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.150, -1.000) deltaDist(6.659, 1.000)
+  step(-1, -1) sideDist(6.659, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 247: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.148, -1.000) deltaDist(6.750, 1.000)
+  step(-1, -1) sideDist(6.750, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 248: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.146, -1.000) deltaDist(6.844, 1.000)
+  step(-1, -1) sideDist(6.844, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 249: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.144, -1.000) deltaDist(6.940, 1.000)
+  step(-1, -1) sideDist(6.940, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 250: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.142, -1.000) deltaDist(7.039, 1.000)
+  step(-1, -1) sideDist(7.039, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 251: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.140, -1.000) deltaDist(7.141, 1.000)
+  step(-1, -1) sideDist(7.141, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 252: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.138, -1.000) deltaDist(7.246, 1.000)
+  step(-1, -1) sideDist(7.246, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 253: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.136, -1.000) deltaDist(7.355, 1.000)
+  step(-1, -1) sideDist(7.355, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 254: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.134, -1.000) deltaDist(7.466, 1.000)
+  step(-1, -1) sideDist(7.466, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 255: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.132, -1.000) deltaDist(7.581, 1.000)
+  step(-1, -1) sideDist(7.581, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 256: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.130, -1.000) deltaDist(7.699, 1.000)
+  step(-1, -1) sideDist(7.699, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 257: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.128, -1.000) deltaDist(7.822, 1.000)
+  step(-1, -1) sideDist(7.822, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 258: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.126, -1.000) deltaDist(7.948, 1.000)
+  step(-1, -1) sideDist(7.948, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 259: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.124, -1.000) deltaDist(8.078, 1.000)
+  step(-1, -1) sideDist(8.078, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 260: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.122, -1.000) deltaDist(8.213, 1.000)
+  step(-1, -1) sideDist(8.213, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 261: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.120, -1.000) deltaDist(8.352, 1.000)
+  step(-1, -1) sideDist(8.352, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 262: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.118, -1.000) deltaDist(8.496, 1.000)
+  step(-1, -1) sideDist(8.496, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 263: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.116, -1.000) deltaDist(8.645, 1.000)
+  step(-1, -1) sideDist(8.645, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 264: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.114, -1.000) deltaDist(8.799, 1.000)
+  step(-1, -1) sideDist(8.799, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 265: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.112, -1.000) deltaDist(8.959, 1.000)
+  step(-1, -1) sideDist(8.959, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 266: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.110, -1.000) deltaDist(9.125, 1.000)
+  step(-1, -1) sideDist(9.125, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 267: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.108, -1.000) deltaDist(9.297, 1.000)
+  step(-1, -1) sideDist(9.297, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 268: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.106, -1.000) deltaDist(9.476, 1.000)
+  step(-1, -1) sideDist(9.476, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 269: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.103, -1.000) deltaDist(9.662, 1.000)
+  step(-1, -1) sideDist(9.662, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 270: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.101, -1.000) deltaDist(9.855, 1.000)
+  step(-1, -1) sideDist(9.855, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 271: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.099, -1.000) deltaDist(10.056, 1.000)
+  step(-1, -1) sideDist(10.056, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 272: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.097, -1.000) deltaDist(10.266, 1.000)
+  step(-1, -1) sideDist(10.266, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 273: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.095, -1.000) deltaDist(10.484, 1.000)
+  step(-1, -1) sideDist(10.484, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 274: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.093, -1.000) deltaDist(10.712, 1.000)
+  step(-1, -1) sideDist(10.712, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 275: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.091, -1.000) deltaDist(10.950, 1.000)
+  step(-1, -1) sideDist(10.950, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 276: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.089, -1.000) deltaDist(11.199, 1.000)
+  step(-1, -1) sideDist(11.199, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 277: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.087, -1.000) deltaDist(11.459, 1.000)
+  step(-1, -1) sideDist(11.459, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 278: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.085, -1.000) deltaDist(11.732, 1.000)
+  step(-1, -1) sideDist(11.732, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 279: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.083, -1.000) deltaDist(12.018, 1.000)
+  step(-1, -1) sideDist(12.018, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 280: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.081, -1.000) deltaDist(12.319, 1.000)
+  step(-1, -1) sideDist(12.319, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 281: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.079, -1.000) deltaDist(12.635, 1.000)
+  step(-1, -1) sideDist(12.635, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 282: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.077, -1.000) deltaDist(12.967, 1.000)
+  step(-1, -1) sideDist(12.967, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 283: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.075, -1.000) deltaDist(13.318, 1.000)
+  step(-1, -1) sideDist(13.318, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 284: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.073, -1.000) deltaDist(13.688, 1.000)
+  step(-1, -1) sideDist(13.688, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 285: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.071, -1.000) deltaDist(14.079, 1.000)
+  step(-1, -1) sideDist(14.079, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 286: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.069, -1.000) deltaDist(14.493, 1.000)
+  step(-1, -1) sideDist(14.493, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 287: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.067, -1.000) deltaDist(14.932, 1.000)
+  step(-1, -1) sideDist(14.932, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 288: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.065, -1.000) deltaDist(15.399, 1.000)
+  step(-1, -1) sideDist(15.399, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 289: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.063, -1.000) deltaDist(15.895, 1.000)
+  step(-1, -1) sideDist(15.895, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 290: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.061, -1.000) deltaDist(16.425, 1.000)
+  step(-1, -1) sideDist(16.425, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 291: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.059, -1.000) deltaDist(16.992, 1.000)
+  step(-1, -1) sideDist(16.992, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 292: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.057, -1.000) deltaDist(17.598, 1.000)
+  step(-1, -1) sideDist(17.598, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 293: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.055, -1.000) deltaDist(18.250, 1.000)
+  step(-1, -1) sideDist(18.250, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 294: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.053, -1.000) deltaDist(18.952, 1.000)
+  step(-1, -1) sideDist(18.952, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 295: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.051, -1.000) deltaDist(19.710, 1.000)
+  step(-1, -1) sideDist(19.710, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 296: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.049, -1.000) deltaDist(20.532, 1.000)
+  step(-1, -1) sideDist(20.532, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 297: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.047, -1.000) deltaDist(21.424, 1.000)
+  step(-1, -1) sideDist(21.424, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 298: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.045, -1.000) deltaDist(22.398, 1.000)
+  step(-1, -1) sideDist(22.398, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 299: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.043, -1.000) deltaDist(23.465, 1.000)
+  step(-1, -1) sideDist(23.465, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 300: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.041, -1.000) deltaDist(24.638, 1.000)
+  step(-1, -1) sideDist(24.638, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 301: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.039, -1.000) deltaDist(25.935, 1.000)
+  step(-1, -1) sideDist(25.935, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 302: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.037, -1.000) deltaDist(27.375, 1.000)
+  step(-1, -1) sideDist(27.375, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 303: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.034, -1.000) deltaDist(28.986, 1.000)
+  step(-1, -1) sideDist(28.986, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 304: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.032, -1.000) deltaDist(30.797, 1.000)
+  step(-1, -1) sideDist(30.797, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 305: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.030, -1.000) deltaDist(32.850, 1.000)
+  step(-1, -1) sideDist(32.850, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 306: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.028, -1.000) deltaDist(35.197, 1.000)
+  step(-1, -1) sideDist(35.197, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 307: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.026, -1.000) deltaDist(37.904, 1.000)
+  step(-1, -1) sideDist(37.904, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 308: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.024, -1.000) deltaDist(41.063, 1.000)
+  step(-1, -1) sideDist(41.063, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 309: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.022, -1.000) deltaDist(44.796, 1.000)
+  step(-1, -1) sideDist(44.796, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 310: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.020, -1.000) deltaDist(49.276, 1.000)
+  step(-1, -1) sideDist(49.276, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 311: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.018, -1.000) deltaDist(54.751, 1.000)
+  step(-1, -1) sideDist(54.751, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 312: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.016, -1.000) deltaDist(61.595, 1.000)
+  step(-1, -1) sideDist(61.595, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 313: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.014, -1.000) deltaDist(70.394, 1.000)
+  step(-1, -1) sideDist(70.394, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 314: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.012, -1.000) deltaDist(82.126, 1.000)
+  step(-1, -1) sideDist(82.126, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 315: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.010, -1.000) deltaDist(98.551, 1.000)
+  step(-1, -1) sideDist(98.551, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 316: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.008, -1.000) deltaDist(123.189, 1.000)
+  step(-1, -1) sideDist(123.189, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 317: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.006, -1.000) deltaDist(164.252, 1.000)
+  step(-1, -1) sideDist(164.252, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 318: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.004, -1.000) deltaDist(246.378, 1.000)
+  step(-1, -1) sideDist(246.378, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 24 0
+Ray 319: pos(25.000, 4.000) map(24, 0)
+  rayDir(-0.002, -1.000) deltaDist(492.757, 1.000)
+  step(-1, -1) sideDist(492.757, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 320: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.000, -1.000) deltaDist(16331239353195370.000, 1.000)
+  step(1, -1) sideDist(16331239353195370.000, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 321: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.002, -1.000) deltaDist(492.757, 1.000)
+  step(1, -1) sideDist(492.757, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 322: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.004, -1.000) deltaDist(246.378, 1.000)
+  step(1, -1) sideDist(246.378, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 323: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.006, -1.000) deltaDist(164.252, 1.000)
+  step(1, -1) sideDist(164.252, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 324: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.008, -1.000) deltaDist(123.189, 1.000)
+  step(1, -1) sideDist(123.189, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 325: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.010, -1.000) deltaDist(98.551, 1.000)
+  step(1, -1) sideDist(98.551, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 326: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.012, -1.000) deltaDist(82.126, 1.000)
+  step(1, -1) sideDist(82.126, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 327: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.014, -1.000) deltaDist(70.394, 1.000)
+  step(1, -1) sideDist(70.394, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 328: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.016, -1.000) deltaDist(61.595, 1.000)
+  step(1, -1) sideDist(61.595, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 329: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.018, -1.000) deltaDist(54.751, 1.000)
+  step(1, -1) sideDist(54.751, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 330: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.020, -1.000) deltaDist(49.276, 1.000)
+  step(1, -1) sideDist(49.276, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 331: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.022, -1.000) deltaDist(44.796, 1.000)
+  step(1, -1) sideDist(44.796, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 332: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.024, -1.000) deltaDist(41.063, 1.000)
+  step(1, -1) sideDist(41.063, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 333: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.026, -1.000) deltaDist(37.904, 1.000)
+  step(1, -1) sideDist(37.904, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 334: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.028, -1.000) deltaDist(35.197, 1.000)
+  step(1, -1) sideDist(35.197, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 335: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.030, -1.000) deltaDist(32.850, 1.000)
+  step(1, -1) sideDist(32.850, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 336: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.032, -1.000) deltaDist(30.797, 1.000)
+  step(1, -1) sideDist(30.797, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 337: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.034, -1.000) deltaDist(28.986, 1.000)
+  step(1, -1) sideDist(28.986, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 338: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.037, -1.000) deltaDist(27.375, 1.000)
+  step(1, -1) sideDist(27.375, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 339: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.039, -1.000) deltaDist(25.935, 1.000)
+  step(1, -1) sideDist(25.935, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 340: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.041, -1.000) deltaDist(24.638, 1.000)
+  step(1, -1) sideDist(24.638, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 341: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.043, -1.000) deltaDist(23.465, 1.000)
+  step(1, -1) sideDist(23.465, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 342: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.045, -1.000) deltaDist(22.398, 1.000)
+  step(1, -1) sideDist(22.398, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 343: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.047, -1.000) deltaDist(21.424, 1.000)
+  step(1, -1) sideDist(21.424, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 344: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.049, -1.000) deltaDist(20.532, 1.000)
+  step(1, -1) sideDist(20.532, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 345: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.051, -1.000) deltaDist(19.710, 1.000)
+  step(1, -1) sideDist(19.710, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 346: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.053, -1.000) deltaDist(18.952, 1.000)
+  step(1, -1) sideDist(18.952, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 347: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.055, -1.000) deltaDist(18.250, 1.000)
+  step(1, -1) sideDist(18.250, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 348: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.057, -1.000) deltaDist(17.598, 1.000)
+  step(1, -1) sideDist(17.598, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 349: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.059, -1.000) deltaDist(16.992, 1.000)
+  step(1, -1) sideDist(16.992, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 350: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.061, -1.000) deltaDist(16.425, 1.000)
+  step(1, -1) sideDist(16.425, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 351: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.063, -1.000) deltaDist(15.895, 1.000)
+  step(1, -1) sideDist(15.895, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 352: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.065, -1.000) deltaDist(15.399, 1.000)
+  step(1, -1) sideDist(15.399, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 353: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.067, -1.000) deltaDist(14.932, 1.000)
+  step(1, -1) sideDist(14.932, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 354: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.069, -1.000) deltaDist(14.493, 1.000)
+  step(1, -1) sideDist(14.493, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 355: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.071, -1.000) deltaDist(14.079, 1.000)
+  step(1, -1) sideDist(14.079, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 356: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.073, -1.000) deltaDist(13.688, 1.000)
+  step(1, -1) sideDist(13.688, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 357: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.075, -1.000) deltaDist(13.318, 1.000)
+  step(1, -1) sideDist(13.318, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 358: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.077, -1.000) deltaDist(12.967, 1.000)
+  step(1, -1) sideDist(12.967, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 359: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.079, -1.000) deltaDist(12.635, 1.000)
+  step(1, -1) sideDist(12.635, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 360: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.081, -1.000) deltaDist(12.319, 1.000)
+  step(1, -1) sideDist(12.319, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 361: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.083, -1.000) deltaDist(12.018, 1.000)
+  step(1, -1) sideDist(12.018, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 362: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.085, -1.000) deltaDist(11.732, 1.000)
+  step(1, -1) sideDist(11.732, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 363: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.087, -1.000) deltaDist(11.459, 1.000)
+  step(1, -1) sideDist(11.459, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 364: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.089, -1.000) deltaDist(11.199, 1.000)
+  step(1, -1) sideDist(11.199, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 365: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.091, -1.000) deltaDist(10.950, 1.000)
+  step(1, -1) sideDist(10.950, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 366: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.093, -1.000) deltaDist(10.712, 1.000)
+  step(1, -1) sideDist(10.712, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 367: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.095, -1.000) deltaDist(10.484, 1.000)
+  step(1, -1) sideDist(10.484, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 368: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.097, -1.000) deltaDist(10.266, 1.000)
+  step(1, -1) sideDist(10.266, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 369: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.099, -1.000) deltaDist(10.056, 1.000)
+  step(1, -1) sideDist(10.056, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 370: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.101, -1.000) deltaDist(9.855, 1.000)
+  step(1, -1) sideDist(9.855, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 371: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.103, -1.000) deltaDist(9.662, 1.000)
+  step(1, -1) sideDist(9.662, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 372: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.106, -1.000) deltaDist(9.476, 1.000)
+  step(1, -1) sideDist(9.476, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 373: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.108, -1.000) deltaDist(9.297, 1.000)
+  step(1, -1) sideDist(9.297, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 374: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.110, -1.000) deltaDist(9.125, 1.000)
+  step(1, -1) sideDist(9.125, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 375: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.112, -1.000) deltaDist(8.959, 1.000)
+  step(1, -1) sideDist(8.959, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 376: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.114, -1.000) deltaDist(8.799, 1.000)
+  step(1, -1) sideDist(8.799, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 377: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.116, -1.000) deltaDist(8.645, 1.000)
+  step(1, -1) sideDist(8.645, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 378: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.118, -1.000) deltaDist(8.496, 1.000)
+  step(1, -1) sideDist(8.496, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 379: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.120, -1.000) deltaDist(8.352, 1.000)
+  step(1, -1) sideDist(8.352, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 380: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.122, -1.000) deltaDist(8.213, 1.000)
+  step(1, -1) sideDist(8.213, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 381: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.124, -1.000) deltaDist(8.078, 1.000)
+  step(1, -1) sideDist(8.078, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 382: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.126, -1.000) deltaDist(7.948, 1.000)
+  step(1, -1) sideDist(7.948, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 383: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.128, -1.000) deltaDist(7.822, 1.000)
+  step(1, -1) sideDist(7.822, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 384: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.130, -1.000) deltaDist(7.699, 1.000)
+  step(1, -1) sideDist(7.699, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 385: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.132, -1.000) deltaDist(7.581, 1.000)
+  step(1, -1) sideDist(7.581, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 386: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.134, -1.000) deltaDist(7.466, 1.000)
+  step(1, -1) sideDist(7.466, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 387: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.136, -1.000) deltaDist(7.355, 1.000)
+  step(1, -1) sideDist(7.355, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 388: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.138, -1.000) deltaDist(7.246, 1.000)
+  step(1, -1) sideDist(7.246, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 389: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.140, -1.000) deltaDist(7.141, 1.000)
+  step(1, -1) sideDist(7.141, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 390: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.142, -1.000) deltaDist(7.039, 1.000)
+  step(1, -1) sideDist(7.039, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 391: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.144, -1.000) deltaDist(6.940, 1.000)
+  step(1, -1) sideDist(6.940, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 392: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.146, -1.000) deltaDist(6.844, 1.000)
+  step(1, -1) sideDist(6.844, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 393: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.148, -1.000) deltaDist(6.750, 1.000)
+  step(1, -1) sideDist(6.750, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 394: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.150, -1.000) deltaDist(6.659, 1.000)
+  step(1, -1) sideDist(6.659, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 395: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.152, -1.000) deltaDist(6.570, 1.000)
+  step(1, -1) sideDist(6.570, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 396: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.154, -1.000) deltaDist(6.484, 1.000)
+  step(1, -1) sideDist(6.484, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 397: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.156, -1.000) deltaDist(6.399, 1.000)
+  step(1, -1) sideDist(6.399, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 398: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.158, -1.000) deltaDist(6.317, 1.000)
+  step(1, -1) sideDist(6.317, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 399: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.160, -1.000) deltaDist(6.237, 1.000)
+  step(1, -1) sideDist(6.237, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 400: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.162, -1.000) deltaDist(6.159, 1.000)
+  step(1, -1) sideDist(6.159, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 401: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.164, -1.000) deltaDist(6.083, 1.000)
+  step(1, -1) sideDist(6.083, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 402: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.166, -1.000) deltaDist(6.009, 1.000)
+  step(1, -1) sideDist(6.009, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 403: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.168, -1.000) deltaDist(5.937, 1.000)
+  step(1, -1) sideDist(5.937, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 404: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.170, -1.000) deltaDist(5.866, 1.000)
+  step(1, -1) sideDist(5.866, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 405: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.172, -1.000) deltaDist(5.797, 1.000)
+  step(1, -1) sideDist(5.797, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 406: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.175, -1.000) deltaDist(5.730, 1.000)
+  step(1, -1) sideDist(5.730, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 407: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.177, -1.000) deltaDist(5.664, 1.000)
+  step(1, -1) sideDist(5.664, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 408: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.179, -1.000) deltaDist(5.600, 1.000)
+  step(1, -1) sideDist(5.600, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 409: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.181, -1.000) deltaDist(5.537, 1.000)
+  step(1, -1) sideDist(5.537, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 410: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.183, -1.000) deltaDist(5.475, 1.000)
+  step(1, -1) sideDist(5.475, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 411: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.185, -1.000) deltaDist(5.415, 1.000)
+  step(1, -1) sideDist(5.415, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 412: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.187, -1.000) deltaDist(5.356, 1.000)
+  step(1, -1) sideDist(5.356, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 413: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.189, -1.000) deltaDist(5.298, 1.000)
+  step(1, -1) sideDist(5.298, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 414: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.191, -1.000) deltaDist(5.242, 1.000)
+  step(1, -1) sideDist(5.242, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 415: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.193, -1.000) deltaDist(5.187, 1.000)
+  step(1, -1) sideDist(5.187, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 416: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.195, -1.000) deltaDist(5.133, 1.000)
+  step(1, -1) sideDist(5.133, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 417: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.197, -1.000) deltaDist(5.080, 1.000)
+  step(1, -1) sideDist(5.080, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 418: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.199, -1.000) deltaDist(5.028, 1.000)
+  step(1, -1) sideDist(5.028, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 419: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.201, -1.000) deltaDist(4.977, 1.000)
+  step(1, -1) sideDist(4.977, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 420: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.203, -1.000) deltaDist(4.928, 1.000)
+  step(1, -1) sideDist(4.928, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 421: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.205, -1.000) deltaDist(4.879, 1.000)
+  step(1, -1) sideDist(4.879, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 422: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.207, -1.000) deltaDist(4.831, 1.000)
+  step(1, -1) sideDist(4.831, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 423: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.209, -1.000) deltaDist(4.784, 1.000)
+  step(1, -1) sideDist(4.784, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 424: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.211, -1.000) deltaDist(4.738, 1.000)
+  step(1, -1) sideDist(4.738, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 425: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.213, -1.000) deltaDist(4.693, 1.000)
+  step(1, -1) sideDist(4.693, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 426: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.215, -1.000) deltaDist(4.649, 1.000)
+  step(1, -1) sideDist(4.649, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 427: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.217, -1.000) deltaDist(4.605, 1.000)
+  step(1, -1) sideDist(4.605, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 428: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.219, -1.000) deltaDist(4.563, 1.000)
+  step(1, -1) sideDist(4.563, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 429: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.221, -1.000) deltaDist(4.521, 1.000)
+  step(1, -1) sideDist(4.521, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 430: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.223, -1.000) deltaDist(4.480, 1.000)
+  step(1, -1) sideDist(4.480, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 431: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.225, -1.000) deltaDist(4.439, 1.000)
+  step(1, -1) sideDist(4.439, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 432: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.227, -1.000) deltaDist(4.400, 1.000)
+  step(1, -1) sideDist(4.400, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 433: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.229, -1.000) deltaDist(4.361, 1.000)
+  step(1, -1) sideDist(4.361, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 434: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.231, -1.000) deltaDist(4.322, 1.000)
+  step(1, -1) sideDist(4.322, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 435: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.233, -1.000) deltaDist(4.285, 1.000)
+  step(1, -1) sideDist(4.285, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 436: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.235, -1.000) deltaDist(4.248, 1.000)
+  step(1, -1) sideDist(4.248, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 437: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.237, -1.000) deltaDist(4.212, 1.000)
+  step(1, -1) sideDist(4.212, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 438: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.239, -1.000) deltaDist(4.176, 1.000)
+  step(1, -1) sideDist(4.176, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 439: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.241, -1.000) deltaDist(4.141, 1.000)
+  step(1, -1) sideDist(4.141, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 440: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.244, -1.000) deltaDist(4.106, 1.000)
+  step(1, -1) sideDist(4.106, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 441: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.246, -1.000) deltaDist(4.072, 1.000)
+  step(1, -1) sideDist(4.072, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 442: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.248, -1.000) deltaDist(4.039, 1.000)
+  step(1, -1) sideDist(4.039, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 443: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.250, -1.000) deltaDist(4.006, 1.000)
+  step(1, -1) sideDist(4.006, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 444: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.252, -1.000) deltaDist(3.974, 1.000)
+  step(1, -1) sideDist(3.974, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 445: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.254, -1.000) deltaDist(3.942, 1.000)
+  step(1, -1) sideDist(3.942, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 446: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.256, -1.000) deltaDist(3.911, 1.000)
+  step(1, -1) sideDist(3.911, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 447: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.258, -1.000) deltaDist(3.880, 1.000)
+  step(1, -1) sideDist(3.880, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 448: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.260, -1.000) deltaDist(3.850, 1.000)
+  step(1, -1) sideDist(3.850, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 449: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.262, -1.000) deltaDist(3.820, 1.000)
+  step(1, -1) sideDist(3.820, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 450: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.264, -1.000) deltaDist(3.790, 1.000)
+  step(1, -1) sideDist(3.790, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 451: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.266, -1.000) deltaDist(3.762, 1.000)
+  step(1, -1) sideDist(3.762, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 452: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.268, -1.000) deltaDist(3.733, 1.000)
+  step(1, -1) sideDist(3.733, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 453: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.270, -1.000) deltaDist(3.705, 1.000)
+  step(1, -1) sideDist(3.705, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 454: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.272, -1.000) deltaDist(3.677, 1.000)
+  step(1, -1) sideDist(3.677, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 455: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.274, -1.000) deltaDist(3.650, 1.000)
+  step(1, -1) sideDist(3.650, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 456: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.276, -1.000) deltaDist(3.623, 1.000)
+  step(1, -1) sideDist(3.623, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 457: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.278, -1.000) deltaDist(3.597, 1.000)
+  step(1, -1) sideDist(3.597, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 458: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.280, -1.000) deltaDist(3.571, 1.000)
+  step(1, -1) sideDist(3.571, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 459: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.282, -1.000) deltaDist(3.545, 1.000)
+  step(1, -1) sideDist(3.545, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 460: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.284, -1.000) deltaDist(3.520, 1.000)
+  step(1, -1) sideDist(3.520, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 461: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.286, -1.000) deltaDist(3.495, 1.000)
+  step(1, -1) sideDist(3.495, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 462: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.288, -1.000) deltaDist(3.470, 1.000)
+  step(1, -1) sideDist(3.470, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 463: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.290, -1.000) deltaDist(3.446, 1.000)
+  step(1, -1) sideDist(3.446, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 464: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.292, -1.000) deltaDist(3.422, 1.000)
+  step(1, -1) sideDist(3.422, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 465: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.294, -1.000) deltaDist(3.398, 1.000)
+  step(1, -1) sideDist(3.398, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 466: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.296, -1.000) deltaDist(3.375, 1.000)
+  step(1, -1) sideDist(3.375, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 467: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.298, -1.000) deltaDist(3.352, 1.000)
+  step(1, -1) sideDist(3.352, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 468: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.300, -1.000) deltaDist(3.329, 1.000)
+  step(1, -1) sideDist(3.329, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 469: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.302, -1.000) deltaDist(3.307, 1.000)
+  step(1, -1) sideDist(3.307, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 470: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.304, -1.000) deltaDist(3.285, 1.000)
+  step(1, -1) sideDist(3.285, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 471: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.306, -1.000) deltaDist(3.263, 1.000)
+  step(1, -1) sideDist(3.263, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 472: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.308, -1.000) deltaDist(3.242, 1.000)
+  step(1, -1) sideDist(3.242, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 473: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.310, -1.000) deltaDist(3.221, 1.000)
+  step(1, -1) sideDist(3.221, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 474: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.313, -1.000) deltaDist(3.200, 1.000)
+  step(1, -1) sideDist(3.200, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 475: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.315, -1.000) deltaDist(3.179, 1.000)
+  step(1, -1) sideDist(3.179, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 476: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.317, -1.000) deltaDist(3.159, 1.000)
+  step(1, -1) sideDist(3.159, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 477: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.319, -1.000) deltaDist(3.139, 1.000)
+  step(1, -1) sideDist(3.139, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 478: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.321, -1.000) deltaDist(3.119, 1.000)
+  step(1, -1) sideDist(3.119, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 479: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.323, -1.000) deltaDist(3.099, 1.000)
+  step(1, -1) sideDist(3.099, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 480: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.325, -1.000) deltaDist(3.080, 1.000)
+  step(1, -1) sideDist(3.080, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 481: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.327, -1.000) deltaDist(3.061, 1.000)
+  step(1, -1) sideDist(3.061, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 482: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.329, -1.000) deltaDist(3.042, 1.000)
+  step(1, -1) sideDist(3.042, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 483: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.331, -1.000) deltaDist(3.023, 1.000)
+  step(1, -1) sideDist(3.023, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 25 0
+Ray 484: pos(25.000, 4.000) map(25, 0)
+  rayDir(0.333, -1.000) deltaDist(3.005, 1.000)
+  step(1, -1) sideDist(3.005, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 485: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.335, -1.000) deltaDist(2.986, 1.000)
+  step(1, -1) sideDist(5.973, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 486: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.337, -1.000) deltaDist(2.968, 1.000)
+  step(1, -1) sideDist(5.937, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 487: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.339, -1.000) deltaDist(2.951, 1.000)
+  step(1, -1) sideDist(5.901, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 488: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.341, -1.000) deltaDist(2.933, 1.000)
+  step(1, -1) sideDist(5.866, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 489: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.343, -1.000) deltaDist(2.916, 1.000)
+  step(1, -1) sideDist(5.831, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 490: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.345, -1.000) deltaDist(2.899, 1.000)
+  step(1, -1) sideDist(5.797, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 491: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.347, -1.000) deltaDist(2.882, 1.000)
+  step(1, -1) sideDist(5.763, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 492: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.349, -1.000) deltaDist(2.865, 1.000)
+  step(1, -1) sideDist(5.730, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 493: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.351, -1.000) deltaDist(2.848, 1.000)
+  step(1, -1) sideDist(5.697, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 494: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.353, -1.000) deltaDist(2.832, 1.000)
+  step(1, -1) sideDist(5.664, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 495: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.355, -1.000) deltaDist(2.816, 1.000)
+  step(1, -1) sideDist(5.632, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 496: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.357, -1.000) deltaDist(2.800, 1.000)
+  step(1, -1) sideDist(5.600, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 497: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.359, -1.000) deltaDist(2.784, 1.000)
+  step(1, -1) sideDist(5.568, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 498: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.361, -1.000) deltaDist(2.768, 1.000)
+  step(1, -1) sideDist(5.537, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 499: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.363, -1.000) deltaDist(2.753, 1.000)
+  step(1, -1) sideDist(5.506, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 500: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.365, -1.000) deltaDist(2.738, 1.000)
+  step(1, -1) sideDist(5.475, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 501: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.367, -1.000) deltaDist(2.722, 1.000)
+  step(1, -1) sideDist(5.445, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 502: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.369, -1.000) deltaDist(2.707, 1.000)
+  step(1, -1) sideDist(5.415, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 503: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.371, -1.000) deltaDist(2.693, 1.000)
+  step(1, -1) sideDist(5.385, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 504: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.373, -1.000) deltaDist(2.678, 1.000)
+  step(1, -1) sideDist(5.356, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 505: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.375, -1.000) deltaDist(2.664, 1.000)
+  step(1, -1) sideDist(5.327, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 506: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.377, -1.000) deltaDist(2.649, 1.000)
+  step(1, -1) sideDist(5.298, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 507: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.379, -1.000) deltaDist(2.635, 1.000)
+  step(1, -1) sideDist(5.270, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 508: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.382, -1.000) deltaDist(2.621, 1.000)
+  step(1, -1) sideDist(5.242, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 509: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.384, -1.000) deltaDist(2.607, 1.000)
+  step(1, -1) sideDist(5.214, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 510: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.386, -1.000) deltaDist(2.593, 1.000)
+  step(1, -1) sideDist(5.187, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 511: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.388, -1.000) deltaDist(2.580, 1.000)
+  step(1, -1) sideDist(5.160, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 512: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.390, -1.000) deltaDist(2.566, 1.000)
+  step(1, -1) sideDist(5.133, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 513: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.392, -1.000) deltaDist(2.553, 1.000)
+  step(1, -1) sideDist(5.106, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 514: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.394, -1.000) deltaDist(2.540, 1.000)
+  step(1, -1) sideDist(5.080, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 515: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.396, -1.000) deltaDist(2.527, 1.000)
+  step(1, -1) sideDist(5.054, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 516: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.398, -1.000) deltaDist(2.514, 1.000)
+  step(1, -1) sideDist(5.028, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 517: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.400, -1.000) deltaDist(2.501, 1.000)
+  step(1, -1) sideDist(5.003, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 518: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.402, -1.000) deltaDist(2.489, 1.000)
+  step(1, -1) sideDist(4.977, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 519: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.404, -1.000) deltaDist(2.476, 1.000)
+  step(1, -1) sideDist(4.952, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 520: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.406, -1.000) deltaDist(2.464, 1.000)
+  step(1, -1) sideDist(4.928, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 521: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.408, -1.000) deltaDist(2.452, 1.000)
+  step(1, -1) sideDist(4.903, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 522: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.410, -1.000) deltaDist(2.439, 1.000)
+  step(1, -1) sideDist(4.879, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 523: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.412, -1.000) deltaDist(2.427, 1.000)
+  step(1, -1) sideDist(4.855, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 524: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.414, -1.000) deltaDist(2.415, 1.000)
+  step(1, -1) sideDist(4.831, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 525: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.416, -1.000) deltaDist(2.404, 1.000)
+  step(1, -1) sideDist(4.807, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 526: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.418, -1.000) deltaDist(2.392, 1.000)
+  step(1, -1) sideDist(4.784, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 527: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.420, -1.000) deltaDist(2.380, 1.000)
+  step(1, -1) sideDist(4.761, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 528: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.422, -1.000) deltaDist(2.369, 1.000)
+  step(1, -1) sideDist(4.738, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 529: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.424, -1.000) deltaDist(2.358, 1.000)
+  step(1, -1) sideDist(4.715, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 530: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.426, -1.000) deltaDist(2.346, 1.000)
+  step(1, -1) sideDist(4.693, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 531: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.428, -1.000) deltaDist(2.335, 1.000)
+  step(1, -1) sideDist(4.671, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 532: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.430, -1.000) deltaDist(2.324, 1.000)
+  step(1, -1) sideDist(4.649, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 533: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.432, -1.000) deltaDist(2.313, 1.000)
+  step(1, -1) sideDist(4.627, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 534: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.434, -1.000) deltaDist(2.303, 1.000)
+  step(1, -1) sideDist(4.605, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 535: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.436, -1.000) deltaDist(2.292, 1.000)
+  step(1, -1) sideDist(4.584, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 536: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.438, -1.000) deltaDist(2.281, 1.000)
+  step(1, -1) sideDist(4.563, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 537: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.440, -1.000) deltaDist(2.271, 1.000)
+  step(1, -1) sideDist(4.542, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 538: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.442, -1.000) deltaDist(2.260, 1.000)
+  step(1, -1) sideDist(4.521, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 539: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.444, -1.000) deltaDist(2.250, 1.000)
+  step(1, -1) sideDist(4.500, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 540: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.446, -1.000) deltaDist(2.240, 1.000)
+  step(1, -1) sideDist(4.480, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 541: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.448, -1.000) deltaDist(2.230, 1.000)
+  step(1, -1) sideDist(4.459, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 542: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.451, -1.000) deltaDist(2.220, 1.000)
+  step(1, -1) sideDist(4.439, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 543: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.453, -1.000) deltaDist(2.210, 1.000)
+  step(1, -1) sideDist(4.419, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 544: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.455, -1.000) deltaDist(2.200, 1.000)
+  step(1, -1) sideDist(4.400, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 545: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.457, -1.000) deltaDist(2.190, 1.000)
+  step(1, -1) sideDist(4.380, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 546: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.459, -1.000) deltaDist(2.180, 1.000)
+  step(1, -1) sideDist(4.361, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 547: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.461, -1.000) deltaDist(2.171, 1.000)
+  step(1, -1) sideDist(4.341, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 548: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.463, -1.000) deltaDist(2.161, 1.000)
+  step(1, -1) sideDist(4.322, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 549: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.465, -1.000) deltaDist(2.152, 1.000)
+  step(1, -1) sideDist(4.304, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 550: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.467, -1.000) deltaDist(2.142, 1.000)
+  step(1, -1) sideDist(4.285, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 551: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.469, -1.000) deltaDist(2.133, 1.000)
+  step(1, -1) sideDist(4.266, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 552: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.471, -1.000) deltaDist(2.124, 1.000)
+  step(1, -1) sideDist(4.248, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 553: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.473, -1.000) deltaDist(2.115, 1.000)
+  step(1, -1) sideDist(4.230, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 554: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.475, -1.000) deltaDist(2.106, 1.000)
+  step(1, -1) sideDist(4.212, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 555: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.477, -1.000) deltaDist(2.097, 1.000)
+  step(1, -1) sideDist(4.194, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 556: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.479, -1.000) deltaDist(2.088, 1.000)
+  step(1, -1) sideDist(4.176, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 557: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.481, -1.000) deltaDist(2.079, 1.000)
+  step(1, -1) sideDist(4.158, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 558: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.483, -1.000) deltaDist(2.070, 1.000)
+  step(1, -1) sideDist(4.141, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 559: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.485, -1.000) deltaDist(2.062, 1.000)
+  step(1, -1) sideDist(4.123, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 560: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.487, -1.000) deltaDist(2.053, 1.000)
+  step(1, -1) sideDist(4.106, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 561: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.489, -1.000) deltaDist(2.045, 1.000)
+  step(1, -1) sideDist(4.089, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 562: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.491, -1.000) deltaDist(2.036, 1.000)
+  step(1, -1) sideDist(4.072, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 563: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.493, -1.000) deltaDist(2.028, 1.000)
+  step(1, -1) sideDist(4.056, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 564: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.495, -1.000) deltaDist(2.019, 1.000)
+  step(1, -1) sideDist(4.039, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 565: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.497, -1.000) deltaDist(2.011, 1.000)
+  step(1, -1) sideDist(4.023, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 566: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.499, -1.000) deltaDist(2.003, 1.000)
+  step(1, -1) sideDist(4.006, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 567: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.501, -1.000) deltaDist(1.995, 1.000)
+  step(1, -1) sideDist(3.990, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 568: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.503, -1.000) deltaDist(1.987, 1.000)
+  step(1, -1) sideDist(3.974, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 569: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.505, -1.000) deltaDist(1.979, 1.000)
+  step(1, -1) sideDist(3.958, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 570: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.507, -1.000) deltaDist(1.971, 1.000)
+  step(1, -1) sideDist(3.942, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 571: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.509, -1.000) deltaDist(1.963, 1.000)
+  step(1, -1) sideDist(3.926, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 572: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.511, -1.000) deltaDist(1.955, 1.000)
+  step(1, -1) sideDist(3.911, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 573: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.513, -1.000) deltaDist(1.948, 1.000)
+  step(1, -1) sideDist(3.895, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 574: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.515, -1.000) deltaDist(1.940, 1.000)
+  step(1, -1) sideDist(3.880, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 575: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.517, -1.000) deltaDist(1.932, 1.000)
+  step(1, -1) sideDist(3.865, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 576: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.520, -1.000) deltaDist(1.925, 1.000)
+  step(1, -1) sideDist(3.850, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 577: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.522, -1.000) deltaDist(1.917, 1.000)
+  step(1, -1) sideDist(3.835, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 578: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.524, -1.000) deltaDist(1.910, 1.000)
+  step(1, -1) sideDist(3.820, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 579: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.526, -1.000) deltaDist(1.903, 1.000)
+  step(1, -1) sideDist(3.805, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 580: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.528, -1.000) deltaDist(1.895, 1.000)
+  step(1, -1) sideDist(3.790, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 581: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.530, -1.000) deltaDist(1.888, 1.000)
+  step(1, -1) sideDist(3.776, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 582: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.532, -1.000) deltaDist(1.881, 1.000)
+  step(1, -1) sideDist(3.762, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 583: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.534, -1.000) deltaDist(1.874, 1.000)
+  step(1, -1) sideDist(3.747, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 584: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.536, -1.000) deltaDist(1.867, 1.000)
+  step(1, -1) sideDist(3.733, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 585: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.538, -1.000) deltaDist(1.859, 1.000)
+  step(1, -1) sideDist(3.719, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 586: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.540, -1.000) deltaDist(1.852, 1.000)
+  step(1, -1) sideDist(3.705, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 587: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.542, -1.000) deltaDist(1.846, 1.000)
+  step(1, -1) sideDist(3.691, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 588: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.544, -1.000) deltaDist(1.839, 1.000)
+  step(1, -1) sideDist(3.677, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 589: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.546, -1.000) deltaDist(1.832, 1.000)
+  step(1, -1) sideDist(3.664, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 590: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.548, -1.000) deltaDist(1.825, 1.000)
+  step(1, -1) sideDist(3.650, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 591: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.550, -1.000) deltaDist(1.818, 1.000)
+  step(1, -1) sideDist(3.637, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 592: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.552, -1.000) deltaDist(1.812, 1.000)
+  step(1, -1) sideDist(3.623, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 593: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.554, -1.000) deltaDist(1.805, 1.000)
+  step(1, -1) sideDist(3.610, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 594: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.556, -1.000) deltaDist(1.798, 1.000)
+  step(1, -1) sideDist(3.597, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 595: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.558, -1.000) deltaDist(1.792, 1.000)
+  step(1, -1) sideDist(3.584, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 596: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.560, -1.000) deltaDist(1.785, 1.000)
+  step(1, -1) sideDist(3.571, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 597: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.562, -1.000) deltaDist(1.779, 1.000)
+  step(1, -1) sideDist(3.558, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 598: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.564, -1.000) deltaDist(1.773, 1.000)
+  step(1, -1) sideDist(3.545, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 599: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.566, -1.000) deltaDist(1.766, 1.000)
+  step(1, -1) sideDist(3.532, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 600: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.568, -1.000) deltaDist(1.760, 1.000)
+  step(1, -1) sideDist(3.520, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 601: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.570, -1.000) deltaDist(1.754, 1.000)
+  step(1, -1) sideDist(3.507, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 602: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.572, -1.000) deltaDist(1.747, 1.000)
+  step(1, -1) sideDist(3.495, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 603: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.574, -1.000) deltaDist(1.741, 1.000)
+  step(1, -1) sideDist(3.482, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 604: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.576, -1.000) deltaDist(1.735, 1.000)
+  step(1, -1) sideDist(3.470, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 605: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.578, -1.000) deltaDist(1.729, 1.000)
+  step(1, -1) sideDist(3.458, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 606: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.580, -1.000) deltaDist(1.723, 1.000)
+  step(1, -1) sideDist(3.446, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 607: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.582, -1.000) deltaDist(1.717, 1.000)
+  step(1, -1) sideDist(3.434, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 608: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.584, -1.000) deltaDist(1.711, 1.000)
+  step(1, -1) sideDist(3.422, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 609: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.586, -1.000) deltaDist(1.705, 1.000)
+  step(1, -1) sideDist(3.410, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 610: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.589, -1.000) deltaDist(1.699, 1.000)
+  step(1, -1) sideDist(3.398, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 611: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.591, -1.000) deltaDist(1.693, 1.000)
+  step(1, -1) sideDist(3.387, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 612: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.593, -1.000) deltaDist(1.688, 1.000)
+  step(1, -1) sideDist(3.375, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 613: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.595, -1.000) deltaDist(1.682, 1.000)
+  step(1, -1) sideDist(3.364, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 614: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.597, -1.000) deltaDist(1.676, 1.000)
+  step(1, -1) sideDist(3.352, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 615: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.599, -1.000) deltaDist(1.670, 1.000)
+  step(1, -1) sideDist(3.341, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 616: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.601, -1.000) deltaDist(1.665, 1.000)
+  step(1, -1) sideDist(3.329, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 617: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.603, -1.000) deltaDist(1.659, 1.000)
+  step(1, -1) sideDist(3.318, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 618: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.605, -1.000) deltaDist(1.654, 1.000)
+  step(1, -1) sideDist(3.307, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 619: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.607, -1.000) deltaDist(1.648, 1.000)
+  step(1, -1) sideDist(3.296, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 620: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.609, -1.000) deltaDist(1.643, 1.000)
+  step(1, -1) sideDist(3.285, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 621: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.611, -1.000) deltaDist(1.637, 1.000)
+  step(1, -1) sideDist(3.274, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 622: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.613, -1.000) deltaDist(1.632, 1.000)
+  step(1, -1) sideDist(3.263, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 623: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.615, -1.000) deltaDist(1.626, 1.000)
+  step(1, -1) sideDist(3.253, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 624: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.617, -1.000) deltaDist(1.621, 1.000)
+  step(1, -1) sideDist(3.242, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 625: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.619, -1.000) deltaDist(1.616, 1.000)
+  step(1, -1) sideDist(3.231, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 626: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.621, -1.000) deltaDist(1.610, 1.000)
+  step(1, -1) sideDist(3.221, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 627: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.623, -1.000) deltaDist(1.605, 1.000)
+  step(1, -1) sideDist(3.210, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 628: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.625, -1.000) deltaDist(1.600, 1.000)
+  step(1, -1) sideDist(3.200, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 629: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.627, -1.000) deltaDist(1.595, 1.000)
+  step(1, -1) sideDist(3.189, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 630: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.629, -1.000) deltaDist(1.590, 1.000)
+  step(1, -1) sideDist(3.179, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 631: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.631, -1.000) deltaDist(1.584, 1.000)
+  step(1, -1) sideDist(3.169, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 632: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.633, -1.000) deltaDist(1.579, 1.000)
+  step(1, -1) sideDist(3.159, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 633: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.635, -1.000) deltaDist(1.574, 1.000)
+  step(1, -1) sideDist(3.149, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 634: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.637, -1.000) deltaDist(1.569, 1.000)
+  step(1, -1) sideDist(3.139, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 635: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.639, -1.000) deltaDist(1.564, 1.000)
+  step(1, -1) sideDist(3.129, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 636: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.641, -1.000) deltaDist(1.559, 1.000)
+  step(1, -1) sideDist(3.119, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 637: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.643, -1.000) deltaDist(1.554, 1.000)
+  step(1, -1) sideDist(3.109, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 638: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.645, -1.000) deltaDist(1.550, 1.000)
+  step(1, -1) sideDist(3.099, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 639: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.647, -1.000) deltaDist(1.545, 1.000)
+  step(1, -1) sideDist(3.089, 4.000)
+  perp_wall_dist: 3.000 side: 1
+hit wall at: 26 0
+Ray 640: pos(25.000, 4.000) map(26, 0)
+  rayDir(0.649, -1.000) deltaDist(1.540, 1.000)
+  step(1, -1) sideDist(3.080, 4.000)
+  perp_wall_dist: 3.000 side: 1

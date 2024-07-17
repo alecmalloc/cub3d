@@ -3,13 +3,13 @@
 static int	dir_to_int(char c)
 {
 	if (c == 'N')
-		return (0);
-	if (c == 'E')
 		return (90);
+	if (c == 'E')
+		return (0);
 	if (c == 'S')
-		return (180);
-	if (c == 'W')
 		return (270);
+	if (c == 'W')
+		return (180);
 	else
 		return (-1);
 }
