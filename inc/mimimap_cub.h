@@ -32,8 +32,8 @@ typedef struct s_minimap{
 
 int		init_minimap(struct s_cubed **master);
 void	free_minimap(t_minimap **map);
-void	load_minimap(mlx_image_t *img, struct s_cubed *cubed);
+void	load_minimap(struct s_cubed *cubed);
 void	set_minimap(struct s_cubed *cuebd);
-void	draw_player(int x, int y, mlx_image_t *img, struct s_cubed *master);
+void	draw_player(int x, int y, struct s_cubed *master);
 
 #endif

@@ -1,24 +1,24 @@
 
-NO ./textures/nw.xpm42
+NO ./textures/nw.png
 
 
 
-SO ./textures/sw.xpm42
+SO ./textures/sw.png
 
 
 
 
 
 
-EA                                        ./textures/ew.xpm42
-F       220,100,0
+EA                                        ./textures/ew.png
+F       0,0,0
 
 
 
-C                         225,30,0
+C                         146,239,243
 
 
-WE ./textures/ww.xpm42
+WE ./textures/ww.png
 
 
 

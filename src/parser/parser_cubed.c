@@ -50,9 +50,6 @@ int	parser(char *file, t_cubed *master)
 	ret = extract_data(master->parser);
 	if (ret)
 		return (ret);
-	ret = load_textures(master);
-	if (ret)
-		return (ret);
 	ret = extract_map(master->parser);
 	return (ret);
 }

@@ -15,8 +15,6 @@ void	exit_game(void *tmp)
 	t_cubed	*master;
 
 	master = (t_cubed *)tmp;
-	mlx_close_window(master->mlx_inst);
-	mlx_terminate(master->mlx_inst);
 	free_all(&master);
 	exit(0);
 }
@@ -36,6 +34,9 @@ int	start_game(t_cubed *master)
 	int	ret;
 
 	ret = init_window(&master);
+	if (ret)
+		return (ret);
+	ret = load_textures(master);
 	if (ret)
 		return (ret);
 	set_game(master);

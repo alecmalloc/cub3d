@@ -5,7 +5,7 @@ static void	calc_end(t_player *player, t_cubed *master)
 	double	radius;
 	int		standart;
 
-	standart = ((int)master->game->dir - 90);
+	standart = (int)master->game->dir;
 	if (standart >= 360)
 		standart = standart - 360;
 	radius = standart * M_PI / 180;
@@ -28,11 +28,12 @@ static void	setup_player(t_player *player)
 	player->tmp = player->dx - player->dy;
 }
 
-static void	draw(t_player *player, mlx_image_t *img)
+static void	draw(t_player *player, t_cubed *master)
 {
 	while (player->cx != player->ex || player->cy != player->ey)
 	{
-		put_pixel_cubed(img, player->cx, player->cy, 0xFF0000FF);
+		//put_pixel_cubed(img, player->cx, player->cy, 0xFF0000FF);
+		master->draw->draw_buffer[player->cx][player->cy] = 0xFF0000FF;
 		player->tmp2 = 2 * player->tmp;
 		if (player->tmp2 > -(player->dy))
 		{
@@ -47,7 +48,7 @@ static void	draw(t_player *player, mlx_image_t *img)
 	}
 }
 
-void	draw_player(int x, int y, mlx_image_t *img, t_cubed *master)
+void	draw_player(int x, int y, t_cubed *master)
 {
 	t_player	player;
 
@@ -55,5 +56,5 @@ void	draw_player(int x, int y, mlx_image_t *img, t_cubed *master)
 	player.cy = y - master->map->size / 2;
 	calc_end(&player, master);
 	setup_player(&player);
-	draw(&player, img);
+	draw(&player, master);
 }

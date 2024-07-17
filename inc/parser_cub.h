@@ -3,7 +3,7 @@
 
 //MapCharacter
 # define MAP_CHR "01234NSWE "
-# define TEX_END ".xpm42"
+# define TEX_END ".png"
 # define FIL_END ".cub"
 # define IMP_CHR "01234NSWE"
 # define PLR_CHR "NSWE"

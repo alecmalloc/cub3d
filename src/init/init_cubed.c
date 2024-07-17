@@ -11,32 +11,11 @@ static int	init_cubed(t_cubed **cubed)
 	(*cubed)->map = NULL;
 	(*cubed)->tex = NULL;
 	(*cubed)->casting = NULL;
+	(*cubed)->draw = NULL;
 	return (0);
 }
 
-static int	init_f_imgs(t_cubed **cubed)
-{
-	t_f_img	*floor;
-	t_f_img	*ceiling;
-
-	floor = malloc(sizeof(t_f_img));
-	ceiling = malloc(sizeof(t_f_img));
-	if (!floor || !ceiling)
-		return (MALL_ERR);
-	floor->image = NULL;
-	floor->r = 0;
-	floor->g = 0;
-	floor->b = 0;
-	ceiling->image = NULL;
-	ceiling->r = 0;
-	ceiling->g = 0;
-	ceiling->b = 0;
-	(*cubed)->ceiling = ceiling;
-	(*cubed)->floor = floor;
-	return (0);
-}
-
-int	init_casting(t_cubed **cubed)
+static int	init_casting(t_cubed **cubed)
 {
 	t_casting	*casting;
 
@@ -47,11 +26,36 @@ int	init_casting(t_cubed **cubed)
 	return (0);
 }
 
+static int	init_draw(t_cubed **cubed)
+{
+	t_draw	*draw;
+	int	z;
+	int	z2;
+
+	draw = (t_draw *)malloc(sizeof(t_draw));
+	if (!draw)
+		return (MALL_ERR);
+	draw->dist_to_wall = -1;
+	draw->line_height = -1;
+	draw->start_drawing = -1;
+	draw->end_drawing = -1;
+	z = 0;
+	z2 = 0;
+	while (z < HIGHT)
+	{
+		while (z2 < WIDTH)
+		{
+			draw->draw_buffer[z][z2] = 0;
+			z2++;
+		}
+		z++;
+	}
+	(*cubed)->draw = draw;
+	return (0);
+}
 int	init_all(t_cubed **cubed)
 {
 	if (init_cubed(cubed))
-		return (MALL_ERR);
-	if (init_f_imgs(cubed))
 		return (MALL_ERR);
 	if (init_parser(&(*cubed)->parser))
 		return (MALL_ERR);
@@ -62,6 +66,8 @@ int	init_all(t_cubed **cubed)
 	if (init_minimap(cubed))
 		return (MALL_ERR);
 	if (init_tex(cubed))
+		return (MALL_ERR);
+	if (init_draw(cubed))
 		return (MALL_ERR);
 	return (0);
 }

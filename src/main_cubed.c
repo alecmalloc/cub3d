@@ -16,9 +16,7 @@ int	main(int argc, char **argv)
 	cubed->game->dir = (double)cubed->parser->map->player_dir;
 	cubed->game->pos[0] = cubed->parser->map->player_pos[0];
 	cubed->game->pos[1] = cubed->parser->map->player_pos[1];
-	casting(cubed);
 	start_game(cubed);
-
 	free_all(&cubed);
 	return (EXIT_SUCCESS);
 }

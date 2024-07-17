@@ -1,19 +1,16 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   simplified.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mbartsch <mbartsch@student.42berlin.d      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/07/17 15:49:25 by mbartsch          #+#    #+#             */
+/*   Updated: 2024/07/17 17:07:20 by mbartsch         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "cubed.h"
-
-void	calc_line_heights(t_casting *cast)
-{
-	if(cast->side == 0) cast->perp_wall_dist = (cast->side_dist_x - cast->delta_dist_x);
-	else          cast->perp_wall_dist = (cast->side_dist_y - cast->delta_dist_y);
-
-	//Calculate height of line to draw on screen
-	cast->line_height = (int)(cast->screen_h / cast->perp_wall_dist);
-
-	//calculate lowest and highest pixel to fill in current stripe
-	cast->draw_start = -(cast->line_height) / 2 + cast->screen_h / 2;
-	if(cast->draw_start < 0) cast->draw_start = 0;
-	cast->draw_end = cast->line_height / 2 + cast->screen_h / 2;
-	if(cast->draw_end >= cast->screen_h) cast->draw_end = cast->screen_h - 1;
-}
 
 void	dda(t_casting *cast)
 {
@@ -34,12 +31,9 @@ void	dda(t_casting *cast)
 			cast->map_y += cast->step_y;
 			cast->side = 1;
 		}
-		//Check if ray has hit a wall
-
-
 		if (cast->map[cast->map_y][cast->map_x] == '1') hit = 1;
-		if (hit)
-			printf("hit wall at: %d %d\n", cast->map_x, cast->map_y);
+		//if (hit == 1)
+			printf("Wall hit, x, y: %d, %d\n", cast->map_x, cast->map_y);
 	}
 }
 
@@ -80,24 +74,16 @@ void	init_ray_dir(t_casting *cast)
 		}
 }
 
-void	draw_rays(t_casting *cast)
+void	draw_rays(t_casting *cast, t_cubed *master)
 {
 	// we iterate over every stripe of the screen and calculate the length of the line we need to draw
 	cast->x = -1;
-	while (cast->x++ < cast->screen_w)
+	while (cast->x++ < WIDTH)
 	{
-		
 		declare_ray_vars(cast);
 		init_ray_dir(cast);
 		dda(cast);
-		calc_line_heights(cast);
-		
-		printf("Ray %d: pos(%.3f, %.3f) map(%d, %d)\n", cast->x, cast->pos_x, cast->pos_y, cast->map_x, cast->map_y);
-		printf("  rayDir(%.3f, %.3f) deltaDist(%.3f, %.3f)\n", cast->ray_dir_x, cast->ray_dir_y, cast->delta_dist_x, cast->delta_dist_y);
-		printf("  step(%d, %d) sideDist(%.3f, %.3f)\n", cast->step_x, cast->step_y, cast->side_dist_x, cast->side_dist_y);
-		printf("  perp_wall_dist: %.3f side: %d\n", cast->perp_wall_dist, cast->side);
-		
-		//draw the pixels of the stripe as a vertical line
+		put_rays(cast->x, cast, master);
     	// verLine(x, draw_start, draw_end);
 	}
 }
@@ -119,8 +105,7 @@ void	simple_caster(t_cubed *cubed)
 	// calculates distance from left to right of camera plane
 	// camera plane is rotated when its 270 -> so then goes right to left
 	// ./cub3D files_cub/test.cub > output.txt to see output better
-	cast.angle_d = 90;
-	printf("angle:%f\n", cast.angle_d);
+	cast.angle_d = cubed->game->dir;
 	cast.angle_r = conv_deg_rad(cast.angle_d);
 	cast.dir_x = cos(cast.angle_r);
 	cast.dir_y = -sin(cast.angle_r);
@@ -130,9 +115,9 @@ void	simple_caster(t_cubed *cubed)
 	cast.plane_len = tan(cast.fov / 2);
 	cast.plane_x = (-1 * cast.dir_y) * cast.plane_len;
 	cast.plane_y = cast.dir_x * cast.plane_len;
-	cast.screen_w = 640;
-	cast.screen_h = 480;
+	cast.screen_w = WIDTH;
+	cast.screen_h = HIGHT;
 
-	draw_rays(&cast);
+	draw_rays(&cast, cubed);
 	
 }

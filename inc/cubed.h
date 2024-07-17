@@ -23,8 +23,6 @@
 # include "mimimap_cub.h"
 # include "textures_cub.h"
 
-# define WIDTH 1920
-# define HIGHT 1080
 
 // strucure for custom RBG filled images
 typedef struct Fill_img
@@ -40,20 +38,19 @@ typedef struct s_cubed
 {
 	t_parser	*parser;
 	mlx_t		*mlx_inst;
-	mlx_image_t	*img;
-	t_f_img		*ceiling;
-	t_f_img		*floor;
+	//mlx_image_t	*img;
 	t_game		*game;
 	t_minimap	*map;
 	t_tex		*tex;
 	t_casting	*casting;
+	t_draw		*draw;
 }	t_cubed;
 
 // /mlx
 int		init_window(t_cubed **cubed);
 
 // /graphics
-void	put_backdrop(mlx_image_t *img, t_cubed *cubed);
+void	put_backdrop(t_cubed *cubed);
 void	put_pixel_cubed(mlx_image_t *img, uint32_t x, uint32_t y, \
 		uint32_t color);
 
