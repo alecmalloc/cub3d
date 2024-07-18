@@ -5,22 +5,22 @@ static void	dir_to_int(char c, t_map **map)
 	if (c == 'N')
 	{
 		(*map)->player_dir_x = 0.0;
-		(*map)->player_dir_y = -1.0;	
+		(*map)->player_dir_y = -1.0;
 	}
 	if (c == 'E')
 	{
 		(*map)->player_dir_x = 1.0;
-		(*map)->player_dir_y = 0.0;	
+		(*map)->player_dir_y = 0.0;
 	}
 	if (c == 'S')
 	{
 		(*map)->player_dir_x = 0.0;
-		(*map)->player_dir_y = 1.0;	
+		(*map)->player_dir_y = 1.0;
 	}
 	if (c == 'W')
 	{
 		(*map)->player_dir_x = -1.0;
-		(*map)->player_dir_y = 0.0;	
+		(*map)->player_dir_y = 0.0;
 	}
 }
 

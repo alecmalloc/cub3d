@@ -6,26 +6,26 @@ static void	decide_dir(t_casting *caster, t_cubed *master)
 	if (caster->ray_dir_x < 0)
 	{
 		caster->step_x = -1;
-		caster->dist_to_x = (master->game->pos[0] - caster->map_x) *\
-				    caster->delta_dist_x;
+		caster->dist_to_x = (master->game->pos[0] - caster->map_x) * \
+					caster->delta_dist_x;
 	}
 	else
 	{
 		caster->step_x = 1;
-		caster->dist_to_x = (caster->map_x + 1.0 - master->game->pos[0]) *\
-				    caster->delta_dist_x;
+		caster->dist_to_x = (caster->map_x + 1.0 - master->game->pos[0]) * \
+					caster->delta_dist_x;
 	}
 	if (caster->ray_dir_y < 0)
 	{
 		caster->step_y = -1;
-		caster->dist_to_y = (master->game->pos[1] - caster->map_y) *\
-				    caster->delta_dist_y;
+		caster->dist_to_y = (master->game->pos[1] - caster->map_y) * \
+					caster->delta_dist_y;
 	}
 	else
 	{
 		caster->step_y = 1;
-		caster->dist_to_y = (caster->map_y + 1.0 - master->game->pos[1]) *\
-				    caster->delta_dist_y;
+		caster->dist_to_y = (caster->map_y + 1.0 - master->game->pos[1]) * \
+					caster->delta_dist_y;
 	}
 }
 
@@ -33,9 +33,9 @@ static void	set_up_caster(t_casting *caster, t_cubed *master, int x)
 {
 	caster->camera_x = 2 * x / (double)WIDTH - 1;
 	caster->ray_dir_x = master->game->dir_x + master->game->plane_x * \
-			    caster->camera_x;
+				caster->camera_x;
 	caster->ray_dir_y = master->game->dir_y + master->game->plane_y * \
-			    caster->camera_x;
+				caster->camera_x;
 	caster->map_x = (int)master->game->pos[0];
 	caster->map_y = (int)master->game->pos[1];
 	caster->delta_dist_x = fabs(1 / caster->ray_dir_x);
@@ -73,7 +73,7 @@ static void	check_hit(t_casting *caster, t_cubed *master)
 void	caster(t_cubed *master)
 {
 	t_casting	caster;
-	int		x;
+	int			x;
 
 	x = 0;
 	while (x < WIDTH)
@@ -83,5 +83,4 @@ void	caster(t_cubed *master)
 		put_rays(x, &caster, master);
 		x++;
 	}
-
 }

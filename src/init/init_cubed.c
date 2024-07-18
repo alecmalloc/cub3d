@@ -9,6 +9,7 @@ static int	init_cubed(t_cubed **cubed)
 	(*cubed)->game = NULL;
 	(*cubed)->mlx_inst = NULL;
 	(*cubed)->map = NULL;
+	(*cubed)->tmp = NULL;
 	(*cubed)->tex = NULL;
 	(*cubed)->casting = NULL;
 	(*cubed)->draw = NULL;
@@ -29,8 +30,8 @@ static int	init_casting(t_cubed **cubed)
 static int	init_draw(t_cubed **cubed)
 {
 	t_draw	*draw;
-	int	z;
-	int	z2;
+	int		z;
+	int		z2;
 
 	draw = (t_draw *)malloc(sizeof(t_draw));
 	if (!draw)
@@ -53,6 +54,7 @@ static int	init_draw(t_cubed **cubed)
 	(*cubed)->draw = draw;
 	return (0);
 }
+
 int	init_all(t_cubed **cubed)
 {
 	if (init_cubed(cubed))

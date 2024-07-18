@@ -40,8 +40,3 @@ void	free_parser(t_parser **parser)
 		free_map(&(*parser)->map);
 	free(*parser);
 }
-
-void	free_minimap(t_minimap **map)
-{
-	free(*map);
-}

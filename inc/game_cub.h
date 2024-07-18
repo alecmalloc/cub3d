@@ -1,8 +1,8 @@
 #ifndef GAME_CUB_H
 # define GAME_CUB_H
 
-# define MOVESPEED 0.1
-# define ROTSPEED 0.05
+# define MOVESPEED 0.01
+# define ROTSPEED 0.01
 
 struct	s_cubed;
 
@@ -28,7 +28,8 @@ int		init_game(t_game **game);
 void	free_game(t_game **game);
 
 int		check_mouse(struct s_cubed *master);
-int		check_keys(struct s_cubed *master);
+int		check_keys_move(struct s_cubed *master);
+int		check_keys_view(struct s_cubed *master);
 void	check_door(mlx_key_data_t key, void *tmp);
 
 int		move(int rot, struct s_cubed *master);

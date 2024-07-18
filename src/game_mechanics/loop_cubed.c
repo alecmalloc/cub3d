@@ -7,13 +7,15 @@ static void	set_game(t_cubed *master)
 
 	master->game->dir_x = master->parser->map->player_dir_x;
 	master->game->dir_y = master->parser->map->player_dir_y;
-	fov = 66.0 *M_PI / 180.0;
+	fov = 66.0 * M_PI / 180.0;
 	plane_len = tan(fov / 2.0);
 	master->game->plane_x = -master->game->dir_y * plane_len;
 	master->game->plane_y = master->game->dir_x * plane_len;
 	master->game->pos[0] = master->parser->map->player_pos[0];
 	master->game->pos[1] = master->parser->map->player_pos[1];
 	master->game->map = master->parser->map->map;
+	master->game->map[(int)master->game->pos[1]] \
+			[(int)master->game->pos[0]] = '0';
 	mlx_set_mouse_pos(master->mlx_inst, WIDTH / 2, HIGHT / 2);
 	set_minimap(master);
 }
@@ -33,7 +35,8 @@ static void	loop_cubed(void *tmp)
 
 	master = (t_cubed *)tmp;
 	check_mouse(master);
-	check_keys(master);
+	check_keys_move(master);
+	check_keys_view(master);
 	make_image(master);
 }
 

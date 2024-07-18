@@ -26,7 +26,16 @@ void	check_door(mlx_key_data_t key, void *tmp)
 		handle_door(master);
 }
 
-int	check_keys(t_cubed *master)
+int	check_keys_view(t_cubed *master)
+{
+	if (mlx_is_key_down(master->mlx_inst, MLX_KEY_LEFT))
+		return (rotate(-1, master));
+	if (mlx_is_key_down(master->mlx_inst, MLX_KEY_RIGHT))
+		return (rotate(1, master));
+	return (0);
+}
+
+int	check_keys_move(t_cubed *master)
 {
 	if (mlx_is_key_down(master->mlx_inst, MLX_KEY_ESCAPE))
 		exit_game(master);
@@ -38,9 +47,5 @@ int	check_keys(t_cubed *master)
 		return (move(2, master));
 	if (mlx_is_key_down(master->mlx_inst, MLX_KEY_D))
 		return (move(3, master));
-	if (mlx_is_key_down(master->mlx_inst, MLX_KEY_LEFT))
-		return (rotate(-1, master));
-	if (mlx_is_key_down(master->mlx_inst, MLX_KEY_RIGHT))
-		return (rotate(1, master));
 	return (0);
 }

@@ -21,7 +21,7 @@
 # include "game_cub.h"
 # include "casting.h"
 # include "mimimap_cub.h"
-# include "textures_cub.h"
+# include "grafics_cub.h"
 
 
 // strucure for custom RBG filled images
@@ -38,7 +38,7 @@ typedef struct s_cubed
 {
 	t_parser	*parser;
 	mlx_t		*mlx_inst;
-	//mlx_image_t	*img;
+	mlx_image_t	*tmp;
 	t_game		*game;
 	t_minimap	*map;
 	t_tex		*tex;

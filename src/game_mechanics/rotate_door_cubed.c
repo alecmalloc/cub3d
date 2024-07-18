@@ -1,63 +1,27 @@
 #include "cubed.h"
 
-
 int	rotate(int dir, t_cubed *master)
 {
 	double	tmp;
 
 	tmp = master->game->dir_x;
-	master->game->dir_x = master->game->dir_x * cos( ROTSPEED * dir) - master->game->dir_y\
-			      * sin(ROTSPEED * dir);
-	master->game->dir_y = tmp * sin(ROTSPEED * dir) + master->game->dir_y * \
-			      cos(ROTSPEED * dir);
+	master->game->dir_x = master->game->dir_x * cos(ROTSPEED * dir) \
+			- master->game->dir_y * sin(ROTSPEED * dir);
+	master->game->dir_y = tmp * sin(ROTSPEED * dir) \
+			+ master->game->dir_y * cos(ROTSPEED * dir);
 	tmp = master->game->plane_x;
-	master->game->plane_x = master->game->plane_x * cos(ROTSPEED * dir) - \
-				   master->game->plane_y * sin(ROTSPEED * dir);
-	master->game->plane_y = tmp * sin(ROTSPEED * dir) + master->game->plane_y\
-				   * cos(ROTSPEED * dir);
+	master->game->plane_x = master->game->plane_x * \
+			cos(ROTSPEED * dir) - master->game->plane_y * sin(ROTSPEED * dir);
+	master->game->plane_y = tmp * sin(ROTSPEED * dir) \
+			+ master->game->plane_y * cos(ROTSPEED * dir);
 	return (1);
 }
-/*
-static int	infront(int dir, int *x, int *y)
-{
-	if ((dir >= 337 && dir <= 360) || (dir >= 0 && dir <= 23))
-	{
-		*y -= 1;
-		return (1);
-	}
-	else if (dir >= 68 && dir < 158)
-	{
-		*x += 1;
-		return (1);
-	}
-	else if (dir >= 158 && dir <= 203)
-	{
-		*y += 1;
-		return (1);
-	}
-	else if (dir >= 248 && dir <= 293)
-	{
-		*x -= 1;
-		return (1);
-	}
-	return (0);
-}
 
-static int	isdoor(int x, int y, t_game *game)
-{
-	if (game->map[y][x] == '2')
-		return (1);
-	else if (game->map[y][x] == '3')
-		return (2);
-	else
-		return (0);
-}
-*/
 int	handle_door(t_cubed *master)
 {
-	int	x;
-	int	y;
 	char	door;
+	int		x;
+	int		y;
 
 	x = master->game->pos[0] + master->game->dir_x;
 	y = master->game->pos[1] + master->game->dir_y;

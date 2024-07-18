@@ -2,28 +2,31 @@
 
 static int	text_to_image(t_cubed *master)
 {
-	master->tex->img[NORTH] = mlx_texture_to_image(master->mlx_inst, master->tex->n_texture);
+	master->tex->img[NORTH] = \
+	mlx_texture_to_image(master->mlx_inst, master->tex->n_texture);
 	if (!master->tex->img[NORTH])
 		return (LTN_ERR);
-	master->tex->img[EAST] = mlx_texture_to_image(master->mlx_inst, master->tex->e_texture);
+	master->tex->img[EAST] = \
+	mlx_texture_to_image(master->mlx_inst, master->tex->e_texture);
 	if (!master->tex->img[EAST])
 		return (LTE_ERR);
-	master->tex->img[SOUTH] = mlx_texture_to_image(master->mlx_inst, master->tex->s_texture);
+	master->tex->img[SOUTH] = \
+	mlx_texture_to_image(master->mlx_inst, master->tex->s_texture);
 	if (!master->tex->img[SOUTH])
 		return (LTS_ERR);
-	master->tex->img[WEST] = mlx_texture_to_image(master->mlx_inst, master->tex->w_texture);
+	master->tex->img[WEST] = \
+	mlx_texture_to_image(master->mlx_inst, master->tex->w_texture);
 	if (!master->tex->img[WEST])
 		return (LTW_ERR);
-	master->tex->img[DOOR] = mlx_texture_to_image(master->mlx_inst, master->tex->d_texture);
+	master->tex->img[DOOR] = \
+	mlx_texture_to_image(master->mlx_inst, master->tex->d_texture);
 	if (!master->tex->img[DOOR])
 		return (LTD_ERR);
-	master->tex->img[OPENDOOR] = mlx_texture_to_image(master->mlx_inst, master->tex->od_texture);
+	master->tex->img[OPENDOOR] = \
+	mlx_texture_to_image(master->mlx_inst, master->tex->od_texture);
 	if (!master->tex->img[OPENDOOR])
 		return (LTD_ERR);
-	master->tex->img[SPRITE] = mlx_texture_to_image(master->mlx_inst, master->tex->sp_texture);
-	if (!master->tex->img[SPRITE])
-		return (LTSP_ERR);
-	return (0);
+	return (load_sprites(master));
 }
 
 int	load_textures(t_cubed *master)
@@ -46,11 +49,5 @@ int	load_textures(t_cubed *master)
 	master->tex->od_texture = mlx_load_png(OPENDOOR_TEX);
 	if (!master->tex->od_texture)
 		return (LTD_ERR);
-	master->tex->sp_texture = mlx_load_png(SPRITE_TEX);
-	if (!master->tex->sp_texture)
-		return (LTSP_ERR);
 	return (text_to_image(master));
 }
-
-
-

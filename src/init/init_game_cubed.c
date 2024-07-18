@@ -19,8 +19,3 @@ int	init_game(t_game **game)
 	(*game)->map = NULL;
 	return (0);
 }
-
-void	free_game(t_game **game)
-{
-	free(*game);
-}
