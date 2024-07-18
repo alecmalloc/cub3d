@@ -6,12 +6,12 @@
 /*   By: mbartsch <mbartsch@student.42berlin.d      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/17 15:49:25 by mbartsch          #+#    #+#             */
-/*   Updated: 2024/07/17 17:07:20 by mbartsch         ###   ########.fr       */
+/*   Updated: 2024/07/18 11:23:53 by mbartsch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "cubed.h"
-
+/*
 void	dda(t_casting *cast)
 {
 	//perform DDA
@@ -37,11 +37,11 @@ void	dda(t_casting *cast)
 	}
 }
 
-void	declare_ray_vars(t_casting *cast)
+void	declare_ray_vars(t_casting *cast, t_cubed *master)
 {
 	cast->camera_x = 2 * cast->x / (double)cast->screen_w - 1;
-	cast->ray_dir_x = cast->dir_x + cast->plane_x * cast->camera_x;
-	cast->ray_dir_y = cast->dir_y + cast->plane_y * cast->camera_x;
+	cast->ray_dir_x = master->game->dir_x + cast->plane_x * cast->camera_x;
+	cast->ray_dir_y = master->game->dir_y + cast->plane_y * cast->camera_x;
 
 	cast->map_x = (int)cast->pos_x;
 	cast->map_y = (int)cast->pos_y;
@@ -80,7 +80,7 @@ void	draw_rays(t_casting *cast, t_cubed *master)
 	cast->x = -1;
 	while (cast->x++ < WIDTH)
 	{
-		declare_ray_vars(cast);
+		declare_ray_vars(cast, master);
 		init_ray_dir(cast);
 		dda(cast);
 		put_rays(cast->x, cast, master);
@@ -105,6 +105,7 @@ void	simple_caster(t_cubed *cubed)
 	// calculates distance from left to right of camera plane
 	// camera plane is rotated when its 270 -> so then goes right to left
 	// ./cub3D files_cub/test.cub > output.txt to see output better
+	//
 	cast.angle_d = cubed->game->dir;
 	cast.angle_r = conv_deg_rad(cast.angle_d);
 	cast.dir_x = cos(cast.angle_r);
@@ -113,11 +114,11 @@ void	simple_caster(t_cubed *cubed)
 	// set field of view and plane length and screen inits
 	cast.fov = 66 * M_PI / 180;
 	cast.plane_len = tan(cast.fov / 2);
-	cast.plane_x = (-1 * cast.dir_y) * cast.plane_len;
-	cast.plane_y = cast.dir_x * cast.plane_len;
+	cast.plane_x = (-1 * cubed->game->dir_x) * cast.plane_len;
+	cast.plane_y = cubed->game->dir_x * cast.plane_len;
 	cast.screen_w = WIDTH;
 	cast.screen_h = HIGHT;
 
 	draw_rays(&cast, cubed);
 	
-}
+}*/

@@ -17,6 +17,9 @@ static int	text_to_image(t_cubed *master)
 	master->tex->img[DOOR] = mlx_texture_to_image(master->mlx_inst, master->tex->d_texture);
 	if (!master->tex->img[DOOR])
 		return (LTD_ERR);
+	master->tex->img[OPENDOOR] = mlx_texture_to_image(master->mlx_inst, master->tex->od_texture);
+	if (!master->tex->img[OPENDOOR])
+		return (LTD_ERR);
 	master->tex->img[SPRITE] = mlx_texture_to_image(master->mlx_inst, master->tex->sp_texture);
 	if (!master->tex->img[SPRITE])
 		return (LTSP_ERR);
@@ -39,6 +42,9 @@ int	load_textures(t_cubed *master)
 		return (LTW_ERR);
 	master->tex->d_texture = mlx_load_png(DOOR_TEX);
 	if (!master->tex->d_texture)
+		return (LTD_ERR);
+	master->tex->od_texture = mlx_load_png(OPENDOOR_TEX);
+	if (!master->tex->od_texture)
 		return (LTD_ERR);
 	master->tex->sp_texture = mlx_load_png(SPRITE_TEX);
 	if (!master->tex->sp_texture)

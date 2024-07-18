@@ -12,7 +12,8 @@ int	init_game(t_game **game)
 	(*game)->l = 0;
 	(*game)->r = 0;
 	(*game)->space = 0;
-	(*game)->dir = 0;
+	(*game)->dir_x = 0;
+	(*game)->dir_y = 0;
 	(*game)->pos[0] = 0;
 	(*game)->pos[1] = 0;
 	(*game)->map = NULL;

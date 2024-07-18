@@ -1,7 +1,7 @@
 #ifndef MIMIMAP_CUB_H
 # define MIMIMAP_CUB_H
 
-# define MINI_SIZE 5
+# define MINI_SIZE 8
 
 struct	s_cubed;
 

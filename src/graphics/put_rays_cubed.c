@@ -1,46 +1,88 @@
 #include "cubed.h"
 
-static void	set_vars(t_casting *cast, t_cubed *master)
+static void	set_vars(t_casting *caster, t_cubed *master)
 {
-	if (cast->side == 0)
-		master->draw->dist_to_wall = (cast->side_dist_x - cast->delta_dist_x);
+	if (caster->side == 0)
+		master->draw->dist_to_wall = (caster->map_x - master->game->pos[0] + \
+				(1 - caster->step_x) / 2) / caster->ray_dir_x;
 	else
-		master->draw->dist_to_wall = (cast->side_dist_y - cast->delta_dist_y);
+		master->draw->dist_to_wall = (caster->map_y - master->game->pos[1] + \
+				(1 - caster->step_y) / 2) / caster->ray_dir_y;
 	master->draw->line_height = (int)(HIGHT / master->draw->dist_to_wall);
-	//changed from -master->.../ 2 + hight ...
 	master->draw->start_drawing = -master->draw->line_height / 2 + HIGHT / 2;
 	if (master->draw->start_drawing < 0)
 		master->draw->start_drawing = 0;
 	master->draw->end_drawing = (HIGHT / 2) + (master->draw->line_height / 2);
 	if (master->draw->end_drawing >= HIGHT)
 		master->draw->end_drawing = HIGHT - 1;
-	if (cast->side && (cast->angle_d > 270 || cast->angle_d < 90))
+	if (caster->side && (master->game->dir_x >= 0))
 		master->draw->tex = EAST;
 	else
 		master->draw->tex = WEST;
-	if (!cast->side && cast->angle_d < 180)
+	if (!caster->side && master->game->dir_y < 0)
 		master->draw->tex = NORTH;
 	else
 		master->draw->tex = SOUTH;
+	/*if (cast->side == 0)
+		master->draw->dist_to_wall = (cast->dist_to_x - cast->delta_dist_x);
+	else
+		master->draw->dist_to_wall = (cast->dist_to_y - cast->delta_dist_y);
+	master->draw->line_height = (int)(HIGHT / master->draw->dist_to_wall);
+	master->draw->start_drawing = -master->draw->line_height / 2 + HIGHT / 2;
+	if (master->draw->start_drawing < 0)
+		master->draw->start_drawing = 0;
+	master->draw->end_drawing = (HIGHT / 2) + (master->draw->line_height / 2);
+	if (master->draw->end_drawing >= HIGHT)
+		master->draw->end_drawing = HIGHT - 1;
+	if (cast->side && (master->game->dir_x >= 0))
+		master->draw->tex = EAST;
+	else
+		master->draw->tex = WEST;
+	if (!cast->side && master->game->dir_y < 0)
+		master->draw->tex = NORTH;
+	else
+		master->draw->tex = SOUTH;*/
 }
 
-static void	calc_vars(t_cubed *master, t_casting *cast, double *wallx, double *step, double *texpos, int *texx)
+static void	calc_vars(t_cubed *master, t_casting *caster)
 {
-	
-	if (!cast->side)
-		*wallx = master->game->pos[0] + master->draw->dist_to_wall * cast->\
+	if (caster->side == 0)
+		master->draw->wallx = master->game->pos[1] + master->draw->dist_to_wall * caster->\
 			 ray_dir_y;
 	else
-		*wallx = master->game->pos[1] + master->draw->dist_to_wall * cast->\
+		master->draw->wallx = master->game->pos[0] + master->draw->dist_to_wall * caster->\
 			 ray_dir_x;
-	*wallx -= floor(*wallx);
-	*texx = (int)(*wallx * (double)master->tex->img[master->draw->tex]->width);
-	if (cast->side == 0 && cast->ray_dir_x > 0)
-		*texx = master->tex->img[master->draw->tex]->width - *texx - 1;
-	if (cast->side == 1 && cast->ray_dir_y < 0)
-		*texx = master->tex->img[master->draw->tex]->width - *texx - 1;
-	*step = 1.0 * master->tex->img[master->draw->tex]->height / master->draw->line_height;
-	*texpos = (master->draw->start_drawing - HIGHT / 2 + master->draw->line_height / 2) * *step;
+	master->draw->wallx -= floor(master->draw->wallx);
+	master->draw->texx = (int)(master->draw->wallx * \
+			(double)master->tex->img[master->draw->tex]->width);
+	if (caster->side == 0 && caster->ray_dir_x > 0)
+		master->draw->texx = master->tex->img[master->draw->tex]->width -\
+				     master->draw->texx - 1;
+	if (caster->side == 1 && caster->ray_dir_y < 0)
+		master->draw->texx = master->tex->img[master->draw->tex]->width -\
+				     master->draw->texx - 1;
+	master->draw->step = 1.0 * master->tex->img[master->draw->tex]->height\
+			     / master->draw->line_height;
+	master->draw->texpos = (master->draw->start_drawing - HIGHT / 2 +\
+		       	master->draw->line_height / 2) * master->draw->step;
+}
+
+static void	get_tex(t_casting *cast, t_cubed *master)
+{
+	if (cast->side && (master->game->dir_x > 0) && (cast->hit == '1'))
+		master->draw->tex = EAST;
+	else if (cast->side && (master->game->dir_x < 0) && (cast->hit == '1'))
+		master->draw->tex = WEST;
+	else if (!cast->side && (master->game->dir_y < 0) && (cast->hit == '1'))
+		master->draw->tex = NORTH;
+	else if (!cast->side && (master->game->dir_y > 0) && (cast->hit == '1'))
+		master->draw->tex = SOUTH;
+	else if (cast->hit == '2')
+		master->draw->tex = DOOR;
+	else if (cast->hit == '3')
+		master->draw->tex = OPENDOOR;
+	else if (cast->hit == '4')
+		master->draw->tex = SPRITE;
 }
 
 static uint32_t	get_color_tex(mlx_image_t *img, int x, int y)
@@ -61,22 +103,20 @@ static uint32_t	get_color_tex(mlx_image_t *img, int x, int y)
 
 void	put_rays(int x, t_casting *cast, t_cubed *master)
 {
-	double		wallx;
-	double		step;
-	double		texpos;
-	int		texx;
-	int		texy;
 	int		y;
 	uint32_t	color;
 
 	set_vars(cast, master);
-	calc_vars(master, cast, &wallx, &step, &texpos, &texx);
+	calc_vars(master, cast);
 	y = master->draw->start_drawing;
+	get_tex(cast, master);
 	while (y < master->draw->end_drawing)
 	{
-		texy = (int)texpos & (master->tex->img[master->draw->tex]->height - 1);
-		texpos += step;
-		color = get_color_tex(master->tex->img[master->draw->tex], texx, texy);
+		master->draw->texy = (int)master->draw->texpos & \
+		        (master->tex->img[master->draw->tex]->height - 1);
+		master->draw->texpos += master->draw->step;
+		color = get_color_tex(master->tex->img[master->draw->tex], \
+				master->draw->texx, master->draw->texy);
 		master->draw->draw_buffer[x][y] = color;
 		y++;
 	}

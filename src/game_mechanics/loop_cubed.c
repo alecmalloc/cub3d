@@ -2,7 +2,15 @@
 
 static void	set_game(t_cubed *master)
 {
-	master->game->dir = master->parser->map->player_dir;
+	double	fov;
+	double	plane_len;
+
+	master->game->dir_x = master->parser->map->player_dir_x;
+	master->game->dir_y = master->parser->map->player_dir_y;
+	fov = 66.0 *M_PI / 180.0;
+	plane_len = tan(fov / 2.0);
+	master->game->plane_x = -master->game->dir_y * plane_len;
+	master->game->plane_y = master->game->dir_x * plane_len;
 	master->game->pos[0] = master->parser->map->player_pos[0];
 	master->game->pos[1] = master->parser->map->player_pos[1];
 	master->game->map = master->parser->map->map;

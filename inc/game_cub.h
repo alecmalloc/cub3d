@@ -1,8 +1,8 @@
 #ifndef GAME_CUB_H
 # define GAME_CUB_H
 
-# define MOVESPEED 0.5
-# define ROTSPEED 0.5
+# define MOVESPEED 0.1
+# define ROTSPEED 0.05
 
 struct	s_cubed;
 
@@ -15,7 +15,10 @@ typedef struct s_game
 	int		l;
 	int		r;
 	int		space;
-	double	dir;
+	double	dir_x;
+	double	dir_y;
+	double	plane_x;
+	double	plane_y;
 	char	**map;
 	double	pos[2];
 

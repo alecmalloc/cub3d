@@ -27,7 +27,8 @@ static int	init_map(t_map **map)
 	(*map)->y_len = 0;
 	(*map)->player_pos[0] = -1;
 	(*map)->player_pos[1] = -1;
-	(*map)->player_dir = -1;
+	(*map)->player_dir_x = -10;
+	(*map)->player_dir_y = -10;
 	(*map)->map = NULL;
 	(*map)->map_storage = NULL;
 	(*map)->map_storage = (char *)malloc(sizeof(char));

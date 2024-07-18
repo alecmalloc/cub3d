@@ -11,7 +11,7 @@ int	make_image(t_cubed *master)
 	if (!new)
 		return (MLX_IMG_ERR);
 	put_backdrop(master);
-	simple_caster(master);
+	caster(master);
 	load_minimap(master);
 	z = 0;
 	z2 = 0;

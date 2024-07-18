@@ -1,18 +1,23 @@
 #include "cubed.h"
 
+
 int	rotate(int dir, t_cubed *master)
 {
 	double	tmp;
 
-	tmp = master->game->dir - (dir * ROTSPEED);
-	if (tmp <= 0)
-		tmp = 360;
-	else if (tmp >= 360)
-		tmp = 0;
-	master->game->dir = tmp;
+	tmp = master->game->dir_x;
+	master->game->dir_x = master->game->dir_x * cos( ROTSPEED * dir) - master->game->dir_y\
+			      * sin(ROTSPEED * dir);
+	master->game->dir_y = tmp * sin(ROTSPEED * dir) + master->game->dir_y * \
+			      cos(ROTSPEED * dir);
+	tmp = master->game->plane_x;
+	master->game->plane_x = master->game->plane_x * cos(ROTSPEED * dir) - \
+				   master->game->plane_y * sin(ROTSPEED * dir);
+	master->game->plane_y = tmp * sin(ROTSPEED * dir) + master->game->plane_y\
+				   * cos(ROTSPEED * dir);
 	return (1);
 }
-
+/*
 static int	infront(int dir, int *x, int *y)
 {
 	if ((dir >= 337 && dir <= 360) || (dir >= 0 && dir <= 23))
@@ -47,23 +52,21 @@ static int	isdoor(int x, int y, t_game *game)
 	else
 		return (0);
 }
-
+*/
 int	handle_door(t_cubed *master)
 {
 	int	x;
 	int	y;
-	int	door;
+	char	door;
 
-	x = master->game->pos[0];
-	y = master->game->pos[1];
-	if (infront(master->game->dir, &x, &y))
+	x = master->game->pos[0] + master->game->dir_x;
+	y = master->game->pos[1] + master->game->dir_y;
+	door = master->game->map[y][x];
+	if (door == '2' || door == '3')
 	{
-		door = isdoor(x, y, master->game);
-		if (!door)
-			return (0);
-		else if (door == 1)
+		if (door == '2')
 			master->game->map[y][x] = '3';
-		else if (door == 2)
+		else if (door == '3')
 			master->game->map[y][x] = '2';
 		return (1);
 	}

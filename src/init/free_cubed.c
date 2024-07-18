@@ -23,6 +23,8 @@ void	free_tex(t_cubed **cubed, t_tex **tex)
 		mlx_delete_texture((*tex)->w_texture);
         if ((*tex)->d_texture)
 		mlx_delete_texture((*tex)->d_texture);
+        if ((*tex)->od_texture)
+		mlx_delete_texture((*tex)->od_texture);
         if ((*tex)->sp_texture)
 		mlx_delete_texture((*tex)->sp_texture);
 	if ((*tex)->img[NORTH])
@@ -35,6 +37,8 @@ void	free_tex(t_cubed **cubed, t_tex **tex)
 		mlx_delete_image((*cubed)->mlx_inst, (*tex)->img[WEST]);
 	if ((*tex)->img[DOOR])
 		mlx_delete_image((*cubed)->mlx_inst, (*tex)->img[DOOR]);
+	if ((*tex)->img[OPENDOOR])
+		mlx_delete_image((*cubed)->mlx_inst, (*tex)->img[OPENDOOR]);
 	if ((*tex)->img[SPRITE])
 		mlx_delete_image((*cubed)->mlx_inst, (*tex)->img[SPRITE]);
 	free((*tex));
