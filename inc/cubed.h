@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   cubed.h                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mbartsch <mbartsch@student.42berlin.d      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/07/19 10:05:40 by mbartsch          #+#    #+#             */
+/*   Updated: 2024/07/19 10:07:18 by mbartsch         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef CUBED_H
 # define CUBED_H
 
@@ -22,7 +34,6 @@
 # include "casting.h"
 # include "mimimap_cub.h"
 # include "grafics_cub.h"
-
 
 // strucure for custom RBG filled images
 typedef struct Fill_img
@@ -72,7 +83,6 @@ int		start_game(t_cubed *master);
 int		casting(t_cubed *cubed);
 double	conv_deg_rad(double deg);
 double	conv_rad_deg(double rad);
-
 
 void	simple_caster(t_cubed *cubed);
 
