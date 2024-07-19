@@ -88,9 +88,8 @@ static void	move_w(double *x, double *y, t_cubed *master)
 
 static void	move_a(double *x, double *y, t_cubed *master)
 {
-	//fix
-	*x = (master->game->pos[0] + (90 * (M_PI / 180) * master->game->dir_x) * MOVESPEED);
-	*y = (master->game->pos[1] - (90 * (M_PI / 180) * master->game->dir_y) * MOVESPEED);
+	*x = (master->game->pos[0] - -master->game->dir_y * MOVESPEED);
+	*y = (master->game->pos[1] - master->game->dir_x * MOVESPEED);
 	if (master->game->map[(int)*y][(int)master->game->pos[0]] != '1' && \
 		master->game->map[(int)*y][(int)master->game->pos[0]] != '2')
 		master->game->pos[1] = *y;
@@ -113,9 +112,8 @@ static void	move_s(double *x, double *y, t_cubed *master)
 
 static void	move_d(double *x, double *y, t_cubed *master)
 {
-	//fix
-	*x = (master->game->pos[0] - (90 * (M_PI / 180) * master->game->dir_x) * MOVESPEED);
-	*y = (master->game->pos[1] + (90 * (M_PI / 180) * master->game->dir_y) * MOVESPEED);
+	*x = (master->game->pos[0] + -master->game->dir_y * MOVESPEED);
+	*y = (master->game->pos[1] + master->game->dir_x * MOVESPEED);
 	if (master->game->map[(int)*y][(int)master->game->pos[0]] != '1' && \
 		master->game->map[(int)*y][(int)master->game->pos[0]] != '2')
 		master->game->pos[1] = *y;

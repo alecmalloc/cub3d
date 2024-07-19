@@ -14,8 +14,8 @@
 # define SPRITE9_TEX "./textures/sprite9.png"
 # define SPRITE10_TEX "./textures/sprite10.png"
 
-# define WIDTH 1000
-# define HIGHT 800
+# define WIDTH 1920
+# define HIGHT 1080
 # define NORTH 0
 # define EAST 1
 # define SOUTH 2
