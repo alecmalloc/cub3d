@@ -50,14 +50,17 @@ static void	calc_vars(t_cubed *master, t_casting *caster)
 
 static void	get_tex(t_casting *cast, t_cubed *master)
 {
-	if (cast->side && (master->game->dir_x > 0) && (cast->hit == '1'))
-		master->draw->tex = EAST;
-	else if (cast->side && (master->game->dir_x < 0) && (cast->hit == '1'))
-		master->draw->tex = WEST;
-	else if (!cast->side && (master->game->dir_y < 0) && (cast->hit == '1'))
-		master->draw->tex = NORTH;
-	else if (!cast->side && (master->game->dir_y > 0) && (cast->hit == '1'))
-		master->draw->tex = SOUTH;
+	if (cast->hit == '1')
+	{
+		if (!cast->side && (cast->ray_dir_x > 0))
+			master->draw->tex = EAST;
+		else if (!cast->side && (cast->ray_dir_x < 0))
+			master->draw->tex = WEST;
+		if (cast->side && (cast->ray_dir_y < 0))
+			master->draw->tex = NORTH;
+		else if (cast->side && (cast->ray_dir_y > 0))
+			master->draw->tex = SOUTH;
+	}
 	else if (cast->hit == '2')
 		master->draw->tex = DOOR;
 	else if (cast->hit == '3')

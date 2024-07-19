@@ -37,7 +37,7 @@ int	load_textures(t_cubed *master)
 	master->tex->e_texture = mlx_load_png(master->parser->grafics->etex);
 	if (!master->tex->e_texture)
 		return (LTE_ERR);
-	master->tex->s_texture = mlx_load_png(master->parser->grafics->ntex);
+	master->tex->s_texture = mlx_load_png(master->parser->grafics->stex);
 	if (!master->tex->s_texture)
 		return (LTS_ERR);
 	master->tex->w_texture = mlx_load_png(master->parser->grafics->wtex);
