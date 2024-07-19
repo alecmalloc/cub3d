@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   loop_cubed.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mbartsch <mbartsch@student.42berlin.d      +#+  +:+       +#+        */
+/*   By: aeastman <aeastman@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/19 10:02:47 by mbartsch          #+#    #+#             */
-/*   Updated: 2024/07/19 10:02:48 by mbartsch         ###   ########.fr       */
+/*   Updated: 2024/07/19 12:23:57 by aeastman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,8 @@ static void	set_game(t_cubed *master)
 	double	fov;
 	double	plane_len;
 
-	master->game->dir_x = master->parser->map->player_dir_x;
-	master->game->dir_y = master->parser->map->player_dir_y;
+	master->game->dir_x = master->parser->map->player_dir_x + 0.01;
+	master->game->dir_y = master->parser->map->player_dir_y + 0.01;
 	fov = 66.0 * M_PI / 180.0;
 	plane_len = tan(fov / 2.0);
 	master->game->plane_x = -master->game->dir_y * plane_len;
