@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   parser_cub.h                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mbartsch <mbartsch@student.42berlin.d      +#+  +:+       +#+        */
+/*   By: aeastman <aeastman@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/19 10:05:53 by mbartsch          #+#    #+#             */
-/*   Updated: 2024/07/19 10:05:54 by mbartsch         ###   ########.fr       */
+/*   Updated: 2024/07/19 11:56:57 by aeastman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 //MapCharacter
 # define MAP_CHR "01234NSWE "
 # define TEX_END ".png"
-# define FIL_END ".cub"
+# define FIL_END ".cub\0"
 # define IMP_CHR "01234NSWE"
 # define PLR_CHR "NSWE"
 

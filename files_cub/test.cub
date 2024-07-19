@@ -1,16 +1,18 @@
 
-NO ./textures/nw.png
+NO ./textures/dog.png
 
 
 
-SO ./textures/sw.png
+SO ./textures/cat.png
 
 
 
 
 
 
-EA                                        ./textures/ew.png
+EA                                        ./textures/maurice.png
+
+
 F       169,169,169
 
 
@@ -18,7 +20,7 @@ F       169,169,169
 C                         146,239,243
 
 
-WE ./textures/ww.png
+WE ./textures/alec.png
 
 
 

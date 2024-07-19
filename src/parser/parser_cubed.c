@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   parser_cubed.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mbartsch <mbartsch@student.42berlin.d      +#+  +:+       +#+        */
+/*   By: aeastman <aeastman@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/19 10:04:27 by mbartsch          #+#    #+#             */
-/*   Updated: 2024/07/19 10:04:29 by mbartsch         ###   ########.fr       */
+/*   Updated: 2024/07/19 12:10:44 by aeastman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	check_suffix(char *file, char *ending)
 	tmp = ft_strrchr(file, '.');
 	if (!tmp)
 		return (WRA_ERR);
-	if (ft_memcmp((void *)tmp, (void *)ending, ft_strlen(ending)))
+	if (ft_strcmp(tmp, ending))
 		return (WRS_ERR);
 	return (0);
 }

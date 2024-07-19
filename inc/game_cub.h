@@ -6,15 +6,15 @@
 /*   By: mbartsch <mbartsch@student.42berlin.d      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/19 10:05:45 by mbartsch          #+#    #+#             */
-/*   Updated: 2024/07/19 10:05:45 by mbartsch         ###   ########.fr       */
+/*   Updated: 2024/07/19 11:24:02 by aeastman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef GAME_CUB_H
 # define GAME_CUB_H
 
-# define MOVESPEED 0.01
-# define ROTSPEED 0.01
+# define MOVESPEED 0.1
+# define ROTSPEED 0.05
 
 struct	s_cubed;
 
