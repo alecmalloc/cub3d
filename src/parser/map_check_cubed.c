@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   map_check_cubed.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mbartsch <mbartsch@student.42berlin.d      +#+  +:+       +#+        */
+/*   By: aeastman <aeastman@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/19 10:04:22 by mbartsch          #+#    #+#             */
-/*   Updated: 2024/07/19 10:04:23 by mbartsch         ###   ########.fr       */
+/*   Updated: 2024/07/19 12:23:36 by aeastman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

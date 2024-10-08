@@ -1,24 +1,24 @@
 
-NO ./textures/nw.png
+NO ./textures/dog.png
 
 
 
-SO ./textures/sw.png
+SO ./textures/cat.png
 
 
 
 
 
 
-EA                                        ./textures/ew.png
-F       169,169,169
+EA                                        ./textures/maurice.png
 
 
+F       190,190,169
 
-C                         146,239,243
+C                         146,6,243
 
 
-WE ./textures/ww.png
+WE ./textures/alec.png
 
 
 
@@ -32,7 +32,7 @@ WE ./textures/ww.png
         1002000000000000000000001
 111111111011000001110000000000001
         1011000001110000000000001
-        100200000000000000S000001
+        100200000000000000W000001
 111111111011000001110000000000001
 100000000110000011101111111111111
 11110111111111011100000010001
