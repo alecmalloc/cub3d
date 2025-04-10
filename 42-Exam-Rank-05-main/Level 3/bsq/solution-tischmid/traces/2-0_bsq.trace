@@ -1,0 +1,39 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+deepthought-worker-3.42berlin.de
+Linux 5.15.0-131-generic x86_64
+$> date
+Mon Feb 24 11:40:24 AM CET 2025
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: git@vogsphere.42berlin.de:exam-2025-02-24/tischmid_exam-rank-02_exam_15h49m51s.git
+
+= Git history ==================================================================
+$> git -C /tmp/tmpi_bzih1g/user log --pretty='%H - %an, %ad : %s'
+a77d83caa9801cfcda2cf66de36b8b5cf1c1d056 - Exam 42, Mon Feb 24 11:40:05 2025 +0100 : Strict parsing
+1884f8f316f6752f1f56a58b96dbf2b8b2db78c0 - Exam 42, Mon Feb 24 11:16:17 2025 +0100 : working
+68707fb0cc0a0f74e03f15840790bcea5e7cce8c - Exam 42, Mon Feb 24 11:05:41 2025 +0100 : Comments
+1c825602997e09352a6f6aaf87f0ad35df4cc326 - Exam 42, Mon Feb 24 10:35:27 2025 +0100 : save
+ 
+= Collected files ==========================================
+$> ls -lAR /tmp/tmpi_bzih1g/user
+/tmp/tmpi_bzih1g/user:
+total 8
+drwxr-xr-x 2 root root 4096 Feb 24 11:40 bsq
+-rw-r--r-- 1 root root 1071 Feb 24 11:40 __GIT_HISTORY
+
+/tmp/tmpi_bzih1g/user/bsq:
+total 12
+-rw-r--r-- 1 root root 9833 Feb 24 11:40 bsq.c
+ 
+= bsq ==========================================================================
+$> cc -Wextra -Wall -Werror bsq.c -o user_exe 
+
+Forbidden function call in 'bsq.c': 'open'
+Forbidden function call in 'bsq.c': 'printf'
+Forbidden function call in 'bsq.c': 'read'
+Forbidden function call in 'bsq.c': 'write'
+Grade: -42
+
+= Final grade: -42 =============================================================

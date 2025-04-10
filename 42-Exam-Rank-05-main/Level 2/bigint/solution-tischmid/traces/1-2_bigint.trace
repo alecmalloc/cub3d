@@ -1,0 +1,60 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+deepthought-worker-6.42berlin.de
+Linux 5.15.0-131-generic x86_64
+$> date
+Fri Feb 21 04:44:22 PM CET 2025
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: git@vogsphere.42berlin.de:exam-2025-02-21/tischmid_exam-rank-02_exam_15h50m51s.git
+
+= Git history ==================================================================
+$> git -C /tmp/tmp1_v5a2gn/user log --pretty='%H - %an, %ad : %s'
+7814f68657aac69acea934c4b6decdd3d87f561b - Exam 42, Fri Feb 21 16:44:13 2025 +0100 : Split up to cpp file
+19516d79657ca4f3c2d9813c4aad21af0e284ad9 - Exam 42, Fri Feb 21 16:38:56 2025 +0100 : Add trivial substraction (returns 0)
+e949760777c79007916a1de5e5c99c45e4668794 - Exam 42, Fri Feb 21 16:31:24 2025 +0100 : Add bigint.hpp bigint.cpp
+f9f4186ff8405005ca22038b93acf52be19263f4 - Exam 42, Fri Feb 21 14:53:34 2025 +0100 : Add vbc.c
+ 
+= Collected files ==========================================
+$> ls -lAR /tmp/tmp1_v5a2gn/user
+/tmp/tmp1_v5a2gn/user:
+total 12
+drwxr-xr-x 2 root root 4096 Feb 21 16:44 bigint
+-rw-r--r-- 1 root root 1053 Feb 21 16:44 __GIT_HISTORY
+drwxr-xr-x 2 root root 4096 Feb 21 16:44 vbc
+
+/tmp/tmp1_v5a2gn/user/bigint:
+total 12
+-rw-r--r-- 1 root root  230 Feb 21 16:44 bigint.cpp
+-rw-r--r-- 1 root root 5825 Feb 21 16:44 bigint.hpp
+
+/tmp/tmp1_v5a2gn/user/vbc:
+total 4
+-rw-r--r-- 1 root root 2691 Feb 21 16:44 vbc.c
+ 
+= bigint =======================================================================
+$> c++ -Wextra -Wall -Werror main.cpp bigint.cpp -o user_exe 
+
+$> c++ -Wextra -Wall -Werror main.cpp bigint.cpp -o ref_exe 
+
+= Test 1 ===================================================
+$> ./2b8gfju77ullc2mxhvr8rmil
+$> ./2b8gfju77ullc2mxhvr8rmil
+$> diff -U 3 user_output_test1 test1.output | cat -e
+--- user_output_test1	2025-02-21 15:44:24.583217908 +0000$
++++ test1.output	2025-02-21 15:44:24.643217301 +0000$
+@@ -21,7 +21,7 @@$
+ (d <= a) = 0$
+ (d >= a) = 1$
+ 0$
+-099999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999$
++99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999$
+ 100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000$
+ 199999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999998$
+ 0$
+
+Diff KO :(
+Grade: 0
+
+= Final grade: 0 ===============================================================

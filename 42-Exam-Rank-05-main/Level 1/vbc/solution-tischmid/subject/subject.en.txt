@@ -1,0 +1,34 @@
+Assignment name  : vbc
+Expected files   : *.c *.h
+Allowed functions: malloc, calloc, realloc, free, printf, isdigit, write
+--------------------------------------------------------------------------------
+
+Write a program that will print the result of a math expression given as
+argument.
+You must handle the operations + * and the parenthesis.
+You don't have to handle whitespaces in the expression.
+All the values in the expression will be between 0 and 9 included.
+In case of unexpected symbol, you will print "Unexpected token '%c'\n" and exit with the code 1 (if the
+symbol is the end of input you will print: "Unexpected end of input\n").
+This rule also apply in case you find an un-expected '(' or ')'.
+In case of a syscall failure you will just exit with the code 1.
+
+You will find in this directory the beginning of the code you need to write.
+
+For example this should work:
+$> ./vbc '1' | cat -e
+1$
+$> ./vbc '2+3' | cat -e
+5$
+$> ./vbc '3*4+5' | cat -e
+17$
+$> ./vbc '3+4*5' | cat -e
+23$
+$> ./vbc '(3+4)*5' | cat -e
+35$
+$> ./vbc '(((((2+2)*2+2)*2+2)*2+2)*2+2)*2'
+188$
+$> ./vbc '1+'
+Unexpected end of input$
+$> ./vbc '1+2)'
+Unexpected token ')'$

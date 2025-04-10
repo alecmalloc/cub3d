@@ -1,0 +1,118 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+deepthought-worker-6.42berlin.de
+Linux 5.15.0-131-generic x86_64
+$> date
+Fri Feb 21 02:53:38 PM CET 2025
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: git@vogsphere.42berlin.de:exam-2025-02-21/tischmid_exam-rank-02_exam_15h50m51s.git
+
+= Git history ==================================================================
+$> git -C /tmp/tmpd1d36y9k/user log --pretty='%H - %an, %ad : %s'
+f9f4186ff8405005ca22038b93acf52be19263f4 - Exam 42, Fri Feb 21 14:53:34 2025 +0100 : Add vbc.c
+ 
+= Collected files ==========================================
+$> ls -lAR /tmp/tmpd1d36y9k/user
+/tmp/tmpd1d36y9k/user:
+total 8
+-rw-r--r-- 1 root root  256 Feb 21 14:53 __GIT_HISTORY
+drwxr-xr-x 2 root root 4096 Feb 21 14:53 vbc
+
+/tmp/tmpd1d36y9k/user/vbc:
+total 4
+-rw-r--r-- 1 root root 2691 Feb 21 14:53 vbc.c
+ 
+= vbc ==========================================================================
+$> cc -Wextra -Wall -Werror vbc.c -o user_exe 
+
+$> cc -Wextra -Wall -Werror vbc.c -o ref_exe 
+
+= Test 1 ===================================================
+$> ./w26ugt0l40ty4kh9lx91h3fh '1'
+$> ./w26ugt0l40ty4kh9lx91h3fh '1'
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./lugkfa4iv44uk8ka58vde9up '1+2'
+$> ./lugkfa4iv44uk8ka58vde9up '1+2'
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./d8byzm4qj3by7soou1ar6wrb '2*3'
+$> ./d8byzm4qj3by7soou1ar6wrb '2*3'
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./en8lornrppww1o8aadcot1l3 '1+2+3+4+5'
+$> ./en8lornrppww1o8aadcot1l3 '1+2+3+4+5'
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./efsihv1zfhxxp18bbzevqlrj '3*2+1'
+$> ./efsihv1zfhxxp18bbzevqlrj '3*2+1'
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./nfuog025t7uahowo9stgmnav '1+2*3'
+$> ./nfuog025t7uahowo9stgmnav '1+2*3'
+$> diff -U 3 user_output_test6 test6.output | cat -e
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./k1mbl8768xefsw10cufo1r3k '2*4+9+3+2*1+5+1+6+6*1*1+8*0+0+5+0*4*9*5*8+9*7+5*1+3+1+4*5*7*3+0*3+4*8+8+8+4*0*5*3+5+4+5*7+9+6*6+7+9*2*6*9+2+1*3*7*1*1*5+1+2+7+4+3*4*2+0+4*4*2*2+6+7*5+9+0+8*4+6*7+5+4*4+2+5*5+1+6+3*5*9*9+7*4*3+7+4*9+3+0+1*8+1+2*9*4*5*1+0*1*9+5*3*5+9*6+5*4+5+5*8*6*4*9*2+0+0+1*5*3+6*8*0+0+2*3+7*5*6+8+6*6+9+3+7+0*0+5+2*8+2*7*2+3+9*1*4*8*7*9+2*0+1*6*4*2+8*8*3*1+8+2*4+8*3+8*3+9*5+2*3+9*5*6*4+3*6*6+7+4*8+0+2+9*8*0*6*8*1*2*7+0*5+6*5+0*2+7+2+3+8*7+6+1*3+5+4*5*4*6*1+4*7+9*0+4+9*8+7+5+6+2+6+1+1+1*6*0*9+7+6*2+4*4+1*6*2*9+3+0+0*1*8+4+6*2+6+2*7+7+0*9+6+2*1+6*5*2*3*5*2*6*4+2*9*2*4*5*2*2*3+8+8*3*2*3+0*5+9*6+8+3*1+6*9+8+9*2*0+2'
+$> ./k1mbl8768xefsw10cufo1r3k '2*4+9+3+2*1+5+1+6+6*1*1+8*0+0+5+0*4*9*5*8+9*7+5*1+3+1+4*5*7*3+0*3+4*8+8+8+4*0*5*3+5+4+5*7+9+6*6+7+9*2*6*9+2+1*3*7*1*1*5+1+2+7+4+3*4*2+0+4*4*2*2+6+7*5+9+0+8*4+6*7+5+4*4+2+5*5+1+6+3*5*9*9+7*4*3+7+4*9+3+0+1*8+1+2*9*4*5*1+0*1*9+5*3*5+9*6+5*4+5+5*8*6*4*9*2+0+0+1*5*3+6*8*0+0+2*3+7*5*6+8+6*6+9+3+7+0*0+5+2*8+2*7*2+3+9*1*4*8*7*9+2*0+1*6*4*2+8*8*3*1+8+2*4+8*3+8*3+9*5+2*3+9*5*6*4+3*6*6+7+4*8+0+2+9*8*0*6*8*1*2*7+0*5+6*5+0*2+7+2+3+8*7+6+1*3+5+4*5*4*6*1+4*7+9*0+4+9*8+7+5+6+2+6+1+1+1*6*0*9+7+6*2+4*4+1*6*2*9+3+0+0*1*8+4+6*2+6+2*7+7+0*9+6+2*1+6*5*2*3*5*2*6*4+2*9*2*4*5*2*2*3+8+8*3*2*3+0*5+9*6+8+3*1+6*9+8+9*2*0+2'
+$> diff -U 3 user_output_test7 test7.output | cat -e
+
+Diff OK :D
+= Test 8 ===================================================
+$> ./ld1hh7jtphmx6ofe9djnkxck '(1)'
+$> ./ld1hh7jtphmx6ofe9djnkxck '(1)'
+$> diff -U 3 user_output_test8 test8.output | cat -e
+
+Diff OK :D
+= Test 9 ===================================================
+$> ./i2oth8x48jw5pjr9cvb6s38s '(((((((3)))))))'
+$> ./i2oth8x48jw5pjr9cvb6s38s '(((((((3)))))))'
+$> diff -U 3 user_output_test9 test9.output | cat -e
+
+Diff OK :D
+= Test 10 ==================================================
+$> ./xjir7hjuhcfix8esdfh40j6j '(1+2)*3'
+$> ./xjir7hjuhcfix8esdfh40j6j '(1+2)*3'
+$> diff -U 3 user_output_test10 test10.output | cat -e
+
+Diff OK :D
+= Test 11 ==================================================
+$> ./a8tchwk22dyil6vmck2k0cc8 '((6*6+7+5+8)*(1+0+4*8+7)+2)+4*(1+2)'
+$> ./a8tchwk22dyil6vmck2k0cc8 '((6*6+7+5+8)*(1+0+4*8+7)+2)+4*(1+2)'
+$> diff -U 3 user_output_test11 test11.output | cat -e
+
+Diff OK :D
+= Test 12 ==================================================
+$> ./8rsuog5o4brgm6hpcxdvho7d '1+'
+$> ./8rsuog5o4brgm6hpcxdvho7d '1+'
+$> diff -U 3 user_output_test12 test12.output | cat -e
+
+Diff OK :D
+= Test 13 ==================================================
+$> ./4a6bdq6iuk5upnizr3u2cx0r '1)'
+$> ./4a6bdq6iuk5upnizr3u2cx0r '1)'
+$> diff -U 3 user_output_test13 test13.output | cat -e
+
+Diff OK :D
+= Test 14 ==================================================
+$> ./4c2uhvgai8wl6bn8t9kh8176 '((1+3)*12+(3*(2+6))'
+$> ./4c2uhvgai8wl6bn8t9kh8176 '((1+3)*12+(3*(2+6))'
+$> diff -U 3 user_output_test14 test14.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================

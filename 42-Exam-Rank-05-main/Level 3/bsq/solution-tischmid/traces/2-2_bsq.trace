@@ -1,0 +1,49 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+deepthought-worker-4.42berlin.de
+Linux 5.15.0-131-generic x86_64
+$> date
+Mon Feb 24 12:12:40 PM CET 2025
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: git@vogsphere.42berlin.de:exam-2025-02-24/tischmid_exam-rank-02_exam_15h49m51s.git
+
+= Git history ==================================================================
+$> git -C /tmp/tmpt2_f9q0a/user log --pretty='%H - %an, %ad : %s'
+8ba31ae5edb54387b657b6ef6e483968de2477f0 - Exam 42, Mon Feb 24 12:12:24 2025 +0100 : Fix bug in parsing
+bf06244c6ff68921fc23f69fbcc4cae5e5bb121c - Exam 42, Mon Feb 24 12:04:45 2025 +0100 : Make equivalent version with file stream functions
+fdbd00c1772357fb11f2de14d77fbd6c5b91f5a3 - Exam 42, Mon Feb 24 11:42:29 2025 +0100 : remove printf
+a77d83caa9801cfcda2cf66de36b8b5cf1c1d056 - Exam 42, Mon Feb 24 11:40:05 2025 +0100 : Strict parsing
+1884f8f316f6752f1f56a58b96dbf2b8b2db78c0 - Exam 42, Mon Feb 24 11:16:17 2025 +0100 : working
+68707fb0cc0a0f74e03f15840790bcea5e7cce8c - Exam 42, Mon Feb 24 11:05:41 2025 +0100 : Comments
+1c825602997e09352a6f6aaf87f0ad35df4cc326 - Exam 42, Mon Feb 24 10:35:27 2025 +0100 : save
+ 
+= Collected files ==========================================
+$> ls -lAR /tmp/tmpt2_f9q0a/user
+/tmp/tmpt2_f9q0a/user:
+total 8
+drwxr-xr-x 2 root root 4096 Feb 24 12:12 bsq
+-rw-r--r-- 1 root root 1930 Feb 24 12:12 __GIT_HISTORY
+
+/tmp/tmpt2_f9q0a/user/bsq:
+total 24
+-rw-r--r-- 1 root root 10317 Feb 24 12:12 bsq.c
+-rw-r--r-- 1 root root  9826 Feb 24 12:12 bsq-with-simple-funcs.c.ignore
+ 
+= bsq ==========================================================================
+$> cc -Wextra -Wall -Werror bsq.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./euxh0lwdy6wd3iywv0pefpet < test1.stdin
+$> diff -U 3 user_output_test1 test1.output | cat -e
+--- user_output_test1	2025-02-24 11:12:40.949510610 +0000$
++++ test1.output	2025-02-24 11:12:40.913510455 +0000$
+@@ -1 +1 @@$
+-map error$
++o$
+
+Diff KO :(
+Grade: 0
+
+= Final grade: 0 ===============================================================
